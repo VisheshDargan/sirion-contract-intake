@@ -7,7 +7,7 @@
 <link rel="icon" href="sirion-mark.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
 <style>
 /* VOICE work: a shipped enterprise tool, quiet and exact, the way Sirion would ship it
    IDEA one request record moving between an inbox and an intake desk
@@ -933,8 +933,8 @@ section[data-view=prototype] .stage{flex:1;min-height:0;display:flex;flex-direct
 /* ===== v18: remove the AI-generated look ===== */
 *{text-transform:none!important;letter-spacing:normal}
 .sfr .k .ok:empty{display:none}
-body{font-family:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;font-feature-settings:normal}
-.spane,.dvt,.dvn{font-family:"IBM Plex Sans",system-ui,sans-serif}
+body{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;font-feature-settings:normal}
+.spane,.dvt,.dvn{font-family:Inter,system-ui,sans-serif}
 *:not(#tip):not(.tour-hl):not(.xtr):not(.rpanel):not(.apop):not(.srcpop):not(.notif):not(.fasmp){box-shadow:none!important}
 #tip,.apop,.srcpop,.notif,.fasmp{box-shadow:0 2px 6px rgba(0,0,0,.12)!important;border:1px solid #a8a8a8}
 .tour-hl{box-shadow:none!important;border-radius:4px}
@@ -1547,6 +1547,50 @@ body:not(.appmode) #pctl{display:none!important}
 .fp-sh .ftab.sht>div{grid-template-columns:minmax(170px,.8fr) minmax(0,1.25fr) minmax(0,1.25fr)}
 .fp-sh{grid-template-rows:max-content max-content!important;align-content:start!important}.fp-sh>.fcol{height:auto!important;max-height:none!important;overflow:visible!important;min-height:min-content!important}
 .fp-sh .orb .orbc{width:96px;height:96px}
+#win .km .nst{display:block;font-style:normal;font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#0e5e69;margin-bottom:1px}
+.fp-mt{grid-template-columns:minmax(0,1fr) minmax(0,1.25fr) minmax(0,.95fr)!important}
+.mt4{border:1px solid #e4e4e7;border-radius:4px;overflow:hidden;background:#fff}
+.mt4>div{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.7fr) 70px 92px}
+.mt4>div>*{padding:7px 10px;border-top:1px solid #e4e4e7;font-size:13px;line-height:1.35}
+.mt4>div:first-child>*{border-top:0}
+.mt4>div>*:last-child{font-weight:600;color:#1d3a6e}.mt4>div>span:nth-child(2){color:#3f3f46}
+.fml{margin:10px 0 0;border:1px solid #d4d4d8;border-radius:4px;background:#fff;font-size:13px;line-height:1.4}
+.fmh{font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#52525b;padding:7px 12px 0}
+.fmr{padding:4px 12px 10px}.fmn ol{margin:4px 0 0;padding-left:20px}.fmn li{margin:1px 0}
+.fmd{border-top:2px solid #111;margin-top:8px;padding-top:6px}
+.fwx{margin-top:10px;font-size:13px;line-height:1.45;background:#f4f7f7;border-left:3px solid #0e5e69;padding:8px 12px}
+.fnote{font-size:12px;color:#52525b;margin:6px 0 0}
+.trkapp{display:block!important;background:#f6f7f8;overflow:auto}
+.trk{min-height:100%;font-size:14px;color:#18181b}
+.trkbar{display:flex;align-items:center;gap:14px;padding:10px 24px;background:#fff;border-bottom:1px solid #e4e4e7}
+.trkb{display:flex;align-items:center;gap:8px}.trkb span{color:#52525b}.trkv{font-size:12.5px;color:#52525b;margin-left:auto}
+.trkin{max-width:1040px;margin:0 auto;padding:22px 24px 28px}
+.trkh h1{font-size:24px;margin:2px 0 8px;font-weight:600}.trks{display:flex;align-items:center;gap:10px;margin-bottom:16px;font-size:15px}
+.trk .stp{background:#fff;border:1px solid #e4e4e7;border-radius:6px;padding:14px 16px;margin-bottom:16px}
+.trkg{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.trkc{background:#fff;border:1px solid #e4e4e7;border-radius:6px;padding:14px 16px}
+.trkc h3{margin:0 0 8px;font-size:14px;font-weight:600}.trkc p{margin:4px 0}
+.trkneed.on{border-color:#d97706;box-shadow:inset 3px 0 0 #d97706}
+.trkd{display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #f1f1f3}
+.trkrisk{margin-top:8px;background:#fef2f2;color:#991b1b;border:1px solid #fecaca;border-radius:4px;padding:7px 10px;font-size:13px}
+.trkok{margin-top:8px;color:#166534;font-weight:600;font-size:13px}
+.trka{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:10px;align-items:center;padding:6px 0;border-bottom:1px solid #f1f1f3}
+.trka>div{display:grid}.trkf{margin-top:14px}
+.trkl{margin-top:14px;padding-top:12px;border-top:1px solid #e4e4e7;display:flex;gap:10px;align-items:center}
+.conn3{display:grid;grid-template-columns:minmax(0,1.3fr) repeat(3,minmax(0,1fr));gap:0;border:1px solid #e4e4e7;border-radius:4px;background:#fff;margin:10px 0 4px;font-size:13px;line-height:1.4}
+.conn3>div{padding:9px 12px;border-left:1px solid #e4e4e7;display:grid;gap:2px;align-content:start}.conn3>div:first-child{border-left:0;background:#f4f7f7}
+.conn3 span{color:#3f3f46}.conn3 .sgo{justify-self:start;margin-top:4px}
+.soltop{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;align-items:start}
+.soltop .conn3{grid-template-columns:repeat(3,minmax(0,1fr));margin:0}.soltop .conn3 .c3h{grid-column:1/-1;border-bottom:1px solid #e4e4e7}
+.soltop .conn3>div:nth-child(2){border-left:0}
+.fasm2{display:grid;border-top:1px solid #e4e4e7}
+.fasm2>div{display:grid;grid-template-columns:100px minmax(0,1fr);gap:10px;border-bottom:1px solid #e4e4e7;padding:6px 0;font-size:13px;line-height:1.4}
+.fasm2 span{color:var(--t2)}
+.fsub{font-size:15px;font-weight:600;margin:4px 0 8px;color:#18181b}.fkr{margin-bottom:2px}
+.fvend{font-size:12.5px;color:#3f3f46;margin:8px 0 0;font-style:italic}
+.fp-pr .fbig>div{padding:8px 0}
+.conn3{font-size:12.5px}.conn3>div{padding:7px 10px}.conn3 .link{font-size:12.5px;padding:0;color:#0e5e69;text-decoration:underline;background:none;border:0;cursor:pointer}
+.fp-pr.two{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr)!important}
 </style>
 </head>
 <body>
@@ -1573,7 +1617,7 @@ body:not(.appmode) #pctl{display:none!important}
 <div id="tip" hidden role="dialog" aria-live="polite"></div>
 
 <section data-view="walkthrough" class="hidden"><div class="fp fp-wt">
-  <div class="wtv"><video id="wtvid" src="walkthrough.mp4" poster="poster.jpg" controls playsinline preload="auto" aria-label="One-minute walkthrough with music: one contract request at IBM, from Priya's email to a draft ready to negotiate"></video></div>
+  <div class="wtv"><video id="wtvid" src="walkthrough.mp4" poster="poster.jpg" controls playsinline preload="auto" aria-label="One-minute walkthrough with music: one contract request at Kovalo, from Priya's email to a draft ready to negotiate"></video></div>
   <div class="wtb"><div><b>Priya's request, start to finish</b><span>A one-minute story: Priya asks by email, Arjun and Ana run it in Sirion, and three teams approve from their own Outlook. Sound on.</span></div><a class="wtgo" href="#prototype">Try the prototype yourself</a></div>
 </div></section>
 
@@ -1586,15 +1630,15 @@ body:not(.appmode) #pctl{display:none!important}
       <div class="sb" tabindex="0" data-to="8.6" data-dec="1">
         <div class="sbl">Contract value lost</div>
         <div class="sbn"><span class="sbv">8.6</span><span class="sbs">%</span></div>
-        <div class="sbc"><span class="sbd">Average share of contract value companies lose to weak contracting processes.</span><span class="sbx">Best performers lose about 3%. The worst lose more than 20%.</span></div>
-        <div class="sbviz"><div class="sbtrack"><span class="sbfill" style="--p:34.4%"></span><span class="sbm" style="left:12%"><b>3%</b>Best</span><span class="sbm on up" style="left:34.4%"><b>8.6%</b>Average</span><span class="sbm" style="left:80%"><b>20%+</b>Worst</span></div></div>
+        <div class="sbc"><span class="sbd">Average share of contract value companies lose to weak contracting processes.</span><span class="sbx">Best performers lose a little over 3%. The worst lose more than 20%.</span></div>
+        <div class="sbviz"><div class="sbtrack"><span class="sbfill" style="--p:34.4%"></span><span class="sbm" style="left:12%"><b>3%+</b>Best</span><span class="sbm on up" style="left:34.4%"><b>8.6%</b>Average</span><span class="sbm" style="left:80%"><b>20%+</b>Worst</span></div></div>
         <div class="sbsrc"><a href="https://www.deloitte.com/us/en/services/tax/articles/contract-management-lifecycle-insights.html" target="_blank" rel="noopener">WorldCC and Deloitte, 1,200+ organisations</a></div>
       </div>
       <div class="sb" tabindex="0" data-to="66" data-dec="0">
         <div class="sbl">Requests that skip Legal</div>
         <div class="sbn"><span class="sbv">66</span><span class="sbs">%</span></div>
-        <div class="sbc"><span class="sbd">of business users bypass the formal legal process at least sometimes.</span><span class="sbx">63% wait four or more business days for a routine contract review.</span></div>
-        <div class="sbviz"><div class="sbtrack two"><span class="sbfill" style="--p:66%"></span></div></div><div class="sblab"><span><b>66%</b> skip it at least sometimes</span><span><b>34%</b> always use it</span></div>
+        <div class="sbc"><span class="sbd">of business professionals bypass formal legal channels at least occasionally to keep projects moving.</span><span class="sbx">63% wait four or more business days for a routine contract review.</span></div>
+        <div class="sbviz"><div class="sbtrack two"><span class="sbfill" style="--p:66%"></span></div></div><div class="sblab"><span><b>66%</b> bypass at least occasionally</span><span><b>34%</b> the other respondents</span></div>
         <div class="sbsrc"><a href="https://www.streamline.ai/2026-cost-of-legal-friction-benchmark-report" target="_blank" rel="noopener">Streamline 2026, 467 professionals</a></div>
       </div>
     </div>
@@ -1652,7 +1696,7 @@ body:not(.appmode) #pctl{display:none!important}
   </div>
 </div></section>
 
-<section data-view="problem" class="hidden"><div class="fp fp-pr">
+<section data-view="problem" class="hidden"><div class="fp fp-pr two">
   <div class="fcol">
     <h1>The problem</h1>
     <p class="flead">Intake runs on email, Teams and Slack. Requests arrive incomplete and scattered across inboxes. Legal spends its day chasing requesters for details and approvers for sign-off. Requesters can't see progress, so they chase Legal, or skip the process altogether.</p>
@@ -1663,41 +1707,42 @@ body:not(.appmode) #pctl{display:none!important}
       <div><b>Approvers</b><span>Get asked late, one at a time, without context</span></div>
       <div><b>The company</b><span>Loses negotiated savings when people skip the process</span></div>
     </div>
-    <button class="fasm" data-asm="1">Assumptions</button>
-    <div class="fasmp" id="asm" hidden><b>Assumptions</b><ul><li>3,000 employees, about 2,500 suppliers</li><li>A legal team of 6, including one in legal operations</li><li>Microsoft 365 (Outlook, Teams), NetSuite and DocuSign; Sirion just bought</li><li>About 2,100 contract requests a year from about 800 people</li><li>Privacy review whenever a supplier handles personal data</li><li>Budget owner approves; Finance too above $100k</li><li>The requester negotiates with the supplier, with Legal looped in</li></ul></div>
+    <h2>Assumptions</h2>
+    <div class="fasm2">
+      <div><b>Company</b><span>Kovalo: fast-growing, 3,000 employees, about 2,500 suppliers</span></div>
+      <div><b>Legal</b><span>A team of 6, including one in legal operations. About 2,100 requests a year from about 800 people</span></div>
+      <div><b>Tools</b><span>Microsoft 365 (Outlook, Teams, Word, SharePoint), NetSuite and DocuSign. Sirion just bought</span></div>
+      <div><b>Approvals</b><span>Budget owner for any spend. Finance too above $100,000 a year, or for a price rise over 5%. Privacy when a supplier handles personal data. Security when it gets system or site access. Kovalo's NDA template, unchanged: no approvals</span></div>
+      <div><b>Target times</b><span>Low risk, 2 working days: NDAs, renewals and SOWs on existing terms. Medium, 5: spend over $100,000 or a price change. High, 10: the supplier's own paper, personal data or system access</span></div>
+      <div><b>Negotiation</b><span>The requester negotiates with the supplier; Legal is looped in on price, dates and data</span></div>
+    </div>
   </div>
   <div class="fcol">
-    <h2>Why it matters</h2>
+    <h2 class="fkr">How we know it's real</h2>
+    <h3 class="fsub">Secondary research</h3>
     <div class="fbig">
-      <div><b>80%</b><span>of business users have little or no visibility into the status of their legal requests.</span><a href="https://www.streamline.ai/2026-cost-of-legal-friction-benchmark-report" target="_blank" rel="noopener">Streamline 2026</a></div>
-      <div><b>41%</b><span>of in-house lawyers spend 3+ hours a day on back-and-forth with the business.</span><a href="https://legalleaders.lawvu.com/2024-in-house-legal-technology-report/" target="_blank" rel="noopener">LawVu and Perceptive 2024</a></div>
-      <div><b>49%</b><span>of legal teams say requests scattered across channels are their biggest source of waste.</span><a href="https://lawvu.com/articles/4-ways-to-improve-legal-intake/" target="_blank" rel="noopener">IDC for LawVu</a></div>
-      <div><b>16%</b><span>of negotiated savings can be lost when people buy outside the process.</span><a href="https://get.coupa.com/rs/950-OLU-185/images/19-Maverick-Spend-Report.pdf" target="_blank" rel="noopener">The Hackett Group</a></div>
-      <div><b>30%</b><span>of confirmed data breaches involved a third party, double the year before. Supplier reviews at intake matter.</span><a href="https://www.verizon.com/about/news/2025-data-breach-investigations-report" target="_blank" rel="noopener">Verizon DBIR 2025</a></div>
+      <div><b>80%</b><span>of business professionals have zero or limited visibility into the status of a legal request.</span><a href="https://www.streamline.ai/2026-cost-of-legal-friction-benchmark-report" target="_blank" rel="noopener">Streamline, The True Cost of Legal Friction 2026 · 467 professionals</a></div>
+      <div><b>41%</b><span>of in-house lawyers spend 3+ hours a day on back-and-forth with the business.</span><a href="https://legalleaders.lawvu.com/2024-in-house-legal-technology-report/" target="_blank" rel="noopener">LawVu and Perceptive, In-house Legal Technology Report 2024 · 300+ in-house legal</a></div>
+      <div><b>49%</b><span>of legal teams say requests scattered across channels are their biggest source of waste.</span><a href="https://lawvu.com/articles/4-ways-to-improve-legal-intake/" target="_blank" rel="noopener">IDC for LawVu · 350+ legal and business leaders</a></div>
+      <div><b>16%</b><span>of negotiated savings can be lost when people buy outside the process.</span><a href="https://get.coupa.com/rs/950-OLU-185/images/19-Maverick-Spend-Report.pdf" target="_blank" rel="noopener">The Hackett Group, Maverick spend study 2019</a></div>
+      <div><b>30%</b><span>of confirmed data breaches involved a third party, double the year before. Supplier reviews at intake matter.</span><a href="https://www.verizon.com/about/news/2025-data-breach-investigations-report" target="_blank" rel="noopener">Verizon, Data Breach Investigations Report 2025 · 12,195 breaches</a></div>
     </div>
-  </div>
-  <div class="fcol">
-    <h2>Sources</h2>
-    <div class="fsrc">
-      <div><a href="https://www.streamline.ai/2026-cost-of-legal-friction-benchmark-report" target="_blank" rel="noopener">The True Cost of Legal Friction, 2026</a><span>Streamline AI survey, 467 professionals</span></div>
-      <div><a href="https://legalleaders.lawvu.com/2024-in-house-legal-technology-report/" target="_blank" rel="noopener">In-house Legal Technology Report, 2024</a><span>LawVu and Perceptive survey</span></div>
-      <div><a href="https://lawvu.com/articles/4-ways-to-improve-legal-intake/" target="_blank" rel="noopener">Legal intake study</a><span>IDC for LawVu, 350+ legal and business leaders</span></div>
-      <div><a href="https://www.deloitte.com/us/en/services/tax/articles/contract-management-lifecycle-insights.html" target="_blank" rel="noopener">The ROI of Contracting Excellence</a><span>WorldCC and Deloitte, 1,200+ organisations</span></div>
-      <div><a href="https://get.coupa.com/rs/950-OLU-185/images/19-Maverick-Spend-Report.pdf" target="_blank" rel="noopener">Maverick spend study, 2019</a><span>The Hackett Group</span></div>
-      <div><a href="https://www.verizon.com/about/news/2025-data-breach-investigations-report" target="_blank" rel="noopener">Data Breach Investigations Report, 2025</a><span>Verizon, 12,195 breaches</span></div>
-      <div><a href="https://repub.eur.nl/pub/31178" target="_blank" rel="noopener">Contributing factors to maverick buying, 2011</a><span>Journal of Purchasing and Supply Management, peer-reviewed</span></div>
-      <div><a href="https://dl.acm.org/doi/10.1145/238386.238530" target="_blank" rel="noopener">Email overload, 1996</a><span>ACM CHI, peer-reviewed</span></div>
-    </div>
+    <p class="fvend">Streamline and LawVu sell legal intake software and ran or sponsored these surveys, so we treat their figures as directional.</p>
   </div>
 </div></section>
 
 <section data-view="solution" class="hidden"><div class="fp fp-sol">
   <div class="fcol">
     <h1>The solution: Sirion contract intake</h1>
-    <p class="flead">Legal runs every supplier contract request from one queue, starting in the Outlook inbox where requests already arrive. Sirion AI reads the request, routes the approvals and keeps the record, so Legal stops chasing and the requester can see where things stand.</p>
-    <div class="solflow"><span>Request email</span><i></i><span>Checked in Outlook</span><i></i><span>Intake queue</span><i></i><span>Approvals by email</span><i></i><span>Draft ready to negotiate</span></div>
-    <div class="sols"><div class="sol"><div class="sn">1</div><h2>Sirion add-in for Outlook</h2><p class="sl">Legal works from the inbox where requests already arrive.</p><ul><li>Summarize any email and its thread</li><li>Check the email and attachments against IBM's intake playbook (8 checks, each linked to its source)</li><li>Ask questions about the request, with sourced answers</li><li>Create the request in one click; the requester gets a request number by email</li></ul><button class="sgo" data-goto="wt:8.4">Watch it in the walkthrough</button></div><div class="sol"><div class="sn">2</div><h2>One intake queue</h2><p class="sl">Every request in one place, whichever channel it came from.</p><ul><li>Outlook, Teams, Slack, Jira and renewal dates in one Jira-style queue</li><li>Every status says who the request is waiting on</li><li>Assign a lawyer by their open work, deadlines and specialism</li></ul><button class="sgo" data-goto="intake">See the queue</button></div><div class="sol"><div class="sn">3</div><h2>Approval routing</h2><p class="sl">Sirion AI works out who must approve, and why.</p><ul><li>Rules from the playbook: budget owner, Finance above $100,000, Privacy when personal data is shared</li><li>One email per approver, drafted with a short brief and one clear ask</li><li>All approvals go out in parallel, not one after another</li></ul><button class="sgo" data-goto="REQ-1036:details">See the routing</button></div><div class="sol"><div class="sn">4</div><h2>Approvals by email</h2><p class="sl">Approvers reply from their own inbox. Nobody logs in to Sirion.</p><ul><li>Sirion AI reads each reply and logs it as an approval, a condition or a change</li><li>Legal replies and follows up from Sirion; every reply is on record</li><li>Agreed changes go into the draft, marked with who asked</li></ul><button class="sgo" data-goto="REQ-1042:emails">See the approvals</button></div><div class="sol"><div class="sn">5</div><h2>Tracking and reporting</h2><p class="sl">Everyone can see where a request stands, and Legal can see where intake slows down.</p><ul><li>A journey, a "Waiting on" block and a full history on every request</li><li>Every request ends in the contract repository with owner, value and renewal date</li><li>A reporting dashboard: volume, on-time rate and approval time by team</li></ul><button class="sgo" data-goto="REQ-1042:tracking">See tracking</button></div></div>
-    <div class="iva"><h2>How much Sirion AI does on its own</h2><p class="ivl">Sirion AI informs and prepares; people decide and send. Anything that commits IBM, or speaks for Legal, needs a person. A wrong extraction costs a minute to fix. A wrong commitment costs money.</p>
+    <div class="soltop"><div><p class="flead">Legal runs every supplier contract request from one queue, starting in the Outlook inbox where requests already arrive. Sirion AI reads the request, routes the approvals and keeps the record, so Legal stops chasing and the requester can see where things stand.</p>
+    <div class="solflow"><span>Request email</span><i></i><span>Checked in Outlook</span><i></i><span>Intake queue</span><i></i><span>Approvals by email</span><i></i><span>Draft ready to negotiate</span></div></div>
+    <div class="conn3"><div class="c3h"><b>One request, three views.</b> Each event updates all three: when Rahul replies "Approve", Legal's queue, the approval timeline and Priya's tracker change together.</div>
+      <div><b>Legal</b><span>Works the queue in Sirion</span></div>
+      <div><b>Approvers</b><span>One email; the reply is the approval</span></div>
+      <div><b>Priya, the requester</b><span>A tracker from her email link. <button class="link" data-goto="track:REQ-1042">Open it</button></span></div></div>
+    </div>
+    <div class="sols"><div class="sol"><div class="sn">1</div><h2>Sirion add-in for Outlook</h2><p class="sl">Legal works from the inbox where requests already arrive.</p><ul><li>Summarize any email and its thread</li><li>Check the email and attachments against Kovalo's intake playbook (8 checks, each linked to its source)</li><li>Ask questions about the request, with sourced answers</li><li>Create the request in one click; the requester gets a request number by email</li></ul><button class="sgo" data-goto="wt:8.4">Watch it in the walkthrough</button></div><div class="sol"><div class="sn">2</div><h2>One intake queue</h2><p class="sl">Every request in one place, whichever channel it came from.</p><ul><li>Outlook, Teams, Slack, Jira and renewal dates in one Jira-style queue</li><li>Every status says who the request is waiting on</li><li>Assign a lawyer by their open work, deadlines and specialism</li></ul><button class="sgo" data-goto="intake">See the queue</button></div><div class="sol"><div class="sn">3</div><h2>Approval routing</h2><p class="sl">Sirion AI works out who must approve, and why.</p><ul><li>Rules from the playbook: budget owner for any spend; Finance above $100,000 a year or a price rise over 5%; Privacy for personal data; Security for system access</li><li>One email per approver, drafted with a short brief and one clear ask</li><li>All approvals go out in parallel, not one after another</li></ul><button class="sgo" data-goto="REQ-1036:details">See the routing</button></div><div class="sol"><div class="sn">4</div><h2>Approvals by email</h2><p class="sl">Approvers reply from their own inbox. Nobody logs in to Sirion.</p><ul><li>Sirion AI reads each reply and logs it as an approval, a condition or a change. A change only counts as approved once the approver confirms it</li><li>Legal replies and follows up from Sirion; every reply is on record</li><li>Agreed changes go into the draft, marked with who asked</li></ul><button class="sgo" data-goto="REQ-1042:emails">See the approvals</button></div><div class="sol"><div class="sn">5</div><h2>Tracking and reporting</h2><p class="sl">Everyone can see where a request stands, and Legal can see where intake slows down.</p><ul><li>A journey, a "Waiting on" block and a full history on every request</li><li>Every request ends in the contract repository with owner, value and renewal date</li><li>The requester follows a read-only tracker from the link in her email</li><li>A reporting dashboard: on-time intake coverage, volume and approval time by team</li></ul><button class="sgo" data-goto="REQ-1042:tracking">See tracking</button></div></div>
+    <div class="iva"><h2>How much Sirion AI does on its own</h2><p class="ivl">Sirion AI informs and prepares; people decide and send. Anything that commits Kovalo, or speaks for Legal, needs a person. A wrong extraction costs a minute to fix. A wrong commitment costs money.</p>
       <div class="ivg">
         <div><h3><span class="ivd a"></span>Does on its own</h3><ul><li>Reads every request email and its attachments</li><li>Checks them against the playbook and flags gaps and risks</li><li>Sends the requester their request number, and asks for what's missing</li><li>Logs each approver's reply as an approval, a condition or a change</li><li>Keeps the summary, status and history up to date</li></ul></div>
         <div><h3><span class="ivd b"></span>Prepares, a person decides</h3><ul><li>Suggests the approvers and why; Legal removes or adds them</li><li>Drafts approval requests, replies and reminders; Legal edits and sends</li><li>Shows each lawyer's workload; legal ops assigns</li><li>Marks the agreed changes in the draft; the lawyer accepts them</li></ul></div>
@@ -1710,31 +1755,38 @@ body:not(.appmode) #pctl{display:none!important}
 <section data-view="metrics" class="hidden"><div class="fp fp-mt">
   <div class="fcol">
     <h1>Success metrics</h1>
-    <div class="nsx"><div class="nsl">North-star metric</div><h2>On-time intake coverage</h2><p>The share of new supplier contracts that came in through the intake queue and were ready to negotiate within their target time, with every required approval in.</p>
-    <p class="nsn">Contracts found later in NetSuite or DocuSign with no request count against it, so going around the process lowers the score. Target times: 2 working days for low risk, 5 for medium, 10 for high. We'd measure the baseline in month one and aim for 80% within two quarters.</p></div>
+    <div class="nsx"><div class="nsl">North-star metric</div><h2>On-time intake coverage</h2><p>The share of new supplier contracts that came in through the intake queue and were ready to negotiate within their target time, with every required approval logged.</p>
+    <div class="fml"><div class="fmh">Formula</div>
+      <div class="fmr"><div class="fmn">New supplier contracts in the period that<ol type="a"><li>started as an intake request, <b>and</b></li><li>reached "Ready to negotiate" within target time (2 working days low risk, 5 medium, 10 high), <b>and</b></li><li>have every required approval logged</li></ol></div>
+      <div class="fmd">All new supplier contracts in the period = intake requests + contracts found in NetSuite or DocuSign with no request</div></div></div>
+    <div class="fwx"><b>Worked example, last 30 days (matches Reporting):</b> 48 new supplier contracts: 37 started as requests, 11 were found in NetSuite or DocuSign with no request. 29 of the 37 were ready on time with every approval logged. <b>29 ÷ 48 = 60%</b>, up from 48%. Target: 80% within two quarters.</div>
+    <p class="nsn">Contracts that go around the process count against the score, so it can't be raised by speeding up only the requests that use it.</p></div>
+  </div>
+  <div class="fcol">
     <h2>What drives it</h2>
-    <div class="mt3"><div class="fh3"><span>Area</span><span>Metric</span><span>Target</span></div>
-      <div><b>Coverage</b><span>Contracts that started as an intake request</span><span>90% or more</span></div>
-      <div><b></b><span>Requests created from Outlook, with no form</span><span>70% or more</span></div>
-      <div><b>Speed</b><span>Email to request created</span><span>Under 15 minutes</span></div>
-      <div><b></b><span>Request to lawyer assigned</span><span>Under 4 working hours</span></div>
-      <div><b></b><span>Median approval reply</span><span>2 days or less</span></div>
-      <div><b>Quality</b><span>Details found by Sirion AI accepted without edits</span><span>80% or more</span></div>
-      <div><b></b><span>Follow-up questions to the requester</span><span>1 or fewer</span></div>
-      <div><b></b><span>Approvals with the reply email on record</span><span>100%</span></div>
+    <div class="mt4"><div class="fh3"><span>Metric</span><span>Formula</span><span>Now</span><span>Target</span></div>
+      <div><b>Intake coverage</b><span>Contracts that started as a request ÷ all new supplier contracts</span><span>77%</span><span>90%+</span></div>
+      <div><b>Outlook share</b><span>Requests created from Outlook ÷ all requests</span><span>43%</span><span>70%+</span></div>
+      <div><b>Email → request</b><span>Median (request created − first email received)</span><span>—</span><span>Under 15 min</span></div>
+      <div><b>Request → lawyer</b><span>Median (assigned − created), in working hours</span><span>—</span><span>Under 4 hours</span></div>
+      <div><b>Approval reply</b><span>Median (approval reply − approval email sent), per approver</span><span>2.0 days</span><span>2 days or less</span></div>
+      <div><b>AI acceptance</b><span>AI-extracted fields accepted without edits ÷ all AI-extracted fields</span><span>—</span><span>80%+</span></div>
+      <div><b>Follow-ups</b><span>Follow-up questions to the requester ÷ requests</span><span>—</span><span>1 or fewer</span></div>
+      <div><b>Approvals on record</b><span>Approvals with the reply email logged ÷ all approvals</span><span>—</span><span>100%</span></div>
     </div>
+    <p class="fnote">"Now" is from the Reporting page; a dash means it's measured from month one.</p>
   </div>
   <div class="fcol">
     <h2>Guardrails</h2>
     <div class="mt2"><div class="fh3"><span>We watch</span><span>Limit</span></div>
+      <div><span>Wrong price, term or data use: requests with a critical field corrected after approval ÷ all requests</span><span>2% or less</span></div>
       <div><span>Missed or misrouted approvals</span><span>No increase</span></div>
-      <div><span>Wrong price, term or data use in the request</span><span>2% or less</span></div>
       <div><span>Open requests per lawyer</span><span>No increase</span></div>
       <div><span>Requester satisfaction</span><span>No drop</span></div>
     </div>
     <h2>When we'd rethink the approach</h2>
     <div class="mt2"><div class="fh3"><span>Signal</span><span>What we'd do</span></div>
-      <div><span>Fewer than 70% of AI-found details accepted unchanged</span><span>Make Sirion AI suggest-only</span></div>
+      <div><span>AI acceptance below 70%</span><span>Make Sirion AI suggest-only</span></div>
       <div><span>Coverage flat for 8 weeks while speed improves</span><span>Agree "no request, no PO" with Finance</span></div>
       <div><span>Median approval reply over 5 days</span><span>Move approvals into Teams, with escalation</span></div>
       <div><span>IT blocks the Outlook add-in</span><span>Use a forwarding address instead</span></div>
@@ -1749,7 +1801,7 @@ const P = {
   priya:{id:'priya',name:'Priya Nair',short:'Priya',role:'Requester · Senior Marketing Manager',ini:'PN',
     want:'Get the agency working by launch day without breaking a rule',pain:"I don't know where to go, I'm asked for things already in my email, and nobody can tell me when it'll be done",
     where:'Email and Teams · a few requests a year',ev:'Streamline 2026: 66% bypass formal legal channels at least occasionally (vendor survey)'},
-  arjun:{id:'arjun',name:'Arjun Mehta',short:'Arjun',role:'IBM Legal · Legal operations, runs the intake queue',ini:'AM',
+  arjun:{id:'arjun',name:'Arjun Mehta',short:'Arjun',role:'Kovalo Legal · Legal operations, runs the intake queue',ini:'AM',
     want:'Get every request to the right lawyer and the right approvers fast, and always know whose court it is in',pain:'I rebuild requests from forwards and attachments, assign them by guesswork, then chase approvers one by one',
     where:'Sirion Intake (shared inbox and Excel today) · dozens open',ev:'Zone and Co 2026: 91% say approval requests often lack key information (vendor survey)'},
   meera:{id:'meera',name:'Meera Iyer',short:'Meera',role:'Reviewer · Privacy Counsel',ini:'MI',
@@ -1831,7 +1883,7 @@ const STORIES = {
  agency:{label:'New agency',steps:[
   {tab:'priya',title:'Priya forwards her supplier emails to intake',
    today:'Priya forwards one thread to someone she knows: "Need this signed by Friday." The pricing and data emails stay in her inbox.',
-   with:'She forwards all three emails to contract-intake@ibm.com with one line. No form, no new tool.',ev:['idc','stream']},
+   with:'She forwards all three emails to contract-intake@kovalo.com with one line. No form, no new tool.',ev:['idc','stream']},
   {tab:'priya',title:'Intake replies in her thread with one question',
    today:'Days later, procurement emails back four questions. She digs through her inbox to answer.',
    with:'A request ID and tracking link arrive in the same thread, plus one question and a heads-up about customer data. She replies in one line.',ev:['zone','lawvu']},
@@ -1893,7 +1945,7 @@ const I = {
 };
 const SRCI = {Outlook: I.mail, Teams: I.chat, Slack: I.hash, Jira: I.ticket, Renewal: I.cal};
 SRC.RP = {where: "Priya's reply to Sirion Intake · Mon 9:12", html: 'Budget is <mark>MKT-4100 (spring launch)</mark>. We agreed the pilot with Sam: <mark>10% off for December to February</mark>, then $18,000 a month.'};
-SRC.PE = {where: "Priya's email to contract-intake@ibm.com · Mon 9:04", html: "We'd like to bring on Pixel &amp; Pine as our agency for the spring launch. They'll run our <mark>paid social and search, starting 1 December</mark>."};
+SRC.PE = {where: "Priya's email to contract-intake@kovalo.com · Mon 9:04", html: "We'd like to bring on Pixel &amp; Pine as our agency for the spring launch. They'll run our <mark>paid social and search, starting 1 December</mark>."};
 SRC.RC = {where: 'Rate card.pdf · page 2', html: 'Pilot pricing: <mark>10% off the monthly retainer for the first 3 months</mark>.'};
 SRC.MP = {where: 'MSA v1 · cover page', html: 'Master Services Agreement · <mark>Pixel &amp; Pine LLC standard terms</mark>, version 3.2'};
 SRC.SR = {where: 'SOW v2 · section 5', html: 'Agency will deliver a <mark>monthly performance report by the 5th working day</mark> of each month.'};
@@ -1904,8 +1956,8 @@ SRC.SF = {where: 'SOW v2 · section 3', html: 'Monthly retainer: <mark>$18,000, 
 
 /* ---------------- data ---------------- */
 const REQS = [
-  {id:'REQ-1042', t:'Onboard Pixel & Pine as spring launch agency', who:'Priya Nair', dept:'Marketing', email:'priya.nair@ibm.com', src:'Outlook', date:'Nov 16', as:'Arjun Mehta', due:'Nov 27', follow:true},
-  {id:'REQ-1041', t:'NDA with Fernway Studio', who:'Priya Nair', dept:'Marketing', src:'Outlook', date:'Nov 16', s:['green','Completed'], as:'Sirion AI', due:'', desc:'Mutual NDA before sharing launch concepts with a photo studio. IBM\'s own template, signed by both sides.', rule:'When the request is an NDA on IBM\'s template → approve automatically'},
+  {id:'REQ-1042', t:'Onboard Pixel & Pine as spring launch agency', who:'Priya Nair', dept:'Marketing', email:'priya.nair@kovalo.com', src:'Outlook', date:'Nov 16', as:'Arjun Mehta', due:'Nov 27', follow:true},
+  {id:'REQ-1041', t:'NDA with Fernway Studio', who:'Priya Nair', dept:'Marketing', src:'Outlook', date:'Nov 16', s:['green','Completed'], as:'Sirion AI', due:'', desc:'Mutual NDA before sharing launch concepts with a photo studio. Kovalo\'s own template, signed by both sides.', rule:'When the request is an NDA on Kovalo\'s template → approve automatically'},
   {id:'REQ-1040', t:'New SOW under the Northstar Digital MSA', who:'Leo Park', dept:'Growth', src:'Teams', date:'Nov 16', s:['green','Completed'], as:'Arjun Mehta', due:'Nov 20', desc:'Q1 analytics sprint under the existing Northstar MSA. Rates match the rate card, so only the budget owner approved.', rule:'When an MSA is in force and rates match its rate card → budget owner approval only'},
   {id:'REQ-1039', t:'Mailstream renewal: decide seats', who:'Priya Nair', dept:'Marketing', src:'Renewal', date:'Nov 16', s:['amber','Waiting on requester'], as:'Arjun Mehta', due:'Mar 2', desc:'The email platform renews on 1 May unless we give notice by 2 Mar. Mailstream quotes $109,440 for 50 seats, 14% more than last year, but the contract caps price rises at 5%. Only 31 seats were used in the last 90 days, so Priya has been asked how many to keep.', rule:'When a contract is 120 days from its notice deadline → open a renewal request'},
   {id:'REQ-1038', t:'Assess the new analytics cookie tool', who:'Dana Cole', dept:'Web', src:'Slack', date:'Nov 16', s:['grey','Not started'], as:null, due:'Nov 23', desc:'Helio Analytics wants to add a tracking cookie to the website. Needs a privacy and security look before launch.', rule:'When the request mentions cookies or tracking → Privacy'},
@@ -1921,16 +1973,16 @@ const REQS = [
 /* ================= v29: every request, fully filled ================= */
 Object.assign(AVC, {RV:'#0078d4', DK:'#5c2e91', RS:'#e3008c', MC:'#498205', MB:'#8a5a00', LP:'#2b7a78', DC:'#b4009e', SL:'#00748f', TH:'#6b4f2a', HC:'#486991', EG:'#7a4b9e', TR:'#9a3412', DS:'#3b5bdb', PV:'#0b6a3b', MR:'#7c3aed', KW:'#be185d', GL:'#0e7490', NK:'#a16207', JB:'#475569', AM:'#4f6bed', AL:'#c239b3'});
 const PPL = {
-  PN:['Priya Nair', 'Marketing', 'priya.nair@ibm.com'], AM:['Arjun Mehta', 'Legal operations', 'arjun.mehta@ibm.com'], AL:['Ana Lopez', 'Legal', 'ana.lopez@ibm.com'],
-  DK:['David Kim', 'Legal', 'david.kim@ibm.com'], RS:['Ritu Shah', 'Legal', 'ritu.shah@ibm.com'], MB:['Marcus Bell', 'Legal', 'marcus.bell@ibm.com'],
-  VR:['Vikram Rao', 'Business team', 'vikram.rao@ibm.com'], RV:['Rahul Verma', 'Finance team', 'rahul.verma@ibm.com'], MI:['Meera Iyer', 'Privacy team', 'meera.iyer@ibm.com'],
-  LP:['Leo Park', 'Growth', 'leo.park@ibm.com'], DC:['Dana Cole', 'Operations', 'dana.cole@ibm.com'], SL:['Sam Lee', 'People team', 'sam.lee@ibm.com'], TH:['Tom Hughes', 'Facilities team', 'tom.hughes@ibm.com'],
-  HC:['Hannah Cole', 'Business team', 'hannah.cole@ibm.com'], DS:['Dev Shah', 'Security team', 'dev.shah@ibm.com'], MR:['Marco Ruiz', 'Business team', 'marco.ruiz@ibm.com'], KW:['Karen Wu', 'Finance team', 'karen.wu@ibm.com'], NK:['Nadia Khan', 'Business team', 'nadia.khan@ibm.com'],
+  PN:['Priya Nair', 'Marketing', 'priya.nair@kovalo.com'], AM:['Arjun Mehta', 'Legal operations', 'arjun.mehta@kovalo.com'], AL:['Ana Lopez', 'Legal', 'ana.lopez@kovalo.com'],
+  DK:['David Kim', 'Legal', 'david.kim@kovalo.com'], RS:['Ritu Shah', 'Legal', 'ritu.shah@kovalo.com'], MB:['Marcus Bell', 'Legal', 'marcus.bell@kovalo.com'],
+  VR:['Vikram Rao', 'Business team', 'vikram.rao@kovalo.com'], RV:['Rahul Verma', 'Finance team', 'rahul.verma@kovalo.com'], MI:['Meera Iyer', 'Privacy team', 'meera.iyer@kovalo.com'],
+  LP:['Leo Park', 'Growth', 'leo.park@kovalo.com'], DC:['Dana Cole', 'Operations', 'dana.cole@kovalo.com'], SL:['Sam Lee', 'People team', 'sam.lee@kovalo.com'], TH:['Tom Hughes', 'Facilities team', 'tom.hughes@kovalo.com'],
+  HC:['Hannah Cole', 'Business team', 'hannah.cole@kovalo.com'], DS:['Dev Shah', 'Security team', 'dev.shah@kovalo.com'], MR:['Marco Ruiz', 'Business team', 'marco.ruiz@kovalo.com'], NK:['Nadia Khan', 'Business team', 'nadia.khan@kovalo.com'],
   SC:['Sam Carter', 'Pixel &amp; Pine', 'sam@pixelandpine.co'], EG:['Ella Grant', 'Fernway Studio', 'ella@fernwaystudio.com'], TR:['Tom Reyes', 'Northstar Digital', 'tom.reyes@northstar.digital'],
   PV:['Pieter de Vries', 'Harbor Logistics', 'pieter.devries@harborlogistics.eu'], GL:['Grace Liu', 'Brightforce', 'grace.liu@brightforce.com'], JB:['Mailstream renewals', 'Mailstream', 'renewals@mailstream.io']
 };
 const LAWYER_INI = {'Ana Lopez':'AL', 'David Kim':'DK', 'Ritu Shah':'RS', 'Marcus Bell':'MB', 'Arjun Mehta':'AM'};
-const SIG = n => `<br><br>${n}<br>IBM Legal · sent with Sirion`;
+const SIG = n => `<br><br>${n}<br>Kovalo Legal · sent with Sirion`;
 const ul = L => `<ul style="margin:8px 0;padding-left:20px">${L.map(x => `<li>${x}</li>`).join('')}</ul>`;
 const ol = L => `<ol style="margin:8px 0;padding-left:20px">${L.map(x => `<li>${x}</li>`).join('')}</ol>`;
 
@@ -1939,87 +1991,88 @@ const TK = {};
 TK['REQ-1042'] = {
   id:'REQ-1042', t:'Onboard Pixel &amp; Pine as spring launch agency', who:'PN', src:'Outlook', created:'Mon 16 Nov', due:'Nov 27', lawyer:'Ana Lopez', status:['amber', 'In negotiation'], wait:'0d', isnew:0,
   desc:'Onboard Pixel &amp; Pine LLC to run paid social and search for the spring launch, from 1 December 2026 for 12 months.', from:"From Priya's email and its 3 files",
-  fields:[['Owner', 'Priya Nair · Marketing · priya.nair@ibm.com', ''], ['Counterparty', 'Pixel &amp; Pine LLC · new supplier', 'NS|Supplier list'], ['Signatory', 'Sam Carter, Managing Partner · sam@pixelandpine.co', "PQ|Priya's email"], ['Agreement', "The agency's own MSA, plus SOW v2", 'MP|MSA cover'], ['Value', '<b>$210,600</b> in year one: $16,200 a month Dec–Feb, then $18,000', 'CALC|Sum'], ['Term', '1 Dec 2026 for 12 months; renews itself', 'M92|MSA 9.2'], ['Payment', 'Within 15 days of invoice', 'M51|MSA 5.1']],
-  files:[['MSA v1.docx', 'docx'], ['SOW v2.docx', 'docx'], ['Rate card.pdf', 'pdf'], ['IBM draft v3', 'g']],
-  waiting:['PN', 'Priya Nair', 'Marketing, requester', 'Negotiate IBM\'s draft with Pixel &amp; Pine', 'Since Wed 16:00'],
+  fields:[['Owner', 'Priya Nair · Marketing · priya.nair@kovalo.com', ''], ['Counterparty', 'Pixel &amp; Pine LLC · new supplier', 'NS|Supplier list'], ['Signatory', 'Sam Carter, Managing Partner · sam@pixelandpine.co', "PQ|Priya's email"], ['Agreement', "The agency's own MSA, plus SOW v2", 'MP|MSA cover'], ['Value', '<b>$210,600</b> in year one: $16,200 a month Dec–Feb, then $18,000', 'CALC|Sum'], ['Term', '1 Dec 2026 for 12 months; renews itself', 'M92|MSA 9.2'], ['Payment', 'Within 15 days of invoice', 'M51|MSA 5.1']],
+  files:[['MSA v1.docx', 'docx'], ['SOW v2.docx', 'docx'], ['Rate card.pdf', 'pdf'], ['Kovalo draft v3.docx', 'docx']],
+  waiting:['PN', 'Priya Nair', 'Marketing, requester', 'Negotiate Kovalo\'s draft with Pixel &amp; Pine', 'Since Wed 16:00'],
   approvals:[['VR', 'Vikram Rao', 'Business', 'Budget owner for MKT-4100', ['green', 'Approved, with a change']], ['RV', 'Rahul Verma', 'Finance', 'Spend over $100,000', ['green', 'Approved']], ['MI', 'Meera Iyer', 'Privacy', 'Customer email addresses are shared every week', ['green', 'Approved, with a condition']]],
   steps:[['Send approval emails to the 3 teams', 1], ['Collect replies and agree any changes', 1], ['Make the changes in a new draft', 1], ['Send the draft to Priya to negotiate with Pixel &amp; Pine', 1]], after:'Next: signature, then tracking',
   emails:[
     {k:'q0', f:'PN', to:'Arjun Mehta (Legal)', subj:'Pixel &amp; Pine agency agreement: please start the process', tm:'Mon 16 Nov, 09:04', tag:'cap', att:[['MSA v1.docx', 'docx'], ['SOW v2.docx', 'docx'], ['Rate card.pdf', 'pdf']], body:"Hi Arjun,<br><br>We've received the MSA, SOW and rate card from Pixel &amp; Pine (attached). We'd like them as our agency for the spring launch, running paid social and search from 1 December.<br><br>We agreed their 10% pilot discount for December to February, then $18,000 a month. Sam Carter (Managing Partner, sam@pixelandpine.co) will sign for them. We're hoping to sign by 27 Nov.<br><br>What do we need to do to start the process?<br><br>Thanks,<br>Priya"},
-    {k:'ack', f:'S', to:'Priya Nair (Marketing)', subj:'REQ-1042 opened: Onboard Pixel &amp; Pine', tm:'Mon 16 Nov, 09:10', tag:'sys', body:'Hi Priya,<br><br>IBM Legal has opened a request for you: <b>REQ-1042 · Onboard Pixel &amp; Pine as spring launch agency</b>. Your email and its 3 files are attached.<br><br>A lawyer will pick it up today. You can follow progress from the link in this email.<br><br>Sirion AI, for IBM Legal'},
-    {k:'rbiz', f:'AL', to:'Vikram Rao (Business team)', cc:'Priya Nair', subj:'Approval needed by Wed 25 Nov: Pixel &amp; Pine (REQ-1042)', tm:'Mon 16 Nov, 11:15', tag:'out', body:'Hi Vikram,<br><br>Legal is reviewing a new agency agreement for Marketing and needs your input.' + ul(['<b>Supplier:</b> Pixel &amp; Pine LLC, new to IBM', '<b>Work:</b> paid social and search for the spring launch, from 1 Dec 2026 for 12 months', '<b>Value:</b> $210,600 in year one, budget MKT-4100']) + '<b>What we need from you:</b> as owner of budget MKT-4100, please approve this spend.<br><br>Reply <b>Approve</b>, or reply with questions, by Wed 25 Nov.' + SIG('Ana Lopez')},
+    {k:'ack', f:'S', to:'Priya Nair (Marketing)', subj:'REQ-1042 opened: Onboard Pixel &amp; Pine', tm:'Mon 16 Nov, 09:10', tag:'sys', body:'Hi Priya,<br><br>Kovalo Legal has opened a request for you: <b>REQ-1042 · Onboard Pixel &amp; Pine as spring launch agency</b>. Your email and its 3 files are attached.<br><br>A lawyer will pick it up today. You can follow progress from the link in this email.<br><br>Sirion AI, for Kovalo Legal'},
+    {k:'rbiz', f:'AL', to:'Vikram Rao (Business team)', cc:'Priya Nair', subj:'Approval needed by Wed 25 Nov: Pixel &amp; Pine (REQ-1042)', tm:'Mon 16 Nov, 11:15', tag:'out', body:'Hi Vikram,<br><br>Legal is reviewing a new agency agreement for Marketing and needs your input.' + ul(['<b>Supplier:</b> Pixel &amp; Pine LLC, new to Kovalo', '<b>Work:</b> paid social and search for the spring launch, from 1 Dec 2026 for 12 months', '<b>Value:</b> $210,600 in year one, budget MKT-4100']) + '<b>What we need from you:</b> as owner of budget MKT-4100, please approve this spend.<br><br>Reply <b>Approve</b>, or reply with questions, by Wed 25 Nov.' + SIG('Ana Lopez')},
     {k:'rfin', f:'AL', to:'Rahul Verma (Finance team)', cc:'Priya Nair', subj:'Approval needed by Wed 25 Nov: Pixel &amp; Pine (REQ-1042)', tm:'Mon 16 Nov, 11:15', tag:'out', body:'Hi Rahul,<br><br>Legal is reviewing a new agency agreement for Marketing: $210,600 in year one, budget MKT-4100.<br><br><b>What we need from you:</b> please confirm the budget covers it, and that payment within 15 days of invoice works.<br><br>Reply <b>Approve</b>, or reply with questions, by Wed 25 Nov.' + SIG('Ana Lopez')},
     {k:'rprv', f:'AL', to:'Meera Iyer (Privacy team)', cc:'Priya Nair', subj:'Privacy review needed by Wed 25 Nov: Pixel &amp; Pine (REQ-1042)', tm:'Mon 16 Nov, 11:15', tag:'out', body:'Hi Meera,<br><br>The SOW sends Pixel &amp; Pine a weekly export of customer email addresses (section 4).<br><br><b>What we need from you:</b> please review the data sharing and confirm whether we need a data processing agreement.' + SIG('Ana Lopez')},
     {k:'rf', f:'RV', to:'Ana Lopez (Legal)', subj:'Re: Approval needed by Wed 25 Nov: Pixel &amp; Pine (REQ-1042)', tm:'Tue 17 Nov, 09:30', tag:'ok', body:'Approved. Budget confirmed, and payment within 15 days is fine.<br><br>Rahul'},
     {k:'mp', f:'MI', to:'Ana Lopez (Legal)', subj:'Re: Privacy review needed by Wed 25 Nov: Pixel &amp; Pine (REQ-1042)', tm:'Tue 17 Nov, 14:20', tag:'cond', body:'Approved, on one condition: the DPA must be signed before any customer data is shared.<br><br>Meera'},
     {k:'vb', f:'VR', to:'Ana Lopez (Legal)', subj:'Re: Approval needed by Wed 25 Nov: Pixel &amp; Pine (REQ-1042)', tm:'Wed 18 Nov, 10:05', tag:'chg', body:"I'm happy with the spend, but this agency missed two launch deadlines for Maya's team last year. Please add delivery dates with penalties, and then it's approved from my side.<br><br>Vikram"},
-    {k:'va', f:'AL', to:'Vikram Rao (Business team)', subj:'Re: Approval needed by Wed 25 Nov: Pixel &amp; Pine (REQ-1042)', tm:'Wed 18 Nov, 11:00', tag:'out', body:"Hi Vikram,<br><br>Agreed. I'll add a delivery date for each deliverable, with a 5% credit for each missed date (up to 20%), to IBM's draft before it goes to Pixel &amp; Pine.<br><br>I'll take this as your approval. Tell me if that's not right." + SIG('Ana Lopez')},
-    {k:'dp', f:'AL', to:'Priya Nair (Marketing)', cc:'Vikram Rao, Rahul Verma, Meera Iyer', subj:"Ready to negotiate: IBM's draft for Pixel &amp; Pine (REQ-1042)", tm:'Wed 18 Nov, 16:00', tag:'neg', att:[['IBM draft v3 (Google Doc)', 'g']], body:"Hi Priya,<br><br>All three teams have approved, so the agreement is ready to negotiate with Pixel &amp; Pine. IBM's draft is in Google Docs (linked above), with our three changes marked:" + ol(['The agreed pilot price: $16,200 a month for December to February', 'A date for each deliverable, with a 5% credit for each missed date, up to 20% (Business team)', 'A data processing agreement, signed before any customer data is shared (Privacy team)']) + "Please share the draft with Sam. If Pixel &amp; Pine pushes back on price, delivery dates or customer data, loop me in before agreeing. When both sides are happy, reply here and I'll set up signature." + SIG('Ana Lopez')}
+    {k:'va', f:'AL', to:'Vikram Rao (Business team)', subj:'Re: Approval needed by Wed 25 Nov: Pixel &amp; Pine (REQ-1042)', tm:'Wed 18 Nov, 11:00', tag:'out', body:"Hi Vikram,<br><br>Agreed. I'll add a delivery date for each deliverable, with a 5% credit for each missed date (up to 20%), to Kovalo's draft before it goes to Pixel &amp; Pine.<br><br>Can you confirm you approve on that basis? Reply <b>Confirmed</b> and Sirion AI will log your approval." + SIG('Ana Lopez')},
+    {k:'vc', f:'VR', to:'Ana Lopez (Legal)', subj:'Re: Approval needed by Wed 25 Nov: Pixel &amp; Pine (REQ-1042)', tm:'Wed 18 Nov, 11:20', tag:'ok', body:'Confirmed, approved. Delivery dates with a 5% credit per missed date, up to 20%, works for me.<br><br>Vikram'},
+    {k:'dp', f:'AL', to:'Priya Nair (Marketing)', cc:'Vikram Rao, Rahul Verma, Meera Iyer', subj:"Ready to negotiate: Kovalo's draft for Pixel &amp; Pine (REQ-1042)", tm:'Wed 18 Nov, 16:00', tag:'neg', att:[['Kovalo draft v3.docx (SharePoint)', 'docx']], body:"Hi Priya,<br><br>All three teams have approved, so the agreement is ready to negotiate with Pixel &amp; Pine. Kovalo's draft is in Word on SharePoint (linked above), with our three changes marked:" + ol(['The agreed pilot price: $16,200 a month for December to February', 'A date for each deliverable, with a 5% credit for each missed date, up to 20% (Business team)', 'A data processing agreement, signed before any customer data is shared (Privacy team)']) + "Please share the draft with Sam. If Pixel &amp; Pine pushes back on price, delivery dates or customer data, loop me in before agreeing. When both sides are happy, reply here and I'll set up signature." + SIG('Ana Lopez')}
   ],
-  sum:[["All three teams approved by Wed 18 Nov: Finance, Privacy (with a condition) and Business (once delivery dates with penalties were agreed).", "IBM draft v3 went to Priya on Wed 18 Nov at 16:00, with the three changes marked.", 'Priya is negotiating with Pixel &amp; Pine in Google Docs. Legal is looped in if price, delivery dates or customer data change.', 'Open condition: the DPA must be signed before any customer data is shared.'], "Wait for Priya. When both sides agree, she replies on the thread and Ana sets up signature."],
-  reply:{to:'PN', subj:"Re: Ready to negotiate: IBM's draft for Pixel &amp; Pine (REQ-1042)", body:"Hi Priya,<br><br>Checking in on the Pixel &amp; Pine draft. Has Sam come back with any comments yet? If they push back on the delivery dates or the data processing agreement, send them my way and I'll join the call.<br><br>We're still on track to sign by 27 Nov if we hear back by Monday." + SIG('Ana Lopez')},
-  review:{doc:'Pixel &amp; Pine MSA and SOW · IBM draft v3', meta:'Google Doc · edited by Ana Lopez, Wed 18 Nov 15:40 · shared with Priya Nair', note:'Teams asked for changes by email. Nobody logged in to Sirion.',
-    timeline:[['VR', 'Business team', 'Vikram Rao', ['d', 'Approved Wed 18 Nov, with a change']], ['RV', 'Finance team', 'Rahul Verma', ['d', 'Approved Tue 17 Nov']], ['MI', 'Privacy team', 'Meera Iyer', ['d', 'Approved Tue 17 Nov, with a condition']], ['AL', 'Draft v3', 'Ana Lopez (Legal)', ['d', '3 changes made, Wed 18 Nov']], ['PN', 'Negotiation', 'Priya Nair (Marketing)', ['n', 'With Pixel &amp; Pine']]],
+  sum:[["All three teams approved by Wed 18 Nov: Finance, Privacy (with a condition) and Business (Vikram confirmed his approval once delivery dates with penalties were added).", "Kovalo draft v3 went to Priya on Wed 18 Nov at 16:00, with the three changes marked.", 'Priya is negotiating with Pixel &amp; Pine in the Word draft on SharePoint. Legal is looped in if price, delivery dates or customer data change.', 'Open condition: the DPA must be signed before any customer data is shared.'], "Wait for Priya. When both sides agree, she replies on the thread and Ana sets up signature."],
+  reply:{to:'PN', subj:"Re: Ready to negotiate: Kovalo's draft for Pixel &amp; Pine (REQ-1042)", body:"Hi Priya,<br><br>Checking in on the Pixel &amp; Pine draft. Has Sam come back with any comments yet? If they push back on the delivery dates or the data processing agreement, send them my way and I'll join the call.<br><br>We're still on track to sign by 27 Nov if we hear back by Monday." + SIG('Ana Lopez')},
+  review:{doc:'Pixel &amp; Pine MSA and SOW · Kovalo draft v3', meta:'Word document on SharePoint · edited by Ana Lopez, Wed 18 Nov 15:40 · shared with Priya Nair', note:'Teams asked for changes by email. Nobody logged in to Sirion.',
+    timeline:[['VR', 'Business team', 'Vikram Rao', ['d', 'Approved Wed 18 Nov, after confirming a change']], ['RV', 'Finance team', 'Rahul Verma', ['d', 'Approved Tue 17 Nov']], ['MI', 'Privacy team', 'Meera Iyer', ['d', 'Approved Tue 17 Nov, with a condition']], ['AL', 'Draft v3', 'Ana Lopez (Legal)', ['d', '3 changes made, Wed 18 Nov']], ['PN', 'Negotiation', 'Priya Nair (Marketing)', ['n', 'With Pixel &amp; Pine']]],
     changes:[{t:'Pilot price', by:'PN', what:'Add the agreed 10% pilot discount: $16,200 a month for December to February.', st:['green', 'In draft v3, sent']}, {t:'Delivery dates', by:'VR', what:'A date for each deliverable, with a 5% credit for each missed date, up to 20%.', st:['green', 'In draft v3, sent']}, {t:'Customer data', by:'MI', what:'A data processing agreement, signed before any customer data is shared.', st:['green', 'In draft v3, sent']}],
-    clauses:[['SOW · 3. Fees', 'The Agency\'s fee is <del>$18,000 a month</del><ins>$16,200 a month for December 2026 to February 2027, then $18,000 a month</ins>.', 'Ana Lopez made this change · asked by Priya Nair (Marketing)'], ['SOW · 5. Delivery dates <span class="faint">(new)</span>', '<ins>Each deliverable in Schedule A has a delivery date. For each date missed, IBM receives a credit of 5% of that month\'s fee, up to 20%.</ins>', 'Ana Lopez made this change · asked by Vikram Rao (Business team)'], ['MSA · 11. Customer data', '<ins>The Agency will not receive any IBM customer data until both parties have signed IBM\'s data processing agreement.</ins>', 'Ana Lopez made this change · asked by Meera Iyer (Privacy team)']]},
-  journey:[['Request created', 'Mon 16 Nov · Outlook', 'd'], ['Lawyer assigned', 'Ana Lopez', 'd'], ['Approvals', '3 of 3 teams', 'd'], ['Draft updated', 'IBM draft v3 · 3 changes', 'd'], ['Negotiation', 'With Priya and Pixel &amp; Pine', 'n']],
-  hist:[['PN', 'emailed Legal the MSA, SOW and rate card', 'Mon 16 Nov, 09:04'], ['AM', 'created REQ-1042 in Outlook', 'Mon 16 Nov, 09:10', 'Not started'], ['AM', 'assigned it to Ana Lopez', 'Mon 16 Nov, 09:40', 'Pending with legal'], ['AL', 'sent approval emails to 3 teams', 'Mon 16 Nov, 11:15', 'Pending approvals'], ['RV', 'approved for Finance', 'Tue 17 Nov, 09:30'], ['MI', 'approved for Privacy, with a condition', 'Tue 17 Nov, 14:20'], ['VR', 'asked for a change', 'Wed 18 Nov, 10:05', 'Pending with legal', 1], ['AL', 'agreed the change', 'Wed 18 Nov, 11:00'], ['AL', 'updated the draft to v3', 'Wed 18 Nov, 15:40'], ['AL', 'sent the draft to Priya', 'Wed 18 Nov, 16:00', 'In negotiation']],
+    clauses:[['SOW · 3. Fees', 'The Agency\'s fee is <del>$18,000 a month</del><ins>$16,200 a month for December 2026 to February 2027, then $18,000 a month</ins>.', 'Ana Lopez made this change · asked by Priya Nair (Marketing)'], ['SOW · 5. Delivery dates <span class="faint">(new)</span>', '<ins>Each deliverable in Schedule A has a delivery date. For each date missed, Kovalo receives a credit of 5% of that month\'s fee, up to 20%.</ins>', 'Ana Lopez made this change · asked by Vikram Rao (Business team)'], ['MSA · 11. Customer data', '<ins>The Agency will not receive any Kovalo customer data until both parties have signed Kovalo\'s data processing agreement.</ins>', 'Ana Lopez made this change · asked by Meera Iyer (Privacy team)']]},
+  journey:[['Request created', 'Mon 16 Nov · Outlook', 'd'], ['Lawyer assigned', 'Ana Lopez', 'd'], ['Approvals', '3 of 3 teams', 'd'], ['Draft updated', 'Kovalo draft v3 · 3 changes', 'd'], ['Negotiation', 'With Priya and Pixel &amp; Pine', 'n']],
+  hist:[['PN', 'emailed Legal the MSA, SOW and rate card', 'Mon 16 Nov, 09:04'], ['AM', 'created REQ-1042 in Outlook', 'Mon 16 Nov, 09:10', 'Not started'], ['AM', 'assigned it to Ana Lopez', 'Mon 16 Nov, 09:40', 'Pending with legal'], ['AL', 'sent approval emails to 3 teams', 'Mon 16 Nov, 11:15', 'Pending approvals'], ['RV', 'approved for Finance', 'Tue 17 Nov, 09:30'], ['MI', 'approved for Privacy, with a condition', 'Tue 17 Nov, 14:20'], ['VR', 'asked for a change', 'Wed 18 Nov, 10:05', 'Pending with legal', 1], ['AL', 'sent the change to Vikram to confirm', 'Wed 18 Nov, 11:00'], ['VR', 'confirmed and approved for Business', 'Wed 18 Nov, 11:20'], ['AL', 'updated the draft to v3', 'Wed 18 Nov, 15:40'], ['AL', 'sent the draft to Priya', 'Wed 18 Nov, 16:00', 'In negotiation']],
   now:['Priya Nair, with Pixel &amp; Pine', 'Intake is done'],
-  nexts:[['Negotiation', "Priya and Sam Carter work through IBM's draft in Google Docs. Ana is looped in if price, delivery dates or customer data change.", 'n'], ['Signature', 'When both sides agree, Priya replies on the same email and Ana sets up signature.', ''], ['Tracking', 'After signing, Sirion AI tracks the delivery dates, the renewal, the price on each invoice and the data condition.', '']],
-  ai:["2 days from Priya's first email to a draft ready to negotiate, against a 6-day median for agency agreements.", 'All three teams replied within 2 days. One change was agreed by email.', "The Privacy team's condition is kept: no customer data until the DPA is signed."]
+  nexts:[['Negotiation', "Priya and Sam Carter work through Kovalo's Word draft on SharePoint. Ana is looped in if price, delivery dates or customer data change.", 'n'], ['Signature', 'When both sides agree, Priya replies on the same email and Ana sets up signature.', ''], ['Tracking', 'After signing, Sirion AI tracks the delivery dates, the renewal, the price on each invoice and the data condition.', '']],
+  ai:["2 days from Priya's first email to a draft ready to negotiate, against a 6-day median for agency agreements.", 'All three teams replied within 2 days. Vikram confirmed his change by email before it counted as approved.', "The Privacy team's condition is kept: no customer data until the DPA is signed."]
 };
 /* ---------- REQ-1041: Fernway NDA, signed ---------- */
 TK['REQ-1041'] = {
   id:'REQ-1041', t:'NDA with Fernway Studio', who:'PN', src:'Outlook', created:'Mon 16 Nov', due:'Nov 19', lawyer:'Marcus Bell', status:['green', 'Signed'], wait:'',
-  desc:"Mutual NDA so Marketing can share spring launch concepts with Fernway Studio, a photo studio, before Thursday's concept review. On IBM's own template with no changes.", from:"From Priya's email and its attachment",
-  fields:[['Owner', 'Priya Nair · Marketing · priya.nair@ibm.com', ''], ['Counterparty', 'Fernway Studio Ltd · new supplier', ''], ['Signatory', 'Ella Grant, Studio Director · ella@fernwaystudio.com', ''], ['Agreement', "IBM mutual NDA template v4, no changes", ''], ['Value', 'No fee', ''], ['Term', '3 years from 16 Nov 2026, ends 16 Nov 2029', ''], ['Covers', 'Spring launch concepts, shoot plans and product samples', '']],
-  files:[['Fernway NDA (IBM template).docx', 'docx'], ['Fernway NDA signed.pdf', 'pdf']],
+  desc:"Mutual NDA so Marketing can share spring launch concepts with Fernway Studio, a photo studio, before Thursday's concept review. On Kovalo's own template with no changes.", from:"From Priya's email and its attachment",
+  fields:[['Owner', 'Priya Nair · Marketing · priya.nair@kovalo.com', ''], ['Counterparty', 'Fernway Studio Ltd · new supplier', ''], ['Signatory', 'Ella Grant, Studio Director · ella@fernwaystudio.com', ''], ['Agreement', "Kovalo mutual NDA template v4, no changes", ''], ['Value', 'No fee', ''], ['Term', '3 years from 16 Nov 2026, ends 16 Nov 2029', ''], ['Covers', 'Spring launch concepts, shoot plans and product samples', '']],
+  files:[['Fernway NDA (Kovalo template).docx', 'docx'], ['Fernway NDA signed.pdf', 'pdf']],
   waiting:null, done:'Signed by both sides on Mon 16 Nov at 15:20. Saved to the contract repository.',
-  approvals:[], noappr:"No approvals needed. It's IBM's NDA template with no changes, so the playbook lets Legal sign it directly.",
-  steps:[["Check it's on IBM's NDA template", 1], ['Send for signature', 1], ['Both sides sign', 1], ['Save to the contract repository', 1]], after:'Sirion AI reminds Priya 60 days before it ends',
+  approvals:[], noappr:"No approvals needed. It's Kovalo's NDA template with no changes, so the playbook lets Legal sign it directly.",
+  steps:[["Check it's on Kovalo's NDA template", 1], ['Send for signature', 1], ['Both sides sign', 1], ['Save to the contract repository', 1]], after:'Sirion AI reminds Priya 60 days before it ends',
   emails:[
-    {k:'q', f:'PN', to:'IBM Legal', subj:'NDA with Fernway Studio before Thursday', tm:'Mon 16 Nov, 08:58', tag:'cap', att:[['Fernway NDA (IBM template).docx', 'docx']], body:"Hi Legal,<br><br>We'd like to share our spring launch concepts with Fernway Studio before Thursday's concept review. I've filled in IBM's NDA template with their details (attached). Ella Grant, their Studio Director, will sign.<br><br>Can we get this signed by Wednesday?<br><br>Thanks,<br>Priya"},
-    {k:'ack', f:'S', to:'Priya Nair (Marketing)', subj:'REQ-1041 opened: NDA with Fernway Studio', tm:'Mon 16 Nov, 09:00', tag:'sys', body:"Hi Priya,<br><br>IBM Legal has opened <b>REQ-1041 · NDA with Fernway Studio</b>. Sirion AI checked the attachment: it's IBM's NDA template with no changes, so no approvals are needed.<br><br>Marcus Bell will send it for signature today.<br><br>Sirion AI, for IBM Legal"},
-    {k:'sig', f:'MB', to:'Ella Grant (Fernway Studio)', cc:'Priya Nair', subj:'For signature: IBM and Fernway Studio mutual NDA', tm:'Mon 16 Nov, 10:30', tag:'out', att:[['Fernway NDA (IBM template).docx', 'docx']], body:"Hi Ella,<br><br>Attached is IBM's mutual NDA, ready for signature. It covers the spring launch concepts, shoot plans and product samples Priya's team will share with you, for 3 years.<br><br>Please sign through the DocuSign link in the next email." + SIG('Marcus Bell')},
-    {k:'eg', f:'EG', to:'Marcus Bell (Legal)', subj:'Re: For signature: IBM and Fernway Studio mutual NDA', tm:'Mon 16 Nov, 15:12', tag:'ok', body:'Hi Marcus,<br><br>Signed, thanks. Looking forward to Thursday.<br><br>Ella'},
-    {k:'done', f:'S', to:'Priya Nair (Marketing)', cc:'Marcus Bell', subj:'Signed: NDA with Fernway Studio (REQ-1041)', tm:'Mon 16 Nov, 15:20', tag:'sys', att:[['Fernway NDA signed.pdf', 'pdf']], body:"Hi Priya,<br><br>The NDA with Fernway Studio is signed by both sides. You can share the concepts with Ella's team.<br><br>It runs until 16 Nov 2029. I'll remind you 60 days before it ends.<br><br>Sirion AI, for IBM Legal"}
+    {k:'q', f:'PN', to:'Kovalo Legal', subj:'NDA with Fernway Studio before Thursday', tm:'Mon 16 Nov, 08:58', tag:'cap', att:[['Fernway NDA (Kovalo template).docx', 'docx']], body:"Hi Legal,<br><br>We'd like to share our spring launch concepts with Fernway Studio before Thursday's concept review. I've filled in Kovalo's NDA template with their details (attached). Ella Grant, their Studio Director, will sign.<br><br>Can we get this signed by Wednesday?<br><br>Thanks,<br>Priya"},
+    {k:'ack', f:'S', to:'Priya Nair (Marketing)', subj:'REQ-1041 opened: NDA with Fernway Studio', tm:'Mon 16 Nov, 09:00', tag:'sys', body:"Hi Priya,<br><br>Kovalo Legal has opened <b>REQ-1041 · NDA with Fernway Studio</b>. Sirion AI checked the attachment: it's Kovalo's NDA template with no changes, so no approvals are needed.<br><br>Marcus Bell will send it for signature today.<br><br>Sirion AI, for Kovalo Legal"},
+    {k:'sig', f:'MB', to:'Ella Grant (Fernway Studio)', cc:'Priya Nair', subj:'For signature: Kovalo and Fernway Studio mutual NDA', tm:'Mon 16 Nov, 10:30', tag:'out', att:[['Fernway NDA (Kovalo template).docx', 'docx']], body:"Hi Ella,<br><br>Attached is Kovalo's mutual NDA, ready for signature. It covers the spring launch concepts, shoot plans and product samples Priya's team will share with you, for 3 years.<br><br>Please sign through the DocuSign link in the next email." + SIG('Marcus Bell')},
+    {k:'eg', f:'EG', to:'Marcus Bell (Legal)', subj:'Re: For signature: Kovalo and Fernway Studio mutual NDA', tm:'Mon 16 Nov, 15:12', tag:'ok', body:'Hi Marcus,<br><br>Signed, thanks. Looking forward to Thursday.<br><br>Ella'},
+    {k:'done', f:'S', to:'Priya Nair (Marketing)', cc:'Marcus Bell', subj:'Signed: NDA with Fernway Studio (REQ-1041)', tm:'Mon 16 Nov, 15:20', tag:'sys', att:[['Fernway NDA signed.pdf', 'pdf']], body:"Hi Priya,<br><br>The NDA with Fernway Studio is signed by both sides. You can share the concepts with Ella's team.<br><br>It runs until 16 Nov 2029. I'll remind you 60 days before it ends.<br><br>Sirion AI, for Kovalo Legal"}
   ],
-  sum:[["Signed by both sides on Mon 16 Nov at 15:20, 6 hours after Priya asked.", "IBM's NDA template with no changes, so no approvals were needed.", 'Saved to the contract repository. It ends on 16 Nov 2029.'], 'Nothing to do. Sirion AI will remind Priya 60 days before the NDA ends.'],
-  reply:{to:'PN', subj:'Re: Signed: NDA with Fernway Studio (REQ-1041)', body:"Hi Priya,<br><br>Just confirming the NDA with Fernway Studio is signed and filed. If the shoot goes ahead, send over Fernway's quote and I'll set up the services agreement.<br><br>" + 'Marcus Bell<br>IBM Legal · sent with Sirion'},
-  review:{doc:'Fernway Studio mutual NDA · signed', meta:'PDF · signed by both sides, Mon 16 Nov 15:20', note:"Sirion AI compared the NDA with IBM's template clause by clause.",
-    changes:[], nochg:"No changes from IBM's NDA template v4.",
-    clauses:[['1. Confidential information', 'Each party will keep the other\'s confidential information secret and use it only to discuss the spring launch project.', 'Matches IBM template v4'], ['4. Term', 'This Agreement lasts for 3 years from the date both parties sign it.', 'Matches IBM template v4'], ['7. Governing law', 'This Agreement is governed by the laws of England and Wales.', 'Matches IBM template v4']]},
+  sum:[["Signed by both sides on Mon 16 Nov at 15:20, 6 hours after Priya asked.", "Kovalo's NDA template with no changes, so no approvals were needed.", 'Saved to the contract repository. It ends on 16 Nov 2029.'], 'Nothing to do. Sirion AI will remind Priya 60 days before the NDA ends.'],
+  reply:{to:'PN', subj:'Re: Signed: NDA with Fernway Studio (REQ-1041)', body:"Hi Priya,<br><br>Just confirming the NDA with Fernway Studio is signed and filed. If the shoot goes ahead, send over Fernway's quote and I'll set up the services agreement.<br><br>" + 'Marcus Bell<br>Kovalo Legal · sent with Sirion'},
+  review:{doc:'Fernway Studio mutual NDA · signed', meta:'PDF · signed by both sides, Mon 16 Nov 15:20', note:"Sirion AI compared the NDA with Kovalo's template clause by clause.",
+    changes:[], nochg:"No changes from Kovalo's NDA template v4.",
+    clauses:[['1. Confidential information', 'Each party will keep the other\'s confidential information secret and use it only to discuss the spring launch project.', 'Matches Kovalo template v4'], ['4. Term', 'This Agreement lasts for 3 years from the date both parties sign it.', 'Matches Kovalo template v4'], ['7. Governing law', 'This Agreement is governed by the laws of England and Wales.', 'Matches Kovalo template v4']]},
   journey:[['Request created', 'Mon 16 Nov · Outlook', 'd'], ['Lawyer assigned', 'Marcus Bell', 'd'], ['Approvals', 'Not needed', 'd'], ['Signature', 'Signed by both sides', 'd'], ['Saved', 'In the contract repository', 'd']],
-  hist:[['PN', 'emailed Legal the NDA', 'Mon 16 Nov, 08:58'], ['S', 'opened REQ-1041 and checked it against IBM\'s NDA template', 'Mon 16 Nov, 09:00', 'Pending with legal'], ['AM', 'assigned it to Marcus Bell', 'Mon 16 Nov, 09:20'], ['MB', 'sent it to Ella Grant for signature', 'Mon 16 Nov, 10:30', 'Sent to counterparty'], ['EG', 'signed for Fernway Studio', 'Mon 16 Nov, 15:12'], ['MB', 'signed for IBM', 'Mon 16 Nov, 15:20', 'Signed']],
+  hist:[['PN', 'emailed Legal the NDA', 'Mon 16 Nov, 08:58'], ['S', 'opened REQ-1041 and checked it against Kovalo\'s NDA template', 'Mon 16 Nov, 09:00', 'Pending with legal'], ['AM', 'assigned it to Marcus Bell', 'Mon 16 Nov, 09:20'], ['MB', 'sent it to Ella Grant for signature', 'Mon 16 Nov, 10:30', 'Sent to counterparty'], ['EG', 'signed for Fernway Studio', 'Mon 16 Nov, 15:12'], ['MB', 'signed for Kovalo', 'Mon 16 Nov, 15:20', 'Signed']],
   now:['Nobody', 'Signed on Mon 16 Nov'],
   nexts:[['Saved', 'The signed NDA is in the contract repository, with Priya as owner.', 'd'], ['Reminder', 'Sirion AI emails Priya on 17 Sep 2029, 60 days before the NDA ends.', '']],
-  ai:['Signed in 6 hours. Same-template NDAs take 1 day on average this quarter.', 'No approvals needed: IBM template, no changes.']
+  ai:['Signed in 6 hours. Same-template NDAs take 1 day on average this quarter.', 'No approvals needed: Kovalo template, no changes.']
 };
 /* ---------- REQ-1040: Northstar SOW, signed ---------- */
 TK['REQ-1040'] = {
   id:'REQ-1040', t:'New SOW under the Northstar Digital MSA', who:'LP', src:'Teams', created:'Thu 12 Nov', due:'Nov 20', lawyer:'Ana Lopez', status:['green', 'Signed'], wait:'',
-  desc:"An 8-week analytics sprint from 4 January under IBM's existing MSA with Northstar Digital. The rates match the MSA rate card, so only the budget owner had to approve.", from:"From Leo's Teams message and the SOW",
-  fields:[['Owner', 'Leo Park · Growth · leo.park@ibm.com', ''], ['Counterparty', 'Northstar Digital · existing supplier, MSA in force to 31 Mar 2027', ''], ['Signatory', 'Tom Reyes, Client Services Director', ''], ['Agreement', 'SOW 7 under the Northstar MSA', ''], ['Value', '<b>$64,000</b> fixed fee, paid in 2 milestones', ''], ['Term', '4 Jan to 26 Feb 2027', ''], ['Budget', 'GRW-2200 · owner Hannah Cole', '']],
+  desc:"An 8-week analytics sprint from 4 January under Kovalo's existing MSA with Northstar Digital. The rates match the MSA rate card, so only the budget owner had to approve.", from:"From Leo's Teams message and the SOW",
+  fields:[['Owner', 'Leo Park · Growth · leo.park@kovalo.com', ''], ['Counterparty', 'Northstar Digital · existing supplier, MSA in force to 31 Mar 2027', ''], ['Signatory', 'Tom Reyes, Client Services Director', ''], ['Agreement', 'SOW 7 under the Northstar MSA', ''], ['Value', '<b>$64,000</b> fixed fee, paid in 2 milestones', ''], ['Term', '4 Jan to 26 Feb 2027', ''], ['Budget', 'GRW-2200 · owner Hannah Cole', '']],
   files:[['Northstar SOW 7.docx', 'docx'], ['Northstar SOW 7 signed.pdf', 'pdf']],
   waiting:null, done:'Signed by both sides on Tue 17 Nov at 16:40. Saved to the contract repository.',
   approvals:[['HC', 'Hannah Cole', 'Business', 'Budget owner for GRW-2200', ['green', 'Approved']]], noappr:'Finance and Privacy were not needed: under $100,000, and no personal data.',
   steps:[['Check the rates against the MSA rate card', 1], ['Budget owner approves', 1], ['Agree one change with Northstar', 1], ['Both sides sign', 1]], after:'Sirion AI tracks the two milestones',
   emails:[
     {k:'q', f:'LP', to:'#legal-requests (Teams)', subj:'Teams message in #legal-requests', tm:'Thu 12 Nov, 14:02', tag:'cap', att:[['Northstar SOW 7.docx', 'docx']], body:"Hi Legal, Northstar sent SOW 7 for the Q1 analytics sprint: 8 weeks from 4 Jan, $64k fixed fee. It's under our existing MSA. Can we sign by the 20th so they can staff it?"},
-    {k:'ack', f:'S', to:'Leo Park (Growth)', subj:'REQ-1040 opened: New SOW under the Northstar Digital MSA', tm:'Thu 12 Nov, 14:03', tag:'sys', body:"Hi Leo,<br><br>IBM Legal has opened <b>REQ-1040</b>. Sirion AI checked SOW 7 against the Northstar MSA: the rates match the rate card, so only your budget owner needs to approve.<br><br>Sirion AI, for IBM Legal"},
+    {k:'ack', f:'S', to:'Leo Park (Growth)', subj:'REQ-1040 opened: New SOW under the Northstar Digital MSA', tm:'Thu 12 Nov, 14:03', tag:'sys', body:"Hi Leo,<br><br>Kovalo Legal has opened <b>REQ-1040</b>. Sirion AI checked SOW 7 against the Northstar MSA: the rates match the rate card, so only your budget owner needs to approve.<br><br>Sirion AI, for Kovalo Legal"},
     {k:'ap', f:'AL', to:'Hannah Cole (Business team)', cc:'Leo Park', subj:'Approval needed by Tue 17 Nov: Northstar SOW 7 (REQ-1040)', tm:'Fri 13 Nov, 10:00', tag:'out', body:'Hi Hannah,<br><br>Leo wants to sign SOW 7 with Northstar Digital for an 8-week analytics sprint from 4 January: $64,000 fixed fee from budget GRW-2200. The rates match the MSA rate card.<br><br>Reply <b>Approve</b>, or reply with questions, by Tue 17 Nov.' + SIG('Ana Lopez')},
     {k:'hc', f:'HC', to:'Ana Lopez (Legal)', subj:'Re: Approval needed by Tue 17 Nov: Northstar SOW 7 (REQ-1040)', tm:'Fri 13 Nov, 11:26', tag:'ok', body:'Approve.<br><br>Hannah'},
     {k:'tr', f:'AL', to:'Tom Reyes (Northstar Digital)', cc:'Leo Park', subj:'SOW 7: one change, then ready to sign', tm:'Mon 16 Nov, 09:45', tag:'out', body:"Hi Tom,<br><br>SOW 7 is approved on our side. One change: payment on acceptance of each milestone, not on delivery, in line with clause 6 of the MSA. If that's fine, I'll send it for signature." + SIG('Ana Lopez')},
     {k:'tr2', f:'TR', to:'Ana Lopez (Legal)', subj:'Re: SOW 7: one change, then ready to sign', tm:'Tue 17 Nov, 12:05', tag:'ok', body:'Hi Ana, that works for us. Please send it over.<br><br>Tom'},
-    {k:'done', f:'S', to:'Leo Park (Growth)', subj:'Signed: Northstar SOW 7 (REQ-1040)', tm:'Tue 17 Nov, 16:40', tag:'sys', att:[['Northstar SOW 7 signed.pdf', 'pdf']], body:"Hi Leo,<br><br>SOW 7 with Northstar Digital is signed by both sides. The sprint starts on 4 January. I'll remind you to accept each milestone before it's paid.<br><br>Sirion AI, for IBM Legal"}
+    {k:'done', f:'S', to:'Leo Park (Growth)', subj:'Signed: Northstar SOW 7 (REQ-1040)', tm:'Tue 17 Nov, 16:40', tag:'sys', att:[['Northstar SOW 7 signed.pdf', 'pdf']], body:"Hi Leo,<br><br>SOW 7 with Northstar Digital is signed by both sides. The sprint starts on 4 January. I'll remind you to accept each milestone before it's paid.<br><br>Sirion AI, for Kovalo Legal"}
   ],
   sum:[['Hannah Cole approved on Fri 13 Nov, 1.5 hours after the email went out.', 'Northstar agreed to pay on acceptance of each milestone, in line with the MSA.', 'Signed by both sides on Tue 17 Nov, 3 days before the deadline.'], 'Nothing to do. Sirion AI reminds Leo to accept each milestone before it is paid.'],
   reply:{to:'LP', subj:'Re: Signed: Northstar SOW 7 (REQ-1040)', body:'Hi Leo,<br><br>SOW 7 is signed and filed. Accept each milestone in Sirion when the work is delivered, and Finance will pay it.' + SIG('Ana Lopez')},
   review:{doc:'Northstar Digital SOW 7 · signed', meta:'PDF · signed by both sides, Tue 17 Nov 16:40', note:'Sirion AI checked the rates against the MSA rate card: all match.',
-    changes:[{t:'Payment on acceptance', by:'AL', what:'Pay each milestone when IBM accepts it, not when it is delivered.', st:['green', 'Agreed by Northstar']}],
-    clauses:[['SOW 7 · 4. Fees', 'Fixed fee of $64,000, paid in two milestones of $32,000.', 'Matches the MSA rate card'], ['SOW 7 · 5. Payment', 'Northstar invoices each milestone <del>on delivery</del><ins>when IBM accepts it in writing</ins>.', 'Ana Lopez made this change · agreed by Tom Reyes']]},
+    changes:[{t:'Payment on acceptance', by:'AL', what:'Pay each milestone when Kovalo accepts it, not when it is delivered.', st:['green', 'Agreed by Northstar']}],
+    clauses:[['SOW 7 · 4. Fees', 'Fixed fee of $64,000, paid in two milestones of $32,000.', 'Matches the MSA rate card'], ['SOW 7 · 5. Payment', 'Northstar invoices each milestone <del>on delivery</del><ins>when Kovalo accepts it in writing</ins>.', 'Ana Lopez made this change · agreed by Tom Reyes']]},
   journey:[['Request created', 'Thu 12 Nov · Teams', 'd'], ['Lawyer assigned', 'Ana Lopez', 'd'], ['Approvals', '1 of 1 team', 'd'], ['Draft updated', '1 change agreed', 'd'], ['Signed', 'Tue 17 Nov', 'd']],
-  hist:[['LP', 'posted the request in Teams', 'Thu 12 Nov, 14:02'], ['S', 'opened REQ-1040 and checked the rates', 'Thu 12 Nov, 14:03', 'Not started'], ['AM', 'assigned it to Ana Lopez', 'Thu 12 Nov, 15:10', 'Pending with legal'], ['AL', 'sent the approval email to Hannah Cole', 'Fri 13 Nov, 10:00', 'Pending approvals'], ['HC', 'approved for the Business team', 'Fri 13 Nov, 11:26', 'Pending with legal'], ['AL', 'asked Northstar for one change', 'Mon 16 Nov, 09:45', 'Sent to counterparty'], ['TR', 'agreed the change', 'Tue 17 Nov, 12:05'], ['AL', 'signed for IBM', 'Tue 17 Nov, 16:40', 'Signed']],
+  hist:[['LP', 'posted the request in Teams', 'Thu 12 Nov, 14:02'], ['S', 'opened REQ-1040 and checked the rates', 'Thu 12 Nov, 14:03', 'Not started'], ['AM', 'assigned it to Ana Lopez', 'Thu 12 Nov, 15:10', 'Pending with legal'], ['AL', 'sent the approval email to Hannah Cole', 'Fri 13 Nov, 10:00', 'Pending approvals'], ['HC', 'approved for the Business team', 'Fri 13 Nov, 11:26', 'Pending with legal'], ['AL', 'asked Northstar for one change', 'Mon 16 Nov, 09:45', 'Sent to counterparty'], ['TR', 'agreed the change', 'Tue 17 Nov, 12:05'], ['AL', 'signed for Kovalo', 'Tue 17 Nov, 16:40', 'Signed']],
   now:['Nobody', 'Signed on Tue 17 Nov'],
   nexts:[['Milestone 1', 'Due 29 Jan 2027. Leo accepts it in Sirion before it is paid.', ''], ['Milestone 2', 'Due 26 Feb 2027.', '']],
   ai:['5 days from request to signature, 3 days ahead of the deadline.', 'Only one approval was needed because the rates matched the rate card.']
@@ -2027,14 +2080,14 @@ TK['REQ-1040'] = {
 /* ---------- REQ-1039: Mailstream renewal, pending with requester ---------- */
 TK['REQ-1039'] = {
   id:'REQ-1039', t:'Mailstream renewal: decide seats', who:'PN', src:'Renewal', created:'Mon 16 Nov', due:'Mar 2', lawyer:'David Kim', status:['amber', 'Pending with requester'], wait:'4d',
-  desc:"IBM's email platform renews on 1 May unless notice is given by 2 Mar. Mailstream quotes $109,440 for 50 seats, 14% more than last year, but the contract caps rises at 5%. Only 31 seats were used in the last 90 days, so Priya has been asked how many to keep.", from:'Opened by Sirion AI from the renewal date in the contract',
-  fields:[['Owner', 'Priya Nair · Marketing · priya.nair@ibm.com', ''], ['Counterparty', 'Mailstream Inc. · existing supplier', ''], ['Agreement', 'Order form signed 14 Apr 2025 · renews each 1 May', 'R72|Clause 7.2'], ['This year', '$96,000 for 50 seats ($1,920 a seat)', ''], ['Quote', '<b>$109,440</b> for 50 seats, up 14%', 'RQ|Quote'], ['Price cap', 'Rises limited to 5%: at most $2,016 a seat', 'R73|Clause 7.3'], ['Usage', '31 of 50 seats active in the last 90 days', 'RQ|Seat report'], ['Notice by', '<b>2 Mar 2027</b>, 60 days before renewal', 'R72|Clause 7.2']],
+  desc:"Kovalo's email platform renews on 1 May unless notice is given by 2 Mar. Mailstream quotes $109,440 for 50 seats, 14% more than last year, but the contract caps rises at 5%. Only 31 seats were used in the last 90 days, so Priya has been asked how many to keep.", from:'Opened by Sirion AI from the renewal date in the contract',
+  fields:[['Owner', 'Priya Nair · Marketing · priya.nair@kovalo.com', ''], ['Counterparty', 'Mailstream Inc. · existing supplier', ''], ['Agreement', 'Order form signed 14 Apr 2025 · renews each 1 May', 'R72|Clause 7.2'], ['This year', '$96,000 for 50 seats ($1,920 a seat)', ''], ['Quote', '<b>$109,440</b> for 50 seats, up 14%', 'RQ|Quote'], ['Price cap', 'Rises limited to 5%: at most $2,016 a seat', 'R73|Clause 7.3'], ['Usage', '31 of 50 seats active in the last 90 days', 'RQ|Seat report'], ['Notice by', '<b>2 Mar 2027</b>, 60 days before renewal', 'R72|Clause 7.2']],
   files:[['Mailstream order form 2025.pdf', 'pdf'], ['Renewal quote 2027.pdf', 'pdf'], ['Seat report.xlsx', 'xlsx']],
   waiting:['PN', 'Priya Nair', 'Marketing, requester', 'Decide how many seats to keep', 'Since Tue 17 Nov'],
   approvals:[['VR', 'Vikram Rao', 'Business', 'Budget owner for MKT-1100', ['grey', 'After Priya decides']]], noappr:'Finance is not needed if the renewal stays under $100,000.',
   steps:[['Check the quote against the contract', 1], ['Ask Priya how many seats to keep', 0], ['Ask Mailstream for a quote at the 5% cap', 0], ['Budget owner approves', 0], ['Renew, or give notice, before 2 Mar', 0]], after:'Then: the renewed order form goes to the repository',
   emails:[
-    {k:'op', f:'S', to:'David Kim (Legal); Priya Nair (Marketing)', subj:'Renewal opened: Mailstream renews on 1 May (REQ-1039)', tm:'Mon 16 Nov, 07:00', tag:'sys', body:"Mailstream's order form renews on 1 May 2027 unless IBM gives notice by 2 Mar. I've opened REQ-1039 and assigned it to David Kim.<br><br>Sirion AI, for IBM Legal"},
+    {k:'op', f:'S', to:'David Kim (Legal); Priya Nair (Marketing)', subj:'Renewal opened: Mailstream renews on 1 May (REQ-1039)', tm:'Mon 16 Nov, 07:00', tag:'sys', body:"Mailstream's order form renews on 1 May 2027 unless Kovalo gives notice by 2 Mar. I've opened REQ-1039 and assigned it to David Kim.<br><br>Sirion AI, for Kovalo Legal"},
     {k:'mq', f:'JB', to:'Priya Nair (Marketing)', subj:'Your Mailstream renewal quote', tm:'Mon 16 Nov, 09:20', tag:'in', att:[['Renewal quote 2027.pdf', 'pdf'], ['Seat report.xlsx', 'xlsx']], body:'Hi Priya,<br><br>Your renewal for 50 seats is $109,440 (list price update). Seat report attached: 31 of 50 seats active in the last 90 days.<br><br>Mailstream renewals'},
     {k:'ask', f:'DK', to:'Priya Nair (Marketing)', subj:'Mailstream renewal: how many seats do you need? (REQ-1039)', tm:'Tue 17 Nov, 10:00', tag:'out', body:"Hi Priya,<br><br>Mailstream's quote is $109,440 for 50 seats, but two things work in our favour:" + ul(['The contract caps price rises at 5%, so the most they can charge is $2,016 a seat (clause 7.3).', 'Only 31 of the 50 seats were used in the last 90 days.']) + "<b>How many seats should we keep?</b> At 35 seats the renewal would be $70,560, saving $38,880 on the quote.<br><br>We need to decide before 2 Mar." + SIG('David Kim')}
   ],
@@ -2054,100 +2107,100 @@ TK['REQ-1039'] = {
 /* ---------- REQ-1038: Helio cookie tool, not started ---------- */
 TK['REQ-1038'] = {
   id:'REQ-1038', t:'Assess the new analytics cookie tool', who:'DC', src:'Slack', created:'Mon 16 Nov', due:'Nov 23', lawyer:null, status:['grey', 'Not started'], wait:'0d', isnew:1,
-  desc:"Helio Analytics wants to add a tracking cookie to ibm.com to measure campaign traffic. It's a new supplier on click-through terms, and it collects visitor data, so it needs Privacy and Security before launch on 30 Nov.", from:"From Dana's Slack message and Helio's terms",
-  fields:[['Owner', 'Dana Cole · Operations · dana.cole@ibm.com', ''], ['Counterparty', 'Helio Analytics Inc. · new supplier', ''], ['Agreement', "Helio's online terms of service and DPA (click-through)", ''], ['Value', '$9,600 a year · Growth plan', ''], ['Personal data', 'Visitor IDs and browsing events, set by a tracking cookie', ''], ['Go-live', '30 Nov 2026', '']],
+  desc:"Helio Analytics wants to add a tracking cookie to kovalo.com to measure campaign traffic. It's a new supplier on click-through terms, and it collects visitor data, so it needs the budget owner, Privacy and Security to approve before launch on 30 Nov.", from:"From Dana's Slack message and Helio's terms",
+  fields:[['Owner', 'Dana Cole · Operations · dana.cole@kovalo.com', ''], ['Counterparty', 'Helio Analytics Inc. · new supplier', ''], ['Agreement', "Helio's online terms of service and DPA (click-through)", ''], ['Value', '$9,600 a year · Growth plan', ''], ['Personal data', 'Visitor IDs and browsing events, set by a tracking cookie', ''], ['Go-live', '30 Nov 2026', '']],
   files:[['Helio terms of service.pdf', 'pdf'], ['Helio DPA.pdf', 'pdf']],
   waiting:['AM', 'Arjun Mehta', 'Legal operations', 'Assign a lawyer', 'Since Mon 14:05'],
-  approvals:[['MI', 'Meera Iyer', 'Privacy', 'Personal data collected by a cookie', ['grey', 'Not sent']], ['DS', 'Dev Shah', 'Security', 'New third-party script on ibm.com', ['grey', 'Not sent']]], noappr:'No budget approval needed: under $25,000.',
-  steps:[['Assign a lawyer', 0], ['Send review requests to Privacy and Security', 0], ["Agree data terms with Helio", 0], ["Accept Helio's terms", 0]], after:'Then: the cookie goes live on ibm.com',
+  approvals:[['MR', 'Marco Ruiz', 'Business', 'Budget owner for OPS-3100', ['grey', 'Not sent']], ['MI', 'Meera Iyer', 'Privacy', 'Personal data collected by a cookie', ['grey', 'Not sent']], ['DS', 'Dev Shah', 'Security', 'New third-party script on kovalo.com', ['grey', 'Not sent']]], noappr:'Finance not needed: $9,600 a year, under $100,000.',
+  steps:[['Assign a lawyer', 0], ['Send approval requests to Business, Privacy and Security', 0], ["Agree data terms with Helio", 0], ["Accept Helio's terms", 0]], after:'Then: the cookie goes live on kovalo.com',
   emails:[
     {k:'q', f:'DC', to:'#legal-requests (Slack)', subj:'Slack message in #legal-requests', tm:'Mon 16 Nov, 14:04', tag:'cap', att:[['Helio terms of service.pdf', 'pdf'], ['Helio DPA.pdf', 'pdf']], body:"Hey Legal 👋 we want to add Helio's analytics cookie to the site to measure the spring campaign. It's $800/month and we'd like it live by 30 Nov. Their terms and DPA are attached. Anything you need from me?"},
-    {k:'ack', f:'S', to:'Dana Cole (Operations)', subj:'REQ-1038 opened: Assess the new analytics cookie tool', tm:'Mon 16 Nov, 14:05', tag:'sys', body:"Hi Dana,<br><br>IBM Legal has opened <b>REQ-1038</b>. Sirion AI read Helio's terms: the cookie collects visitor data, so Privacy and Security will need to review it. A lawyer will pick it up today.<br><br>Sirion AI, for IBM Legal"}
+    {k:'ack', f:'S', to:'Dana Cole (Operations)', subj:'REQ-1038 opened: Assess the new analytics cookie tool', tm:'Mon 16 Nov, 14:05', tag:'sys', body:"Hi Dana,<br><br>Kovalo Legal has opened <b>REQ-1038</b>. Sirion AI read Helio's terms: the cookie collects visitor data, so Privacy and Security will review it, alongside the budget owner. A lawyer will pick it up today.<br><br>Sirion AI, for Kovalo Legal"}
   ],
-  sum:[["Dana (Operations) wants Helio's analytics cookie live on ibm.com by 30 Nov.", "Helio's click-through terms let it use IBM's site data to improve its own products (clause 4.2). IBM's playbook doesn't allow that.", 'Privacy and Security must review: the cookie collects visitor data and adds a third-party script.', 'No lawyer yet.'], 'Assign a lawyer. Sirion AI has review requests ready for Privacy and Security.'],
-  afterAssign:{status:['blue', 'Pending with legal'], waitAction:'Send review requests to Privacy and Security', step:0, sum:[["Dana (Operations) wants Helio's analytics cookie live on ibm.com by 30 Nov.", "Helio's terms let it use IBM's site data to improve its own products (clause 4.2). IBM's playbook doesn't allow that.", 'Privacy and Security must review before launch.'], 'Send the review requests to Privacy and Security (drafted on the right).'],
-    draft:{asks:{MI:'is the DPA enough, and does the cookie banner need to change?', DS:'are you OK with a new third-party script on ibm.com?'}, subj:'Review needed by Fri 20 Nov: Helio analytics cookie (REQ-1038)', label:'Review request drafted by Sirion AI', due:'Fri 20 Nov', intro:"Operations wants to add Helio Analytics' tracking cookie to ibm.com from 30 Nov, to measure the spring campaign.", facts:['<b>Data:</b> visitor IDs and browsing events, stored in the US', "<b>Terms:</b> Helio's click-through terms and DPA (attached)", "<b>Issue:</b> clause 4.2 lets Helio use our site data to improve its products. I'll ask them to remove it."],
-      fx:{status:['amber', 'Pending approvals'], step:1, apst:['amber', 'Email sent'], toast:'Review requests sent.'}}},
-  review:{doc:"Helio Analytics terms of service and DPA", meta:"PDF · Helio's click-through terms · checked by Sirion AI against IBM's playbook", note:"Sirion AI checks supplier terms against IBM's playbook before a lawyer reads them.",
-    changes:[{t:'Use of IBM data', by:'S', what:"Clause 4.2 lets Helio use IBM's site data to improve its products. The playbook doesn't allow it.", st:['red', 'Ask Helio to remove']}, {t:'Data location', by:'S', what:'Data is stored in the US. The DPA has no standard contractual clauses.', st:['amber', 'For Privacy to decide']}, {t:'Liability', by:'S', what:'Capped at fees paid in the last 12 months.', st:['green', 'Within the playbook']}],
-    clauses:[['Terms · 4.2 Service improvement', '<del>Helio may use Customer Data, in aggregated form, to improve and develop its products and services.</del>', 'Sirion AI flagged this · playbook: suppliers may not reuse IBM data'], ['DPA · 6. Transfers', 'Customer Data is stored and processed in the United States.<ins> Transfers are covered by the EU standard contractual clauses.</ins>', 'Suggested by Sirion AI · for Privacy to confirm'], ['Terms · 9. Liability', "Each party's liability is limited to the fees paid in the 12 months before the claim.", 'Within the playbook']]},
-  journey:[['Request created', 'Mon 16 Nov · Slack', 'd'], ['Lawyer assigned', 'Waiting', 'n'], ['Reviews', 'Privacy and Security', ''], ['Terms agreed', "Helio's clause 4.2", ''], ['Ready', 'Go-live 30 Nov', '']],
-  hist:[['DC', 'posted the request in Slack', 'Mon 16 Nov, 14:04'], ['S', 'opened REQ-1038 and read Helio\'s terms', 'Mon 16 Nov, 14:05', 'Not started'], ['S', 'flagged clause 4.2: Helio may reuse IBM data', 'Mon 16 Nov, 14:05', '', 1]],
+  sum:[["Dana (Operations) wants Helio's analytics cookie live on kovalo.com by 30 Nov.", "Helio's click-through terms let it use Kovalo's site data to improve its own products (clause 4.2). Kovalo's playbook doesn't allow that.", 'Marco (budget owner) approves the spend; Privacy and Security must review: the cookie collects visitor data and adds a third-party script.', 'No lawyer yet.'], 'Assign a lawyer. Sirion AI has approval requests ready for Marco, Privacy and Security.'],
+  afterAssign:{status:['blue', 'Pending with legal'], waitAction:'Send approval requests to Business, Privacy and Security', step:0, sum:[["Dana (Operations) wants Helio's analytics cookie live on kovalo.com by 30 Nov.", "Helio's terms let it use Kovalo's site data to improve its own products (clause 4.2). Kovalo's playbook doesn't allow that.", 'Marco (budget owner), Privacy and Security must approve before launch.'], 'Send the approval requests to Marco, Privacy and Security (drafted on the right).'],
+    draft:{asks:{MR:'please approve $9,600 a year for Helio as owner of budget OPS-3100.', MI:'is the DPA enough, and does the cookie banner need to change?', DS:'are you OK with a new third-party script on kovalo.com?'}, subj:'Approval needed by Fri 20 Nov: Helio analytics cookie (REQ-1038)', label:'Approval requests drafted by Sirion AI', due:'Fri 20 Nov', intro:"Operations wants to add Helio Analytics' tracking cookie to kovalo.com from 30 Nov, to measure the spring campaign.", facts:['<b>Data:</b> visitor IDs and browsing events, stored in the US', "<b>Terms:</b> Helio's click-through terms and DPA (attached)", "<b>Issue:</b> clause 4.2 lets Helio use our site data to improve its products. I'll ask them to remove it."],
+      fx:{status:['amber', 'Pending approvals'], step:1, apst:['amber', 'Email sent'], toast:'Approval requests sent.'}}},
+  review:{doc:"Helio Analytics terms of service and DPA", meta:"PDF · Helio's click-through terms · checked by Sirion AI against Kovalo's playbook", note:"Sirion AI checks supplier terms against Kovalo's playbook before a lawyer reads them.",
+    changes:[{t:'Use of Kovalo data', by:'S', what:"Clause 4.2 lets Helio use Kovalo's site data to improve its products. The playbook doesn't allow it.", st:['red', 'Ask Helio to remove']}, {t:'Data location', by:'S', what:'Data is stored in the US. The DPA has no standard contractual clauses.', st:['amber', 'For Privacy to decide']}, {t:'Liability', by:'S', what:'Capped at fees paid in the last 12 months.', st:['green', 'Within the playbook']}],
+    clauses:[['Terms · 4.2 Service improvement', '<del>Helio may use Customer Data, in aggregated form, to improve and develop its products and services.</del>', 'Sirion AI flagged this · playbook: suppliers may not reuse Kovalo data'], ['DPA · 6. Transfers', 'Customer Data is stored and processed in the United States.<ins> Transfers are covered by the EU standard contractual clauses.</ins>', 'Suggested by Sirion AI · for Privacy to confirm'], ['Terms · 9. Liability', "Each party's liability is limited to the fees paid in the 12 months before the claim.", 'Within the playbook']]},
+  journey:[['Request created', 'Mon 16 Nov · Slack', 'd'], ['Lawyer assigned', 'Waiting', 'n'], ['Approvals', 'Business, Privacy and Security', ''], ['Terms agreed', "Helio's clause 4.2", ''], ['Ready', 'Go-live 30 Nov', '']],
+  hist:[['DC', 'posted the request in Slack', 'Mon 16 Nov, 14:04'], ['S', 'opened REQ-1038 and read Helio\'s terms', 'Mon 16 Nov, 14:05', 'Not started'], ['S', 'flagged clause 4.2: Helio may reuse Kovalo data', 'Mon 16 Nov, 14:05', '', 1]],
   now:['Arjun Mehta · assign a lawyer', 'Waiting since Mon 14:05'],
-  nexts:[['Reviews', 'Privacy and Security review the cookie and the DPA.', ''], ['Terms', 'The lawyer asks Helio to remove clause 4.2.', ''], ['Go-live', "Dana accepts Helio's terms and the cookie goes live on 30 Nov.", '']],
+  nexts:[['Approvals', 'Marco approves the spend; Privacy and Security review the cookie and the DPA.', ''], ['Terms', 'The lawyer asks Helio to remove clause 4.2.', ''], ['Go-live', "Dana accepts Helio's terms and the cookie goes live on 30 Nov.", '']],
   ai:['Ritu Shah handles most privacy and data requests and has 5 open this week.', 'Tight timeline: 2 weeks to go-live, and reviews usually take 3 days.']
 };
 /* ---------- REQ-1037: Harbor amendment, sent to counterparty ---------- */
 TK['REQ-1037'] = {
   id:'REQ-1037', t:'Harbor Logistics: add two delivery lanes', who:'DC', src:'Outlook', created:'Thu 12 Nov', due:'Nov 24', lawyer:'David Kim', status:['amber', 'Sent to counterparty'], wait:'1d',
   desc:'Amendment 3 to the Harbor Logistics MSA, adding the Rotterdam–Lyon and Antwerp–Milan lanes from 1 January with a new price table.', from:"From Dana's email and Harbor's amendment",
-  fields:[['Owner', 'Dana Cole · Operations · dana.cole@ibm.com', ''], ['Counterparty', 'Harbor Logistics BV · existing supplier, MSA to 30 Jun 2028', ''], ['Signatory', 'Pieter de Vries, Commercial Director', ''], ['Agreement', 'Amendment 3 to the MSA', ''], ['Value', '<b>+$186,000</b> a year for the two lanes', ''], ['Start', '1 Jan 2027', ''], ['Open point', 'Fuel surcharge cap: Harbor wants 12%, IBM offered 10%', '']],
+  fields:[['Owner', 'Dana Cole · Operations · dana.cole@kovalo.com', ''], ['Counterparty', 'Harbor Logistics BV · existing supplier, MSA to 30 Jun 2028', ''], ['Signatory', 'Pieter de Vries, Commercial Director', ''], ['Agreement', 'Amendment 3 to the MSA', ''], ['Value', '<b>+$186,000</b> a year for the two lanes', ''], ['Start', '1 Jan 2027', ''], ['Open point', 'Fuel surcharge cap: Harbor wants 12%, Kovalo offered 10%', '']],
   files:[['Harbor amendment 3 v2.docx', 'docx'], ['Lane price table.xlsx', 'xlsx']],
   waiting:['PV', 'Pieter de Vries', 'Harbor Logistics, counterparty', 'Reply on the fuel surcharge cap', 'Since Tue 17 Nov'],
   approvals:[['MR', 'Marco Ruiz', 'Business', 'Budget owner for OPS-3100', ['green', 'Approved']], ['RV', 'Rahul Verma', 'Finance', 'Spend over $100,000', ['green', 'Approved']]],
-  steps:[['Send approval emails to 2 teams', 1], ["Send IBM's markup to Harbor", 1], ["Agree Harbor's response", 0], ['Signature', 0]], after:'Then: the new lanes go live on 1 Jan',
+  steps:[['Send approval emails to 2 teams', 1], ["Send Kovalo's markup to Harbor", 1], ["Agree Harbor's response", 0], ['Signature', 0]], after:'Then: the new lanes go live on 1 Jan',
   emails:[
-    {k:'q', f:'DC', to:'IBM Legal', subj:'Harbor Logistics amendment 3: two new lanes', tm:'Thu 12 Nov, 09:15', tag:'cap', att:[['Harbor amendment 3 v1.docx', 'docx'], ['Lane price table.xlsx', 'xlsx']], body:"Hi Legal,<br><br>Harbor sent amendment 3 to add the Rotterdam–Lyon and Antwerp–Milan lanes from 1 January. Price table attached, about $186k a year. Can we get it signed by the 24th?<br><br>Dana"},
-    {k:'ack', f:'S', to:'Dana Cole (Operations)', subj:'REQ-1037 opened: Harbor Logistics: add two delivery lanes', tm:'Thu 12 Nov, 09:16', tag:'sys', body:'Hi Dana,<br><br>IBM Legal has opened <b>REQ-1037</b>. Sirion AI found one point to check: the fuel surcharge cap goes from 8% to 12%.<br><br>Sirion AI, for IBM Legal'},
+    {k:'q', f:'DC', to:'Kovalo Legal', subj:'Harbor Logistics amendment 3: two new lanes', tm:'Thu 12 Nov, 09:15', tag:'cap', att:[['Harbor amendment 3 v1.docx', 'docx'], ['Lane price table.xlsx', 'xlsx']], body:"Hi Legal,<br><br>Harbor sent amendment 3 to add the Rotterdam–Lyon and Antwerp–Milan lanes from 1 January. Price table attached, about $186k a year. Can we get it signed by the 24th?<br><br>Dana"},
+    {k:'ack', f:'S', to:'Dana Cole (Operations)', subj:'REQ-1037 opened: Harbor Logistics: add two delivery lanes', tm:'Thu 12 Nov, 09:16', tag:'sys', body:'Hi Dana,<br><br>Kovalo Legal has opened <b>REQ-1037</b>. Sirion AI found one point to check: the fuel surcharge cap goes from 8% to 12%.<br><br>Sirion AI, for Kovalo Legal'},
     {k:'ap', f:'DK', to:'Marco Ruiz (Business team); Rahul Verma (Finance team)', subj:'Approval needed by Mon 16 Nov: Harbor amendment 3 (REQ-1037)', tm:'Thu 12 Nov, 13:00', tag:'out', body:'Hi Marco, hi Rahul,<br><br>Amendment 3 adds two delivery lanes with Harbor Logistics from 1 January: about $186,000 a year from budget OPS-3100.<br><br>Reply <b>Approve</b>, or reply with questions, by Mon 16 Nov.' + SIG('David Kim')},
     {k:'mr', f:'MR', to:'David Kim (Legal)', subj:'Re: Approval needed by Mon 16 Nov: Harbor amendment 3 (REQ-1037)', tm:'Thu 12 Nov, 16:40', tag:'ok', body:'Approved. We need these lanes running for January volumes.<br><br>Marco'},
     {k:'rv', f:'RV', to:'David Kim (Legal)', subj:'Re: Approval needed by Mon 16 Nov: Harbor amendment 3 (REQ-1037)', tm:'Fri 13 Nov, 10:05', tag:'ok', body:"Approved, as long as the fuel surcharge doesn't go above 10%.<br><br>Rahul"},
-    {k:'pv', f:'PV', to:'David Kim (Legal)', subj:'Re: Harbor amendment 3: our markup', tm:'Mon 16 Nov, 08:40', tag:'chg', att:[['Harbor amendment 3 v2.docx', 'docx']], body:"Hi David,<br><br>Thanks for IBM's comments. We accept 30-day payment. On fuel, we need the cap at 12%: diesel costs on these lanes have risen sharply this year.<br><br>Pieter"},
+    {k:'pv', f:'PV', to:'David Kim (Legal)', subj:'Re: Harbor amendment 3: our markup', tm:'Mon 16 Nov, 08:40', tag:'chg', att:[['Harbor amendment 3 v2.docx', 'docx']], body:"Hi David,<br><br>Thanks for Kovalo's comments. We accept 30-day payment. On fuel, we need the cap at 12%: diesel costs on these lanes have risen sharply this year.<br><br>Pieter"},
     {k:'dk', f:'DK', to:'Pieter de Vries (Harbor Logistics)', cc:'Dana Cole', subj:'Re: Harbor amendment 3: our markup', tm:'Tue 17 Nov, 11:30', tag:'out', body:"Hi Pieter,<br><br>Thanks for accepting 30-day payment. On fuel, we can go to 10%, reviewed every quarter against the diesel index. That's the most our Finance team can approve.<br><br>Can you confirm by Friday so we can sign before the 24th?" + SIG('David Kim')}
   ],
   sum:[['Business (Marco Ruiz) and Finance (Rahul Verma) approved. Finance capped the fuel surcharge at 10%.', 'Harbor accepted 30-day payment but asked for a 12% fuel cap.', 'David offered 10%, reviewed quarterly, on Tue 17 Nov. Waiting for Harbor.'], 'Wait for Pieter. If Harbor holds at 12%, it goes back to Rahul in Finance.'],
   reply:{to:'PV', subj:'Re: Harbor amendment 3: our markup', body:"Hi Pieter,<br><br>Following up on the fuel surcharge. Could you confirm 10%, reviewed quarterly, by Friday? We'd like to sign before the 24th so the lanes start on 1 January." + SIG('David Kim')},
-  review:{doc:'Harbor Logistics MSA · amendment 3 v2', meta:"Word · Harbor's markup of IBM's comments, Mon 16 Nov", note:"Harbor's changes arrived by email. Sirion AI compared v2 with IBM's version.",
-    changes:[{t:'Fuel surcharge cap', by:'PV', what:'Harbor asked for 12%. Finance approved up to 10%. David offered 10%, reviewed quarterly.', st:['amber', 'With Harbor'], act:1}, {t:'Payment terms', by:'DK', what:'45 days changed to 30 days, in line with IBM policy.', st:['green', 'Accepted by Harbor']}],
-    clauses:[['Amendment 3 · 2. New lanes', 'Rotterdam–Lyon and Antwerp–Milan are added to Schedule B from 1 January 2027, at the prices in the attached table.', 'No change'], ['Amendment 3 · 4. Fuel surcharge', 'The fuel surcharge may not exceed <del>12%</del><ins>10%</ins> of the lane price<ins>, reviewed each quarter against the diesel index</ins>.', 'David Kim proposed this · Harbor asked for 12%'], ['MSA · 7.1 Payment', 'IBM pays each invoice within <del>45</del><ins>30</ins> days.', 'Accepted by Pieter de Vries']]},
+  review:{doc:'Harbor Logistics MSA · amendment 3 v2', meta:"Word · Harbor's markup of Kovalo's comments, Mon 16 Nov", note:"Harbor's changes arrived by email. Sirion AI compared v2 with Kovalo's version.",
+    changes:[{t:'Fuel surcharge cap', by:'PV', what:'Harbor asked for 12%. Finance approved up to 10%. David offered 10%, reviewed quarterly.', st:['amber', 'With Harbor'], act:1}, {t:'Payment terms', by:'DK', what:'45 days changed to 30 days, in line with Kovalo policy.', st:['green', 'Accepted by Harbor']}],
+    clauses:[['Amendment 3 · 2. New lanes', 'Rotterdam–Lyon and Antwerp–Milan are added to Schedule B from 1 January 2027, at the prices in the attached table.', 'No change'], ['Amendment 3 · 4. Fuel surcharge', 'The fuel surcharge may not exceed <del>12%</del><ins>10%</ins> of the lane price<ins>, reviewed each quarter against the diesel index</ins>.', 'David Kim proposed this · Harbor asked for 12%'], ['MSA · 7.1 Payment', 'Kovalo pays each invoice within <del>45</del><ins>30</ins> days.', 'Accepted by Pieter de Vries']]},
   journey:[['Request created', 'Thu 12 Nov · Outlook', 'd'], ['Lawyer assigned', 'David Kim', 'd'], ['Approvals', '2 of 2 teams', 'd'], ['Negotiation', 'Fuel cap with Harbor', 'n'], ['Signature', 'Target Tue 24 Nov', '']],
   hist:[['DC', 'emailed Legal the amendment', 'Thu 12 Nov, 09:15'], ['S', 'opened REQ-1037 and flagged the fuel surcharge', 'Thu 12 Nov, 09:16', 'Not started'], ['AM', 'assigned it to David Kim', 'Thu 12 Nov, 10:00', 'Pending with legal'], ['DK', 'sent approval emails to 2 teams', 'Thu 12 Nov, 13:00', 'Pending approvals'], ['MR', 'approved for the Business team', 'Thu 12 Nov, 16:40'], ['RV', 'approved for Finance, up to a 10% fuel cap', 'Fri 13 Nov, 10:05', 'Pending with legal'], ['PV', 'asked for a 12% fuel cap', 'Mon 16 Nov, 08:40', '', 1], ['DK', 'offered 10%, reviewed quarterly', 'Tue 17 Nov, 11:30', 'Sent to counterparty']],
   now:['Pieter de Vries · Harbor Logistics', 'Waiting 1 day'],
-  nexts:[['Harbor replies', 'If Harbor accepts 10%, David sends it for signature.', ''], ['Signature', 'Pieter de Vries signs for Harbor, David Kim for IBM.', ''], ['Go-live', 'The two lanes start on 1 Jan 2027.', '']],
-  ai:["Harbor accepted IBM's last two fuel caps within 3 days.", '7 days to the target date of Tue 24 Nov.']
+  nexts:[['Harbor replies', 'If Harbor accepts 10%, David sends it for signature.', ''], ['Signature', 'Pieter de Vries signs for Harbor, David Kim for Kovalo.', ''], ['Go-live', 'The two lanes start on 1 Jan 2027.', '']],
+  ai:["Harbor accepted Kovalo's last two fuel caps within 3 days.", '7 days to the target date of Tue 24 Nov.']
 };
 /* ---------- REQ-1036: Brightforce rates, pending with finance ---------- */
 TK['REQ-1036'] = {
   id:'REQ-1036', t:'Brightforce staffing rates for Q1', who:'SL', src:'Teams', created:'Sun 15 Nov', due:'Nov 25', lawyer:'Ritu Shah', status:['amber', 'Pending with finance'], wait:'1d',
   desc:'Brightforce wants to raise hourly rates for warehouse temps by 9% for the December to March peak. Ritu agreed with Brightforce that the rise ends on 31 March. Finance still has to approve.', from:"From Sam's Teams message and Brightforce's letter",
-  fields:[['Owner', 'Sam Lee · People team · sam.lee@ibm.com', ''], ['Counterparty', 'Brightforce Staffing · existing supplier, SOW 2 to 31 Jan 2027', ''], ['Signatory', 'Grace Liu, Account Manager', ''], ['Agreement', 'Rate change letter under SOW 2', ''], ['Value', '<b>+$38,400</b> for Dec–Mar · $24.50 to $26.70 an hour', ''], ['Budget', 'OPS-3100 · owner Marco Ruiz', '']],
+  fields:[['Owner', 'Sam Lee · People team · sam.lee@kovalo.com', ''], ['Counterparty', 'Brightforce Staffing · existing supplier, SOW 2 to 31 Jan 2027', ''], ['Signatory', 'Grace Liu, Account Manager', ''], ['Agreement', 'Rate change letter under SOW 2', ''], ['Value', '<b>+$38,400</b> for Dec–Mar · $24.50 to $26.70 an hour', ''], ['Budget', 'OPS-3100 · owner Marco Ruiz', '']],
   files:[['Brightforce rate letter.pdf', 'pdf'], ['Peak staffing plan.xlsx', 'xlsx']],
-  waiting:['KW', 'Karen Wu', 'Finance team', 'Approve the 9% rate rise', 'Since Wed 09:15'],
-  approvals:[['MR', 'Marco Ruiz', 'Business', 'Budget owner for OPS-3100', ['green', 'Approved']], ['KW', 'Karen Wu', 'Finance', 'Rate rise above 5%', ['amber', 'Email sent']]],
+  waiting:['RV', 'Rahul Verma', 'Finance team', 'Approve the 9% rate rise', 'Since Wed 09:15'],
+  approvals:[['MR', 'Marco Ruiz', 'Business', 'Budget owner for OPS-3100', ['green', 'Approved']], ['RV', 'Rahul Verma', 'Finance', 'Price rise above 5% on an existing contract', ['amber', 'Email sent']]],
   steps:[['Send approval emails to 2 teams', 1], ['Agree an end date with Brightforce', 1], ['Finance approves', 0], ['Sign the rate letter', 0]], after:'Then: rates go back to $24.50 on 1 April',
   emails:[
     {k:'q', f:'SL', to:'#legal-requests (Teams)', subj:'Teams message in #legal-requests', tm:'Sun 15 Nov, 18:30', tag:'cap', att:[['Brightforce rate letter.pdf', 'pdf']], body:"Brightforce sent a letter: +9% on temp rates from 1 Dec for peak season. We need the extra people, so I'd like to say yes. Who needs to sign off?"},
-    {k:'ack', f:'S', to:'Sam Lee (People team)', subj:'REQ-1036 opened: Brightforce staffing rates for Q1', tm:'Sun 15 Nov, 18:31', tag:'sys', body:"Hi Sam,<br><br>IBM Legal has opened <b>REQ-1036</b>. A rise above 5% needs Finance as well as your budget owner. The letter doesn't say when the rise ends, so the lawyer will ask.<br><br>Sirion AI, for IBM Legal"},
+    {k:'ack', f:'S', to:'Sam Lee (People team)', subj:'REQ-1036 opened: Brightforce staffing rates for Q1', tm:'Sun 15 Nov, 18:31', tag:'sys', body:"Hi Sam,<br><br>Kovalo Legal has opened <b>REQ-1036</b>. A rise above 5% needs Finance as well as your budget owner. The letter doesn't say when the rise ends, so the lawyer will ask.<br><br>Sirion AI, for Kovalo Legal"},
     {k:'gl', f:'RS', to:'Grace Liu (Brightforce)', subj:'Rate letter: end date for the peak rates', tm:'Mon 16 Nov, 10:10', tag:'out', body:'Hi Grace,<br><br>Before we approve the 9% rise, can you confirm it applies only from 1 December to 31 March, and that rates go back to $24.50 on 1 April?' + SIG('Ritu Shah')},
     {k:'gl2', f:'GL', to:'Ritu Shah (Legal)', subj:'Re: Rate letter: end date for the peak rates', tm:'Tue 17 Nov, 09:00', tag:'ok', body:"Hi Ritu, confirmed. Peak rates end on 31 March. I'll add it to the letter.<br><br>Grace"},
-    {k:'ap', f:'RS', to:'Marco Ruiz (Business team); Karen Wu (Finance team)', cc:'Sam Lee', subj:'Approval needed by Mon 23 Nov: Brightforce peak rates (REQ-1036)', tm:'Wed 18 Nov, 09:15', tag:'out', body:'Hi Marco, hi Karen,<br><br>Brightforce wants a 9% rise for warehouse temps from 1 Dec to 31 Mar: $24.50 to $26.70 an hour, about $38,400 in total from OPS-3100. Rates go back on 1 April.<br><br>Reply <b>Approve</b>, or reply with questions, by Mon 23 Nov.' + SIG('Ritu Shah')},
+    {k:'ap', f:'RS', to:'Marco Ruiz (Business team); Rahul Verma (Finance team)', cc:'Sam Lee', subj:'Approval needed by Mon 23 Nov: Brightforce peak rates (REQ-1036)', tm:'Wed 18 Nov, 09:15', tag:'out', body:'Hi Marco, hi Rahul,<br><br>Brightforce wants a 9% rise for warehouse temps from 1 Dec to 31 Mar: $24.50 to $26.70 an hour, about $38,400 in total from OPS-3100. Rates go back on 1 April.<br><br>Reply <b>Approve</b>, or reply with questions, by Mon 23 Nov.' + SIG('Ritu Shah')},
     {k:'mr', f:'MR', to:'Ritu Shah (Legal)', subj:'Re: Approval needed by Mon 23 Nov: Brightforce peak rates (REQ-1036)', tm:'Wed 18 Nov, 12:40', tag:'ok', body:"Approved. We can't cover peak without them.<br><br>Marco"}
   ],
-  sum:[['Brightforce agreed the 9% rise ends on 31 March.', 'Marco Ruiz (Business) approved on Wed 18 Nov.', 'Karen Wu (Finance) has not replied. The approval is due Mon 23 Nov, and the new rates start 1 Dec.'], 'Send Karen a short reminder (drafted on the right).'],
-  draft:{to:'KW', subj:'Re: Approval needed by Mon 23 Nov: Brightforce peak rates (REQ-1036)', label:'Reminder drafted by Sirion AI', body:"Hi Karen,<br><br>A quick reminder on Brightforce's peak rates. In short:" + ul(['9% rise for warehouse temps, 1 Dec to 31 Mar only', 'About $38,400 in total from OPS-3100; Marco has approved', "In line with the other two staffing suppliers' peak rates (7% and 11%)"]) + 'Reply <b>Approve</b>, or with any questions, by Mon 23 Nov so the new rates can start on 1 Dec.' + SIG('Ritu Shah'),
-    fx:{hist:['RS', 'sent Karen Wu a reminder', 'Now'], waitSince:'Reminder sent today', sum:[['Brightforce agreed the 9% rise ends on 31 March.', 'Marco Ruiz (Business) approved on Wed 18 Nov.', 'Ritu sent Karen Wu (Finance) a reminder today. The approval is due Mon 23 Nov.'], 'Wait for Karen. Sirion AI flags it to her manager if there is no reply by Mon 23 Nov.'], toast:'Reminder sent to Karen Wu.'}},
+  sum:[['Brightforce agreed the 9% rise ends on 31 March.', 'Marco Ruiz (Business) approved on Wed 18 Nov.', 'Rahul Verma (Finance) has not replied. The approval is due Mon 23 Nov, and the new rates start 1 Dec.'], 'Send Rahul a short reminder (drafted on the right).'],
+  draft:{to:'RV', subj:'Re: Approval needed by Mon 23 Nov: Brightforce peak rates (REQ-1036)', label:'Reminder drafted by Sirion AI', body:"Hi Rahul,<br><br>A quick reminder on Brightforce's peak rates. In short:" + ul(['9% rise for warehouse temps, 1 Dec to 31 Mar only', 'About $38,400 in total from OPS-3100; Marco has approved', "In line with the other two staffing suppliers' peak rates (7% and 11%)"]) + 'Reply <b>Approve</b>, or with any questions, by Mon 23 Nov so the new rates can start on 1 Dec.' + SIG('Ritu Shah'),
+    fx:{hist:['RS', 'sent Rahul Verma a reminder', 'Now'], waitSince:'Reminder sent today', sum:[['Brightforce agreed the 9% rise ends on 31 March.', 'Marco Ruiz (Business) approved on Wed 18 Nov.', 'Ritu sent Rahul Verma (Finance) a reminder today. The approval is due Mon 23 Nov.'], 'Wait for Rahul. Sirion AI flags it to her manager if there is no reply by Mon 23 Nov.'], toast:'Reminder sent to Rahul Verma.'}},
   reply:{to:'SL', subj:'Re: Brightforce staffing rates for Q1 (REQ-1036)', body:"Hi Sam,<br><br>Quick update: Marco has approved, and we're waiting on Finance. I'll let you know as soon as they reply." + SIG('Ritu Shah')},
   review:{doc:'Brightforce rate change letter · v2', meta:'PDF from Brightforce · updated Tue 17 Nov', note:"Sirion AI compared Brightforce's v2 letter with v1.",
     changes:[{t:'End date', by:'RS', what:'The peak rates end on 31 March, and rates go back to $24.50 on 1 April.', st:['green', 'Agreed by Brightforce']}],
     clauses:[['Letter · 1. New rates', 'From 1 December 2026, the hourly rate for warehouse temps is $26.70 (was $24.50).', 'No change'], ['Letter · 2. Duration', '<ins>The new rate applies until 31 March 2027. From 1 April 2027 the rate returns to $24.50.</ins>', 'Ritu Shah asked for this · agreed by Grace Liu']]},
   journey:[['Request created', 'Sun 15 Nov · Teams', 'd'], ['Lawyer assigned', 'Ritu Shah', 'd'], ['Approvals', '1 of 2 teams', 'n'], ['Letter updated', 'End date added', 'd'], ['Signature', 'Before 1 Dec', '']],
   hist:[['SL', 'posted the request in Teams', 'Sun 15 Nov, 18:30'], ['S', 'opened REQ-1036', 'Sun 15 Nov, 18:31', 'Not started'], ['AM', 'assigned it to Ritu Shah', 'Mon 16 Nov, 09:05', 'Pending with legal'], ['RS', 'asked Brightforce for an end date', 'Mon 16 Nov, 10:10', 'Sent to counterparty'], ['GL', 'agreed the rise ends on 31 March', 'Tue 17 Nov, 09:00', 'Pending with legal'], ['RS', 'sent approval emails to 2 teams', 'Wed 18 Nov, 09:15', 'Pending approvals'], ['MR', 'approved for the Business team', 'Wed 18 Nov, 12:40', 'Pending with finance']],
-  now:['Karen Wu · Finance team', 'Waiting 1 day'],
-  nexts:[['Finance approves', 'Karen Wu approves by Mon 23 Nov.', ''], ['Signature', 'Ritu signs the rate letter; Grace Liu countersigns.', ''], ['Tracking', 'Sirion AI checks April invoices are back at $24.50 an hour.', '']],
+  now:['Rahul Verma · Finance team', 'Waiting 1 day'],
+  nexts:[['Finance approves', 'Rahul Verma approves by Mon 23 Nov.', ''], ['Signature', 'Ritu signs the rate letter; Grace Liu countersigns.', ''], ['Tracking', 'Sirion AI checks April invoices are back at $24.50 an hour.', '']],
   ai:['Finance approvals take 1.2 days on average. This one is at 1 day.', 'The end date protects about $96,000 a year after March.']
 };
 /* ---------- REQ-1035: CleanPro renewal from Jira, not started ---------- */
 TK['REQ-1035'] = {
   id:'REQ-1035', t:'Office cleaning contract renewal', who:'TH', ownerLabel:'Facilities team', src:'Jira', created:'Sat 14 Nov', due:'Dec 1', lawyer:null, status:['grey', 'Not started'], wait:'2d',
   desc:"CleanPro's contract for the London and Pune offices renews on 1 January. Their new quote is 6% higher and adds weekend cleaning in Pune.", from:'From Jira ticket FAC-2291 and its attachments',
-  fields:[['Owner', 'Tom Hughes · Facilities team · tom.hughes@ibm.com', ''], ['Counterparty', 'CleanPro Services · existing supplier', ''], ['Agreement', 'Services agreement 2024 · renews 1 Jan 2027', ''], ['Value', '<b>$142,000</b> a year (was $134,000, up 6%)', ''], ['New scope', 'Weekend cleaning at the Pune office', ''], ['Budget', 'FAC-0400 · owner Nadia Khan', ''], ['Jira', 'FAC-2291', '']],
+  fields:[['Owner', 'Tom Hughes · Facilities team · tom.hughes@kovalo.com', ''], ['Counterparty', 'CleanPro Services · existing supplier', ''], ['Agreement', 'Services agreement 2024 · renews 1 Jan 2027', ''], ['Value', '<b>$142,000</b> a year (was $134,000, up 6%)', ''], ['New scope', 'Weekend cleaning at the Pune office', ''], ['Budget', 'FAC-0400 · owner Nadia Khan', ''], ['Jira', 'FAC-2291', '']],
   files:[['CleanPro quote 2027.pdf', 'pdf'], ['CleanPro services agreement 2024.pdf', 'pdf']],
   waiting:['AM', 'Arjun Mehta', 'Legal operations', 'Assign a lawyer', 'Since Sat 11:20'],
   approvals:[['NK', 'Nadia Khan', 'Business', 'Budget owner for FAC-0400', ['grey', 'Not sent']], ['RV', 'Rahul Verma', 'Finance', 'Spend over $100,000', ['grey', 'Not sent']]],
   steps:[['Assign a lawyer', 0], ['Send approval emails to 2 teams', 0], ['Agree the renewal with CleanPro', 0], ['Sign before 1 Jan', 0]], after:'Then: the renewed agreement goes to the repository',
   emails:[
     {k:'q', f:'TH', to:'Jira · FAC-2291', subj:'Jira ticket FAC-2291: CleanPro renewal', tm:'Sat 14 Nov, 11:18', tag:'cap', att:[['CleanPro quote 2027.pdf', 'pdf'], ['CleanPro services agreement 2024.pdf', 'pdf']], body:"CleanPro's contract renews on 1 Jan. New quote attached: $142k a year, up from $134k, and it adds weekend cleaning in Pune, which we asked for. Please process the renewal."},
-    {k:'ack', f:'S', to:'Jira · FAC-2291', subj:'Comment on FAC-2291', tm:'Sat 14 Nov, 11:20', tag:'sys', body:'IBM Legal has opened <b>REQ-1035</b> from this ticket. The renewal is over $100,000, so Finance and the budget owner will approve. Updates will be posted here.<br><br>Sirion AI, for IBM Legal'}
+    {k:'ack', f:'S', to:'Jira · FAC-2291', subj:'Comment on FAC-2291', tm:'Sat 14 Nov, 11:20', tag:'sys', body:'Kovalo Legal has opened <b>REQ-1035</b> from this ticket. The renewal is over $100,000, so Finance and the budget owner will approve. Updates will be posted here.<br><br>Sirion AI, for Kovalo Legal'}
   ],
   sum:[["CleanPro's quote is $142,000 a year, up 6%, including the weekend cleaning Facilities asked for.", 'The agreement renews on 1 Jan 2027. No notice period applies.', 'Budget owner (Nadia Khan) and Finance must approve. No lawyer yet.'], 'Assign a lawyer. Sirion AI has the approval emails ready.'],
   afterAssign:{status:['blue', 'Pending with legal'], waitAction:'Send approval emails to 2 teams', step:0, sum:[["CleanPro's quote is $142,000 a year, up 6%, including weekend cleaning in Pune.", 'The agreement renews on 1 Jan 2027.', 'Budget owner (Nadia Khan) and Finance must approve.'], 'Send the approval emails (drafted on the right).'],
@@ -2203,7 +2256,7 @@ const avp = (i, cls = '') => i === 'S' ? av('S', true) : `<span class="av ${cls}
 const lawIni = t => t.lawyer ? LAWYER_INI[t.lawyer] : 'AM';
 const ownerName = t => t.ownerLabel || name(t.who);
 const srcBtns = s => s ? s.split(',').map(x => { const [id, l] = x.split('|'); return src(id, l); }).join('') : '';
-const fileChip = f => `<span class="fchip">${OI[f[1]] || OI.docx}<b>${f[0].replace(' (Google Doc)', '')}</b></span>`;
+const fileChip = f => `<span class="fchip">${OI[f[1]] || OI.docx}<b>${f[0]}</b></span>`;
 const now = () => { const d = new Date(); return `Today, ${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`; };
 const isOpen = t => t.status[1] !== 'Signed';
 
@@ -2211,7 +2264,7 @@ const isOpen = t => t.status[1] !== 'Signed';
 const NOTES = [
   ['S', 'New request needs a lawyer', 'REQ-1038 · Assess the new analytics cookie tool', 'Mon 14:05', 'REQ-1038'],
   ['S', 'Quote is above the price cap', 'REQ-1039 · Mailstream renewal: 14% rise, cap is 5%', 'Mon 09:21', 'REQ-1039'],
-  ['KW', 'Finance approval due Monday', 'REQ-1036 · Karen Wu has not replied yet', 'Wed 12:40', 'REQ-1036'],
+  ['RV', 'Finance approval due Monday', 'REQ-1036 · Rahul Verma has not replied yet', 'Wed 12:40', 'REQ-1036'],
   ['S', 'New request from Jira', 'REQ-1035 · Office cleaning contract renewal', 'Sat 11:20', 'REQ-1035'],
   ['PV', 'Harbor asked for a 12% fuel cap', 'REQ-1037 · Harbor Logistics: add two delivery lanes', 'Mon 08:40', 'REQ-1037'],
   ['AL', 'Draft sent to Priya to negotiate', 'REQ-1042 · Onboard Pixel & Pine as spring launch agency', 'Wed 16:00', 'REQ-1042']
@@ -2224,7 +2277,7 @@ function tside() {
   const nv = (k, ic, label, ct = '', bd = '') => `<button class="nv${on(k) ? ' on' : ''}" data-tnav="${k}">${ic}<span>${label}</span>${ct !== '' ? `<span class="ct">${ct}</span>` : ''}${bd ? `<span class="bdn">${bd}</span>` : ''}</button>`;
   const open = st.order.filter(id => isOpen(T(id))).length, unread = allNotes().map(noteView).filter(v => !v.read).length;
   return `<nav class="tside v29" aria-label="Sirion"><div class="lab">Main menu</div>${nv('intake', I.inbox, 'Intake', open)}${nv('reports', OI.report, 'Reporting')}${nv('contracts', OI.repo, 'Contract repository')}${nv('notifs', I.bell, 'Notifications', '', unread || '')}
-    <div class="me">${avp('AM')}<span><b>Arjun Mehta</b><br><span>Legal operations, IBM Legal</span></span></div></nav>`;
+    <div class="me">${avp('AM')}<span><b>Arjun Mehta</b><br><span>Legal operations, Kovalo Legal</span></span></div></nav>`;
 }
 
 /* ---------- intake: list + preview ---------- */
@@ -2253,7 +2306,7 @@ function fmenu(k) {
 }
 function intake() {
   const fb = k => { const v = st.f[k], lab = FILT[k][0], cur = FILT[k][1].find(o => o[0] === v); return `<span class="fwrap"><button class="fbtn${v !== 'all' ? ' set' : ''}" data-fm="${k}" aria-haspopup="menu" aria-expanded="${st.fm === k}">${v !== 'all' ? cur[1] : lab}${OI.chev}</button>${st.fm === k ? fmenu(k) : ''}</span>`; };
-  return `<div class="hv"><div class="hvh"><div><h1>Contract intake</h1><div class="hvsub">Every contract request to IBM Legal, whichever channel it came from</div></div>
+  return `<div class="hv"><div class="hvh"><div><h1>Contract intake</h1><div class="hvsub">Every contract request to Kovalo Legal, whichever channel it came from</div></div>
     <div class="hvtools"><label class="hvq">${I.search}<input id="hvq" type="search" placeholder="Search requests" value="${st.q.replace(/"/g, '&quot;')}" aria-label="Search requests"></label>${fb('status')}${fb('chan')}${fb('law')}</div></div>
     <div class="qtbl" aria-label="Contract requests"><div class="qr qh" aria-hidden="true"><span>Key</span><span>Request</span><span>Owner</span><span>Channel</span><span>Lawyer</span><span>Status</span><span>Waiting</span><span>Due</span></div><div class="qbody">${qBody()}</div></div></div>`;
 }
@@ -2290,17 +2343,17 @@ function emailCard(t, m, sel) {
     ${m.att ? `<div class="ecf">${m.att.map(fileChip).join('')}</div>` : ''}</div>`;
 }
 function readView(t, m) {
-  const from = m.f === 'S' ? 'Sirion AI &lt;contract-intake@ibm.com&gt;' : `${name(m.f)} &lt;${PPL[m.f] ? PPL[m.f][2] : ''}&gt;`;
+  const from = m.f === 'S' ? 'Sirion AI &lt;contract-intake@kovalo.com&gt;' : `${name(m.f)} &lt;${PPL[m.f] ? PPL[m.f][2] : ''}&gt;`;
   const note = {ok:'Sirion AI logged this as an approval.', cond:'Sirion AI logged this approval and its condition.', chg:'Sirion AI logged this as a change request and added it to Contract review.', cap:`Sirion AI created ${t.id} from this ${CH[t.src][0] === 'Outlook' ? 'email' : CH[t.src][0] + ' message'}.`}[m.tag];
   return `<div class="osubj">${m.subj}</div>${note ? `<div class="snote2">${av('S', true)}<span>${note}</span></div>` : ''}
     <div class="om"><div class="omh">${oav(m.f === 'S' ? 'S' : m.f, m.f === 'S')}<div class="omw"><div><b>${from}</b></div><div class="omto">To: ${m.to}${m.cc ? `; Cc: ${m.cc}` : ''}</div></div><div class="oma"><div class="omd">${m.tm}</div></div></div>
-    ${m.att ? `<div class="ecf" style="margin:0 0 10px">${m.att.map(fileChip).join('')}</div>` : ''}<div class="omb">${m.body}</div></div>
+    ${m.att ? `<div class="ecf" style="margin:0 0 10px">${m.att.map(fileChip).join('')}</div>` : ''}<div class="omb">${m.body}${m.k === 'ack' && PPL[t.who] ? `<div class="trkl"><button class="pri sm2" data-act="track" data-id="${t.id}">Track ${t.id}</button><span class="sm faint">The link ${PPL[t.who][0].split(' ')[0]} gets in this email</span></div>` : ''}</div></div>
     <div class="rbar"><button data-act="reply">${OI.reply}Reply</button><button data-act="replyall">${OI.replyall}Reply all</button><button data-act="fwd">${OI.fwd}Forward</button></div>`;
 }
 function composer(t, d) {
   const to = d.toLabel || who2(d.to), L = t.lawyer || 'Arjun Mehta';
   return `<div class="compose oc v29c"><div class="ocbar"><button class="osend" data-act="send">${OI.sent}Send</button><button class="odisc dbtn" data-act="discard">Discard</button>${d.label ? `<span class="aidr">${av('S', true)}${d.label}</span>` : ''}</div>
-    <div class="ocr"><span class="lbl box">From</span><span class="rcp">${avp(lawIni(t), 'sm')}IBM Legal &lt;contract-intake@ibm.com&gt; · for ${L}</span></div>
+    <div class="ocr"><span class="lbl box">From</span><span class="rcp">${avp(lawIni(t), 'sm')}Kovalo Legal &lt;contract-intake@kovalo.com&gt; · for ${L}</span></div>
     <div class="ocr"><span class="lbl box">To</span><span class="rcp">${d.to && !d.toLabel ? avp(d.to, 'sm') : ''}${to}</span></div>
     <div class="ocsub" contenteditable="true" id="csub" aria-label="Subject">${d.subj}</div><div class="ocbody" contenteditable="true" id="cbody" aria-label="Message">${d.body}</div></div>`;
 }
@@ -2312,7 +2365,7 @@ function draftFor(t) {
   const names = A.map(a => a[1].split(' ')[0]).join(', ').replace(/, ([^,]*)$/, ' and $1');
   const ask = a => (typeof d.asks === 'object' && d.asks[a[0]]) || ASK[a[0]] || 'review and approve';
   return Object.assign({}, d, {toLabel:A.map(a => `${a[1]} (${a[2]} team)`).join('; ') || 'Nobody: every approver was removed',
-    body:`Hi ${names || 'team'},<br><br>${d.intro}${ul(d.facts)}<b>What we need from ${A.length > 1 ? 'each of you' : 'you'}:</b>${ul(A.map(a => `<b>${a[1].split(' ')[0]}:</b> ${ask(a)}`))}Reply <b>Approve</b>, or reply with questions, by ${d.due}.<br><br>${L}<br>IBM Legal · sent with Sirion`});
+    body:`Hi ${names || 'team'},<br><br>${d.intro}${ul(d.facts)}<b>What we need from ${A.length > 1 ? 'each of you' : 'you'}:</b>${ul(A.map(a => `<b>${a[1].split(' ')[0]}:</b> ${ask(a)}`))}Reply <b>Approve</b>, or reply with questions, by ${d.due}.<br><br>${L}<br>Kovalo Legal · sent with Sirion`});
 }
 function emailsTab(t) {
   const L = t.emails, P = st.pane[t.id] || {}, D = draftFor(t);
@@ -2325,11 +2378,11 @@ function emailsTab(t) {
     <div class="sug"><div><div class="sul">Where it stands</div><ul>${t.sum[0].map(x => `<li>${x}</li>`).join('')}</ul></div><div class="sun"><div class="sul">Next step</div><p>${t.sum[1]}</p>${D && mode !== 'draft' ? `<button class="pri sm2" data-act="opendraft">Open the draft</button>` : ''}</div></div></div>
     <div class="ea"><div class="elist"><div class="olh2"><b>Email chain</b><span class="efil">${FIL.map(f => `<button class="xtab${st.efilt === f[0] ? ' on' : ''}" data-efilt="${f[0]}">${f[1]} <span class="faint">${filt[f[0]].length}</span></button>`).join('')}</span></div>
       <div class="ecs">${show.map(m => emailCard(t, m, mode === 'read' && m.k === sel.k)).join('') || '<div class="empty" style="min-height:100px">Nothing here.</div>'}</div></div>
-    <div class="eread olkr"><div class="olkbar">${OI.mail}<span>Outlook · IBM Legal</span><span class="faint">contract-intake@ibm.com</span><button class="newm" data-act="newmail">${OI.newm}New email</button></div><div class="olkin">${right}</div></div></div>`;
+    <div class="eread olkr"><div class="olkbar">${OI.mail}<span>Outlook · Kovalo Legal</span><span class="faint">contract-intake@kovalo.com</span><button class="newm" data-act="newmail">${OI.newm}New email</button></div><div class="olkin">${right}</div></div></div>`;
 }
 const noteAv = s => { if (/^Sirion AI/.test(s)) return av('S', true); const k = Object.keys(PPL).find(k => s.startsWith(PPL[k][0])); return k ? avp(k, 'sm') : `<span class="okd">${OI.check}</span>`; };
 function reviewTab(t) {
-  const R = t.review, open = /Google/.test(R.meta) ? 'Open in Google Docs' : /Word/.test(R.meta) ? 'Open in Word' : 'Open PDF';
+  const R = t.review, open = /Word/.test(R.meta) ? 'Open in Word' : 'Open PDF';
   const TL = R.timeline || t.approvals.map(a => [a[0], a[2] + ' team', a[1], [{green:'d', amber:'n', red:'x'}[a[4][0]] || '', a[4][1]]]);
   const strip = TL.length ? `<div class="apj" style="grid-template-columns:repeat(${TL.length},minmax(0,1fr))">${TL.map(a => `<div class="${a[3][0]}">${avp(a[0])}<div><b>${a[1]}</b><span class="sm faint">${a[2]}</span><span class="st2">${a[3][1]}</span></div></div>`).join('')}</div>` : '';
   return `${strip}<div class="rvsplit"><div class="rvchg"><div class="fh"><h3>Changes and flags</h3><span class="faint sm">${R.changes.length ? R.changes.length + ' on this agreement' : 'None'}</span></div>
@@ -2351,7 +2404,7 @@ function reqPage() {
   const tabs = [['details', 'Details'], ['emails', `Emails &amp; actions ${D ? '<span class="nbad">1</span>' : `<span class="faint">${t.emails.length}</span>`}`], ['review', 'Contract review'], ['tracking', 'Tracking']];
   const body = tab === 'details' ? `<div class="dwrap">${journey(t)}<div class="dsplit">${detailsCard(t)}<div class="dcol">${pendingBlock(t)}${nextSteps(t)}</div></div></div>` : tab === 'emails' ? emailsTab(t) : tab === 'review' ? reviewTab(t) : trackingTab(t);
   return `<div class="xreq"><div class="xrh"><div class="crumb"><button class="link" data-tnav="intake">Contract intake</button> / ${t.id}</div>
-    <div class="trow"><h1>${t.t}</h1>${pill(...t.status)}<span style="margin-left:auto;display:flex;gap:8px">${t.lawyer ? `<span class="pp sm">${avp(LAWYER_INI[t.lawyer], 'sm')}${t.lawyer}</span>` : `<button class="asg" data-act="asgopen" data-id="${t.id}">Assign a lawyer</button>`}<button class="ghost" data-act="contact" data-id="${t.id}">${OI.mail} Message ${ownerName(t).split(' ')[0]}</button></span></div>
+    <div class="trow"><h1>${t.t}</h1>${pill(...t.status)}<span style="margin-left:auto;display:flex;gap:8px">${t.lawyer ? `<span class="pp sm">${avp(LAWYER_INI[t.lawyer], 'sm')}${t.lawyer}</span>` : `<button class="asg" data-act="asgopen" data-id="${t.id}">Assign a lawyer</button>`}<button class="ghost" data-act="track" data-id="${t.id}" title="What the requester sees">Requester view</button><button class="ghost" data-act="contact" data-id="${t.id}">${OI.mail} Message ${ownerName(t).split(' ')[0]}</button></span></div>
     <div class="xtabs">${tabs.map(x => `<button class="${tab === x[0] ? 'on' : ''}" data-rtab="${x[0]}">${x[1]}</button>`).join('')}</div></div>
     <div class="xmainc eamode">${body}</div></div>`;
 }
@@ -2369,16 +2422,16 @@ function repoPage() {
     ['CleanPro office cleaning', 'CleanPro Services', 'Services', 'Tom Hughes', '$134,000', '31 Dec 2026', ['red', 'Renews 1 Jan · REQ-1035']],
     ['Canvasly team plan', 'Canvasly', 'Order form', 'Leo Park', '$18,400', '12 Dec 2026', ['red', 'Auto-renews in 20 days']]
   ];
-  return `<div class="xin repo"><div class="xhead"><div><h1 class="serif">Contract repository</h1><div class="mute">Every signed and in-flight supplier contract, with owner, value and renewal date captured at intake</div></div><span style="display:flex;gap:8px"><button class="chip" data-act="na" data-what="Export" title="Not part of this prototype">Export</button></span></div>
-    <div class="rkpi"><div><b>128</b><span>Active contracts</span></div><div><b>$18.4M</b><span>Annual contract value</span></div><div><b>9</b><span>Renewing in 90 days</span></div><div><b>2</b><span>Auto-renew without review</span></div></div>
+  return `<div class="xin repo"><div class="xhead"><div><h1 class="serif">Contract repository</h1><div class="mute">Supplier contracts captured through intake since launch, with owner, value and renewal date. The rest of the ~2,500 suppliers are added as their contracts renew or change.</div></div><span style="display:flex;gap:8px"><button class="chip" data-act="na" data-what="Export" title="Not part of this prototype">Export</button></span></div>
+    <div class="rkpi"><div><b>128</b><span>Active contracts, since launch</span></div><div><b>$18.4M</b><span>Annual contract value</span></div><div><b>9</b><span>Renewing in 90 days</span></div><div><b>2</b><span>Auto-renew without review</span></div></div>
     <div class="xtbl rtbl"><div class="xtr h"><span>Contract</span><span>Counterparty</span><span>Type</span><span>Owner</span><span>Value a year</span><span>Ends</span><span>Status</span></div>
     ${C.map(c => `<div class="xtr"><span class="sum">${c[0]}</span><span>${c[1]}</span><span>${c[2]}</span><span class="person">${avp(ini(c[3]), 'sm')}${c[3]}</span><span>${c[4]}</span><span>${c[5]}</span><span>${pill(...c[6])}</span></div>`).join('')}</div></div>`;
 }
 const RW = ['28 Sep', '5 Oct', '12 Oct', '19 Oct', '26 Oct', '2 Nov', '9 Nov', '16 Nov'];
 const RM = [
+  {k:'ns', l:'On-time intake coverage', v:60, pv:48, pts:1, f:x => Math.round(x) + '%', s:[46, 48, 50, 52, 55, 57, 59, 60], sub:'29 of 48 contracts · target 80%', ns:1},
   {k:'recv', l:'Requests received', v:42, pv:34, f:x => String(Math.round(x)), s:[7, 9, 8, 10, 9, 11, 12, 10]},
   {k:'done', l:'Ready to negotiate', v:35, pv:27, f:x => String(Math.round(x)), s:[5, 7, 7, 8, 8, 9, 10, 8], sub:'83% of requests'},
-  {k:'ontime', l:'Processed on time', v:79, pv:65, f:x => Math.round(x) + '%', s:[61, 64, 66, 70, 74, 78, 81, 83]},
   {k:'appr', l:'Median approval time', v:2.0, pv:3.1, f:x => x.toFixed(1) + ' days', s:[3.4, 3.1, 3.0, 2.8, 2.4, 2.1, 1.9, 1.8], lowGood:1}
 ];
 function lineChart(m, W = 900) {
@@ -2412,10 +2465,10 @@ function hbars() {
     <div class="hn"><em></em>2-day target. Privacy and Business are over it: their reviews start late because requests reach them late.</div></div>`;
 }
 function reportPage() {
-  const m = RM.find(x => x.k === st.rmet) || RM[3];
-  const chg = x => { const c = (x.v - x.pv) / x.pv * 100, good = x.lowGood ? c < 0 : c > 0; return `<span class="dl ${good ? 'up' : 'down'}">${c > 0 ? '▲' : '▼'} ${Math.abs(c).toFixed(0)}%</span>`; };
+  const m = RM.find(x => x.k === st.rmet) || RM[0];
+  const chg = x => { const c = x.pts ? x.v - x.pv : (x.v - x.pv) / x.pv * 100, good = x.lowGood ? c < 0 : c > 0; return `<span class="dl ${good ? 'up' : 'down'}">${c > 0 ? '▲' : '▼'} ${Math.abs(c).toFixed(0)}${x.pts ? ' pts' : '%'}</span>`; };
   return `<div class="xin rep"><div class="xhead"><div><h1 class="serif">Reporting</h1><div class="mute">Contract intake, last 30 days compared with the 30 days before</div></div><span style="display:flex;gap:8px"><button class="chip" data-act="na" data-what="Changing the period" title="Not part of this prototype">Last 30 days</button><button class="chip" data-act="na" data-what="Filtering by team" title="Not part of this prototype">All teams</button></span></div>
-    <div class="rg"><section class="rw w1" aria-label="Intake trend"><div class="kt">${RM.map(x => `<button class="km${x === m ? ' on' : ''}" data-act="rmet" data-k="${x.k}" aria-pressed="${x === m}"><span class="kl">${x.l}${chg(x)}</span><b>${x.f(x.v)}</b><span class="kf">${x.sub ? x.sub + ' · ' : ''}from ${x.f(x.pv)}</span></button>`).join('')}</div>
+    <div class="rg"><section class="rw w1" aria-label="Intake trend"><div class="kt">${RM.map(x => `<button class="km${x === m ? ' on' : ''}${x.ns ? ' ns' : ''}" data-act="rmet" data-k="${x.k}" aria-pressed="${x === m}"><span class="kl"><span>${x.ns ? '<i class="nst">North star</i>' : ''}${x.l}</span>${chg(x)}</span><b>${x.f(x.v)}</b><span class="kf">${x.sub ? x.sub + ' · ' : ''}from ${x.f(x.pv)}</span></button>`).join('')}</div>
       <div class="lcw"><div class="lct">${m.l}, by week</div>${lineChart(m)}</div></section>
       <section class="rw"><h3>Requests by channel</h3>${donut()}</section><section class="rw"><h3>Approvals by team</h3>${diverging()}</section><section class="rw"><h3>Average time to approve</h3>${hbars()}</section></div></div>`;
 }
@@ -2425,7 +2478,7 @@ function notifPage() {
 }
 function apop() {
   const t = T(st.asg);
-  return `<div class="apop" id="apop" role="dialog" aria-label="Assign a lawyer"><div class="aph"><b>Assign ${t.id}</b><span class="faint sm">IBM Legal · commercial</span></div><div class="alh"><span>Lawyer</span><span>This week</span></div>
+  return `<div class="apop" id="apop" role="dialog" aria-label="Assign a lawyer"><div class="aph"><b>Assign ${t.id}</b><span class="faint sm">Kovalo Legal · commercial</span></div><div class="alh"><span>Lawyer</span><span>This week</span></div>
     ${LT.map(l => `<div class="arow2">${avp(LAWYER_INI[l.n])}<div><b>${l.n}</b><div class="tps">${l.types.map(x => `<span>${x}</span>`).join('')}</div></div><div class="wk"><b>${l.open}</b> open<br><b>${l.due}</b> due</div>${btn('Assign', 'assign', '', `data-n="${l.n}" aria-label="Assign ${t.id} to ${l.n}"`)}</div>`).join('')}</div>`;
 }
 function placeApop() {
@@ -2437,6 +2490,7 @@ function placeApop() {
 }
 function teamApp() {
   const s = st.scr;
+  if (s === 'track') return `<div class="tapp v29 trkapp">${trackPage()}</div>`;
   const main = s === 'request' ? reqPage() : s === 'contracts' ? repoPage() : s === 'reports' ? reportPage() : s === 'notifs' ? notifPage() : intake();
   return `<div class="tapp v29">${tside()}<div class="tmain">${main}</div>${st.asg ? apop() : ''}${st.toast ? `<div class="toast" role="status">${st.toast}</div>` : ''}</div>`;
 }
@@ -2448,7 +2502,7 @@ function render() {
   const es = document.querySelector('#win .ecs .ec.on'), ecs = document.querySelector('#win .ecs');
   if (ecs) ecs.scrollTop = es ? es.offsetTop - 12 : ecs.scrollHeight;
   const lw = document.querySelector('#win .lcw svg');
-  if (lw) { const m = RM.find(x => x.k === st.rmet) || RM[3]; lw.outerHTML = lineChart(m, Math.max(400, lw.parentElement.clientWidth)); }
+  if (lw) { const m = RM.find(x => x.k === st.rmet) || RM[0]; lw.outerHTML = lineChart(m, Math.max(400, lw.parentElement.clientWidth)); }
   placeApop(); renderCtl(); saveDemo(); pushNav();
   if (st.toast) { clearTimeout(toastT); toastT = setTimeout(() => { st.toast = null; const e = document.querySelector('#win .toast'); if (e) e.remove(); saveDemo(); }, 3200); }
 }
@@ -2461,7 +2515,7 @@ function pushNav() {
   lastNav = k;
 }
 window.addEventListener('popstate', e => { if (e.state && e.state.p29 && e.state.p29.length === 4) { [st.view, st.scr, st.reqId, st.rtab] = e.state.p29; lastNav = JSON.stringify(e.state.p29); st.asg = null; st.fm = null; render(); } });
-function renderCtl() { const c = $('pctl'); if (c) c.innerHTML = `<button class="tourbtn" data-act="reset" title="Put every request back to where it started">Reset demo</button>`; }
+function renderCtl() { const c = $('pctl'); if (c) c.innerHTML = `${st.scr === 'track' ? '' : `<button class="tourbtn" data-act="track" title="See the request the way the requester sees it">${st.scr === 'request' ? 'Requester view' : 'View as Priya'}</button>`}<button class="tourbtn" data-act="reset" title="Put every request back to where it started">Reset demo</button>`; }
 function stop() {}
 let pop = null;
 function closePop() { if (pop) { pop.remove(); pop = null; } }
@@ -2481,7 +2535,7 @@ function doSend() {
   if (!d) return;
   const cb = $('cbody'), cs = $('csub');
   const body = cb ? cb.innerHTML : d.body, subj = cs ? cs.innerHTML : d.subj;
-  const bad = !plain(body).replace(/(IBM Legal · sent with Sirion|Ana Lopez|David Kim|Ritu Shah|Marcus Bell|Arjun Mehta|Hi [A-Za-z ,]+,)/g, '').trim() ? 'Write a message before sending.' : !plain(subj).trim() ? 'Add a subject before sending.' : '';
+  const bad = !plain(body).replace(/(Kovalo Legal · sent with Sirion|Ana Lopez|David Kim|Ritu Shah|Marcus Bell|Arjun Mehta|Hi [A-Za-z ,]+,)/g, '').trim() ? 'Write a message before sending.' : !plain(subj).trim() ? 'Add a subject before sending.' : '';
   if (bad) { const box = document.querySelector('#win .v29c'); let er = box && box.querySelector('.cerr'); if (box && !er) { er = document.createElement('div'); er.className = 'cerr'; er.setAttribute('role', 'alert'); box.querySelector('.ocbar').after(er); } if (er) er.textContent = bad + ' Nothing was sent.'; (bad.includes('subject') ? cs : cb) && (bad.includes('subject') ? cs : cb).focus(); return; }
   const k = 'n' + Date.now();
   t.emails.push({k, f:lawIni(t), to:d.toLabel || who2(d.to), cc:d.cc && !d.toLabel ? who2(d.cc) : '', subj, tm:now(), tag:'out', body});
@@ -2504,11 +2558,11 @@ function doSend() {
 function startCompose(kind) {
   const t = T(st.reqId), P = st.pane[t.id] || {}, L = t.emails, m = L.find(x => x.k === P.k) || L[L.length - 1];
   let d;
-  if (kind === 'new' || kind === 'contact') d = {to:t.who, subj:`${plain(t.t)} (${t.id})`, body:`Hi ${ownerName(t).split(' ')[0]},<br><br><br>` + `<br>${t.lawyer || 'Arjun Mehta'}<br>IBM Legal · sent with Sirion`};
+  if (kind === 'new' || kind === 'contact') d = {to:t.who, subj:`${plain(t.t)} (${t.id})`, body:`Hi ${ownerName(t).split(' ')[0]},<br><br><br>` + `<br>${t.lawyer || 'Arjun Mehta'}<br>Kovalo Legal · sent with Sirion`};
   else {
     const mine = fromLegal(m) && m.f !== 'S', other = mine ? null : fromLegal(m) ? (t.reply ? t.reply.to : t.who) : m.f;
     const first = mine ? m.to.split(';').map(x => x.trim().split(' ')[0]).join(', ').replace(/, ([^,]*)$/, ' and $1') : name(other).split(' ')[0];
-    const base = !mine && t.reply && t.reply.to === other ? t.reply : {to:other, toLabel:mine ? m.to : undefined, subj:'Re: ' + m.subj.replace(/^Re: /, ''), body:`Hi ${first},<br><br>${mine ? 'Following up on my email below.' : 'Thanks for this.'} <br><br>${t.lawyer || 'Arjun Mehta'}<br>IBM Legal · sent with Sirion`};
+    const base = !mine && t.reply && t.reply.to === other ? t.reply : {to:other, toLabel:mine ? m.to : undefined, subj:'Re: ' + m.subj.replace(/^Re: /, ''), body:`Hi ${first},<br><br>${mine ? 'Following up on my email below.' : 'Thanks for this.'} <br><br>${t.lawyer || 'Arjun Mehta'}<br>Kovalo Legal · sent with Sirion`};
     d = Object.assign({}, base, {label:'Reply drafted by Sirion AI'});
     if (kind === 'fwd') d = {to:t.who, subj:'FW: ' + m.subj.replace(/^Re: /, ''), body:`Hi ${ownerName(t).split(' ')[0]},<br><br>Forwarding this for your information.<br><br>${t.lawyer || 'Arjun Mehta'}<div class="oquote"><b>From:</b> ${name(m.f)}<br><b>Sent:</b> ${m.tm}<br><br>${m.body}</div>`};
     if (kind === 'replyall' && m.cc) d.toLabel = `${who2(d.to)}; ${m.cc}`;
@@ -2581,12 +2635,13 @@ window.__go = g => {
   st.view = 'sirion';
   if (id === 'outlook') { st.scr = 'intake'; return render(); }
   if (id === 'intake') { st.scr = 'intake'; return render(); }
+  if (id === 'track') { st.trkFrom = ['intake', st.reqId, 'details']; st.trk = tab || 'REQ-1042'; st.scr = 'track'; return render(); }
   if (T(id)) return openReq(id, tab || 'details');
 };
 window.__st = st; window.__render = () => render();
 
 /* ================= v29: Legal's Outlook, the Sirion panel, live Sirion AI ================= */
-Object.assign(PPL, {MC:['Maya Chen', 'Social team', 'maya.chen@ibm.com'], LP:['Leo Park', 'Growth', 'leo.park@ibm.com'], BO:['Budget owner', 'Business team', 'budget.owner@ibm.com']});
+Object.assign(PPL, {MC:['Maya Chen', 'Social team', 'maya.chen@kovalo.com'], LP:['Leo Park', 'Growth', 'leo.park@kovalo.com'], BO:['Budget owner', 'Business team', 'budget.owner@kovalo.com']});
 Object.assign(AVC, {MC:'#498205', BO:'#6b7280'});
 const svo = (d, s = 16) => `<svg width="${s}" height="${s}" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${d}</svg>`;
 const OL = {
@@ -2609,44 +2664,44 @@ const oavx = (i, sys) => sys ? `<span class="oav sys" aria-hidden="true"><img sr
 /* ---------- the inbox ---------- */
 const LOOMLY_BODY = "Hi Arjun,<br><br>The Social team would like to start using Loomly to schedule posts and reply to comments on our Instagram, Facebook and LinkedIn accounts. It's 25 seats on the annual plan for $14,400 a year (order form attached), on Loomly's standard online terms.<br><br>Loomly will connect to our brand social accounts and keep a copy of customer comments and messages so we can reply from one place. Jordan Blake, their Account Executive, will sign the order form.<br><br>We'd like to start on 1 December for 12 months. Who needs to sign off?<br><br>Thanks,<br>Maya";
 const MBOX = {
-  loomly:{from:'MC', who:'Maya Chen &lt;maya.chen@ibm.com&gt;', subj:'Loomly for the Social team: who needs to sign off?', tm:'Mon 16/11/2026 13:12', time:'13:12', att:[['Loomly order form.pdf', 'pdf', '96 KB'], ['Loomly terms of service.pdf', 'pdf', '310 KB']], body:LOOMLY_BODY, req:true},
-  pixel:{from:'PN', who:'Priya Nair &lt;priya.nair@ibm.com&gt;', subj:'Pixel &amp; Pine agency agreement: please start the process', tm:'Mon 16/11/2026 09:04', time:'09:04', att:[['MSA v1.docx', 'docx', '84 KB'], ['SOW v2.docx', 'docx', '46 KB'], ['Rate card.pdf', 'pdf', '212 KB']], body:() => TK['REQ-1042'].emails[0].body, linked:'REQ-1042'},
-  har:{from:'DK', who:'David Kim &lt;david.kim@ibm.com&gt;', subj:'Re: Harbor Logistics amendment 3', tm:'Mon 16/11/2026 08:40', time:'08:40', body:'Harbor sent their markup on amendment 3. One open point on the fuel surcharge cap. Sirion filed it to REQ-1037.<br><br>David', linked:'REQ-1037'},
-  wk:{from:'S', who:'Sirion AI &lt;contract-intake@ibm.com&gt;', subj:'Weekly intake report', tm:'Mon 16/11/2026 08:00', time:'08:00', body:'42 requests came in last month: 18 by email, 9 Teams, 6 Slack, 4 Jira and 5 from renewal dates. 3 are waiting for a lawyer.<br><br>Sirion AI, for IBM Legal'},
-  can:{from:'LP', who:'Leo Park &lt;leo.park@ibm.com&gt;', subj:'Canvasly team plan', tm:'Fri 13/11/2026 16:20', time:'Fri 13/11', body:'We only need 40 seats on the Canvasly team plan, not 50. Can you check the renewal terms before it renews on 12 Dec?<br><br>Leo', old:true}
+  loomly:{from:'MC', who:'Maya Chen &lt;maya.chen@kovalo.com&gt;', subj:'Loomly for the Social team: who needs to sign off?', tm:'Mon 16/11/2026 13:12', time:'13:12', att:[['Loomly order form.pdf', 'pdf', '96 KB'], ['Loomly terms of service.pdf', 'pdf', '310 KB']], body:LOOMLY_BODY, req:true},
+  pixel:{from:'PN', who:'Priya Nair &lt;priya.nair@kovalo.com&gt;', subj:'Pixel &amp; Pine agency agreement: please start the process', tm:'Mon 16/11/2026 09:04', time:'09:04', att:[['MSA v1.docx', 'docx', '84 KB'], ['SOW v2.docx', 'docx', '46 KB'], ['Rate card.pdf', 'pdf', '212 KB']], body:() => TK['REQ-1042'].emails[0].body, linked:'REQ-1042'},
+  har:{from:'DK', who:'David Kim &lt;david.kim@kovalo.com&gt;', subj:'Re: Harbor Logistics amendment 3', tm:'Mon 16/11/2026 08:40', time:'08:40', body:'Harbor sent their markup on amendment 3. One open point on the fuel surcharge cap. Sirion filed it to REQ-1037.<br><br>David', linked:'REQ-1037'},
+  wk:{from:'S', who:'Sirion AI &lt;contract-intake@kovalo.com&gt;', subj:'Weekly intake report', tm:'Mon 16/11/2026 08:00', time:'08:00', body:'42 requests came in last month: 18 by email, 9 Teams, 6 Slack, 4 Jira and 5 from renewal dates. 3 are waiting for a lawyer.<br><br>Sirion AI, for Kovalo Legal'},
+  can:{from:'LP', who:'Leo Park &lt;leo.park@kovalo.com&gt;', subj:'Canvasly team plan', tm:'Fri 13/11/2026 16:20', time:'Fri 13/11', body:'We only need 40 seats on the Canvasly team plan, not 50. Can you check the renewal terms before it renews on 12 Dec?<br><br>Leo', old:true}
 };
 const MORDER = ['loomly', 'pixel', 'har', 'wk', 'can'];
 const mbody = m => typeof m.body === 'function' ? m.body() : m.body;
-const LOOMLY_FIELDS = {title:'Loomly social media tool for the Social team', summary:"Maya Chen (Social team) wants Loomly, a social media scheduling tool, for 25 seats at $14,400 a year from 1 Dec, on Loomly's online terms. It connects to IBM's brand social accounts and keeps customer comments.",
-  requester:'Maya Chen', team:'Social team', email:'maya.chen@ibm.com', supplier:'Loomly Inc.', agreement:"Loomly's online terms of service, plus an order form", value_text:'$14,400 a year (25 seats, annual plan)', value_usd:14400,
-  signatory:'Jordan Blake, Account Executive', start_term:'1 Dec 2026 for 12 months', budget:null, personal:true, personal_text:'Customer comments and messages from IBM social accounts', access:true, access_text:'Connects to IBM brand accounts on Instagram, Facebook and LinkedIn',
+const LOOMLY_FIELDS = {title:'Loomly social media tool for the Social team', summary:"Maya Chen (Social team) wants Loomly, a social media scheduling tool, for 25 seats at $14,400 a year from 1 Dec, on Loomly's online terms. It connects to Kovalo's brand social accounts and keeps customer comments.",
+  requester:'Maya Chen', team:'Social team', email:'maya.chen@kovalo.com', supplier:'Loomly Inc.', agreement:"Loomly's online terms of service, plus an order form", value_text:'$14,400 a year (25 seats, annual plan)', value_usd:14400,
+  signatory:'Jordan Blake, Account Executive', start_term:'1 Dec 2026 for 12 months', budget:null, personal:true, personal_text:'Customer comments and messages from Kovalo social accounts', access:true, access_text:'Connects to Kovalo brand accounts on Instagram, Facebook and LinkedIn',
   flags:["Loomly's terms don't say how long it keeps customer comments and messages.", "The terms renew automatically each year unless 30 days' notice is given (terms, section 8)."], questions:['Which budget will Loomly come from?'],
   quotes:{supplier:'start using Loomly to schedule posts and reply to comments', value_text:"It's 25 seats on the annual plan for $14,400 a year", agreement:"on Loomly's standard online terms", signatory:'Jordan Blake, their Account Executive, will sign the order form', start_term:"We'd like to start on 1 December for 12 months", personal_text:'keep a copy of customer comments and messages', access_text:'connect to our brand social accounts'},
   files:[['Loomly order form.pdf', 'pdf'], ['Loomly terms of service.pdf', 'pdf']], due:'Nov 30', src:'Outlook', from:'MC', mailTm:'Mon 16 Nov, 13:12', mailSubj:MBOX.loomly.subj, mailBody:LOOMLY_BODY};
 const SUMS = {
-  loomly:'<ul class="sum2"><li><b>Maya Chen (Social team)</b> wants Loomly to schedule posts and reply to comments on IBM\'s brand social accounts.</li><li><b>Cost:</b> 25 seats, $14,400 a year, from 1 Dec for 12 months, on Loomly\'s online terms.</li><li><b>Data:</b> Loomly keeps copies of customer comments and messages.</li><li><b>Asks:</b> who needs to sign off.</li></ul>',
+  loomly:'<ul class="sum2"><li><b>Maya Chen (Social team)</b> wants Loomly to schedule posts and reply to comments on Kovalo\'s brand social accounts.</li><li><b>Cost:</b> 25 seats, $14,400 a year, from 1 Dec for 12 months, on Loomly\'s online terms.</li><li><b>Data:</b> Loomly keeps copies of customer comments and messages.</li><li><b>Asks:</b> who needs to sign off.</li></ul>',
   pixel:"<ul class='sum2'><li><b>Priya Nair (Marketing)</b> wants Pixel &amp; Pine as the spring launch agency from 1 Dec.</li><li>MSA, SOW v2 and rate card attached; 10% pilot discount agreed for Dec–Feb.</li><li>Already in Sirion as <b>REQ-1042</b>.</li></ul>",
   har:"<ul class='sum2'><li>David says Harbor marked up amendment 3. One open point: the fuel surcharge cap.</li><li>Already filed to <b>REQ-1037</b>.</li></ul>",
   wk:"<ul class='sum2'><li>42 requests last month, most by email.</li><li>3 requests are waiting for a lawyer.</li></ul>",
   can:"<ul class='sum2'><li>Leo wants 40 seats instead of 50 on the Canvasly team plan.</li><li>It renews on 12 Dec. No request exists yet.</li></ul>"
 };
 const PRESETS = {
-  loomly:[["Is this on IBM's paper or Loomly's?", "Loomly's. Maya says it's on \"Loomly's standard online terms\", so a lawyer will need to review the terms rather than use IBM's template."],
-    ['What data will Loomly hold?', 'Copies of customer comments and messages from IBM\'s brand social accounts, and access to those accounts. The email says Loomly will "keep a copy of customer comments and messages". So Privacy and Security should review it.'],
-    ['Who needs to approve?', "Under IBM's playbook: the budget owner (Social sits in Marketing, so Vikram Rao), Privacy (customer messages are stored) and Security (it connects to IBM's social accounts). Finance isn't needed: $14,400 is under $100,000."]],
+  loomly:[["Is this on Kovalo's paper or Loomly's?", "Loomly's. Maya says it's on \"Loomly's standard online terms\", so a lawyer will need to review the terms rather than use Kovalo's template."],
+    ['What data will Loomly hold?', 'Copies of customer comments and messages from Kovalo\'s brand social accounts, and access to those accounts. The email says Loomly will "keep a copy of customer comments and messages". So Privacy and Security should review it.'],
+    ['Who needs to approve?', "Under Kovalo's playbook: the budget owner (Social sits in Marketing, so Vikram Rao), Privacy (customer messages are stored) and Security (it connects to Kovalo's social accounts). Finance isn't needed: $14,400 is under $100,000."]],
   pixel:[['What will this cost in year one?', '$210,600: three months at $16,200, then nine at $18,000.']]
 };
 
 /* ---------- playbook check, shared by the recorded and the live result ---------- */
 const PB = [['requester', 'Requester'], ['supplier', 'Supplier'], ['agreement', 'Agreement'], ['value_text', 'Value'], ['signatory', 'Signatory'], ['start_term', 'Start, term'], ['budget', 'Budget'], ['personal_text', 'Personal data']];
-const KNOWN = {northstar:'existing supplier, MSA in force', mailstream:'existing supplier', harbor:'existing supplier', brightforce:'existing supplier', cleanpro:'existing supplier', canvasly:'existing supplier', fernway:'existing supplier, NDA in force', 'pixel':'new to IBM'};
-const supplierStatus = s => { const k = Object.keys(KNOWN).find(k => (s || '').toLowerCase().includes(k)); return k ? KNOWN[k] : 'new to IBM'; };
+const KNOWN = {northstar:'existing supplier, MSA in force', mailstream:'existing supplier', harbor:'existing supplier', brightforce:'existing supplier', cleanpro:'existing supplier', canvasly:'existing supplier', fernway:'existing supplier, NDA in force', 'pixel':'new to Kovalo'};
+const supplierStatus = s => { const k = Object.keys(KNOWN).find(k => (s || '').toLowerCase().includes(k)); return k ? KNOWN[k] : 'new to Kovalo'; };
 const fval = (f, k) => k === 'requester' ? (f.requester ? `${f.requester}${f.team ? ' · ' + f.team : ''}` : null) : k === 'supplier' ? (f.supplier ? `${f.supplier} · ${supplierStatus(f.supplier)}` : null) : k === 'personal_text' ? (f.personal ? f.personal_text || 'Yes' : f.personal === false ? 'None found' : null) : f[k];
 const esc2 = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;'}[c]));
 function checkView(f, live, foot) {
   const found = PB.filter(([k]) => fval(f, k)).length;
   const rows = PB.map(([k, l]) => { const v = fval(f, k), q = f.quotes && f.quotes[k]; return `<div class="sfr"><span class="k"><span class="${v ? 'ok' : 'miss'}">${v ? '' : 'Missing'}</span> ${l}</span><div><div>${v ? (live ? esc2(v) : v) : '<span class="mtx">Not in the email</span>'}</div>${q ? `<div class="sq">"${live ? esc2(q) : q}"</div>` : ''}</div></div>`; }).join('');
-  return `<div class="scheck2"><div class="sch">Checked against IBM's intake playbook for new requests${live ? ' <span class="livetag">Read just now by Sirion AI</span>' : ''}</div><div class="sok ${found < 8 ? 'part' : ''}">${found} of 8 items found</div><div class="sfields">${rows}</div>
+  return `<div class="scheck2"><div class="sch">Checked against Kovalo's intake playbook for new requests${live ? ' <span class="livetag">Read just now by Sirion AI</span>' : ''}</div><div class="sok ${found < 8 ? 'part' : ''}">${found} of 8 items found</div><div class="sfields">${rows}</div>
     ${(f.flags || []).length ? `<div class="snote"><b>Flags</b><ul>${f.flags.map(x => `<li>${live ? esc2(x) : x}</li>`).join('')}</ul></div>` : ''}
     ${(f.questions || []).length ? `<div class="snote q"><b>Sirion AI will ask ${f.requester ? esc2(f.requester.split(' ')[0]) : 'the requester'}</b><ul>${f.questions.map(x => `<li>${live ? esc2(x) : x}</li>`).join('')}</ul></div>` : ''}${foot}</div>`;
 }
@@ -2658,10 +2713,10 @@ function routeFor(f) {
   A.push([bo, PPL[bo][0], 'Business', f.budget ? `Budget owner for ${esc2(f.budget)}` : `Budget owner for the ${esc2(f.team || 'requesting')} team`, ['grey', 'Not sent']]);
   if ((f.value_usd || 0) > 100000) A.push(['RV', 'Rahul Verma', 'Finance', 'Spend over $100,000', ['grey', 'Not sent']]);
   if (f.personal) A.push(['MI', 'Meera Iyer', 'Privacy', 'Personal data: ' + esc2(f.personal_text || 'yes'), ['grey', 'Not sent']]);
-  if (f.access) A.push(['DS', 'Dev Shah', 'Security', 'Access to IBM systems or accounts', ['grey', 'Not sent']]);
+  if (f.access) A.push(['DS', 'Dev Shah', 'Security', 'Access to Kovalo systems or accounts', ['grey', 'Not sent']]);
   return A;
 }
-const ASK = {VR:'approve the spend as budget owner', HC:'approve the spend as budget owner', MR:'approve the spend as budget owner', NK:'approve the spend as budget owner', BO:'approve the spend as budget owner', RV:'confirm the budget covers it', MI:'review the personal data and tell us whether we need a data processing agreement', DS:"review the access it needs to IBM's systems and accounts"};
+const ASK = {VR:'approve the spend as budget owner', HC:'approve the spend as budget owner', MR:'approve the spend as budget owner', NK:'approve the spend as budget owner', BO:'approve the spend as budget owner', RV:'confirm the budget covers it', MI:'review the personal data and tell us whether we need a data processing agreement', DS:"review the access it needs to Kovalo's systems and accounts"};
 function nextId() { return 'REQ-' + (Math.max(...Object.keys(st.T).map(k => +k.slice(4))) + 1); }
 function makeTicket(f, live) {
   const id = nextId(), L = x => live ? esc2(x) : x, first = (f.requester || 'the requester').split(' ')[0];
@@ -2678,9 +2733,9 @@ function makeTicket(f, live) {
     files:f.files || [], waiting:['AM', 'Arjun Mehta', 'Legal operations', 'Assign a lawyer', 'Since today'], approvals:route, noappr:(f.value_usd || 0) <= 100000 ? 'Finance not needed: under $100,000.' : '',
     steps:[['Assign a lawyer', 0], [`Send approval requests to ${route.length} team${route.length > 1 ? 's' : ''}`, 0], ['Collect replies and agree any changes', 0], [`Agree terms with ${L(f.supplier || 'the supplier')}`, 0]], after:'Then: signature, then tracking',
     emails:[{k:'q', f:who, to:'Arjun Mehta (Legal)', subj, tm, tag:'cap', att:f.files, body:f.mailBody || L(f.raw || '').replace(/\n/g, '<br>')},
-      {k:'ack', f:'S', to:`${ppl[0]} (${ppl[1]})`, subj:`${id} opened: ${L(f.title)}`, tm:now(), tag:'sys', body:`Hi ${L(first)},<br><br>IBM Legal has opened a request for you: <b>${id} · ${L(f.title)}</b>. Your email${(f.files || []).length ? ' and its files are' : ' is'} attached.${qs.length ? `<br><br>To keep it moving, could you reply with:${ul(qs)}` : ''}<br><br>A lawyer will pick it up today.<br><br>Sirion AI, for IBM Legal`}],
+      {k:'ack', f:'S', to:`${ppl[0]} (${ppl[1]})`, subj:`${id} opened: ${L(f.title)}`, tm:now(), tag:'sys', body:`Hi ${L(first)},<br><br>Kovalo Legal has opened a request for you: <b>${id} · ${L(f.title)}</b>. Your email${(f.files || []).length ? ' and its files are' : ' is'} attached.${qs.length ? `<br><br>To keep it moving, could you reply with:${ul(qs)}` : ''}<br><br>A lawyer will pick it up today.<br><br>Sirion AI, for Kovalo Legal`}],
     sum:[[L(f.summary || ''), `Checked against the playbook: ${found} of 8 items found${missing.length ? ` (missing: ${missing.join(', ')})` : ''}.`, `Sirion AI suggests approval from ${route.map(a => a[2]).join(', ')}.`], 'Assign a lawyer. The approval requests are drafted and ready.'],
-    review:{doc:(f.files && f.files[0] ? f.files[0][0] : 'Request email'), meta:'Checked by Sirion AI against IBM\'s playbook', note:'Sirion AI checks supplier terms against the playbook before a lawyer reads them.', changes:(f.flags || []).map(x => ({t:'Flag', by:'S', what:L(x), st:['amber', 'For the lawyer']})), nochg:'Sirion AI found nothing outside the playbook.',
+    review:{doc:(f.files && f.files[0] ? f.files[0][0] : 'Request email'), meta:'Checked by Sirion AI against Kovalo\'s playbook', note:'Sirion AI checks supplier terms against the playbook before a lawyer reads them.', changes:(f.flags || []).map(x => ({t:'Flag', by:'S', what:L(x), st:['amber', 'For the lawyer']})), nochg:'Sirion AI found nothing outside the playbook.',
       clauses:Object.entries(f.quotes || {}).slice(0, 4).map(([k, q]) => [`Email · ${(PB.find(p => p[0] === k) || [k, k === 'access_text' ? 'System access' : k])[1]}`, `"${L(q)}"`, 'Sirion AI read this from the email'])},
     journey:[['Request created', 'Today · Outlook', 'd'], ['Lawyer assigned', 'Waiting', 'n'], ['Approvals', route.map(a => a[2]).join(', '), ''], ['Terms agreed', `With ${L(f.supplier || 'the supplier')}`, ''], ['Ready', 'To negotiate', '']],
     hist:[[who, 'emailed Legal', tm], ['AM', `created ${id} in Outlook`, now(), 'Not started']], now:['Arjun Mehta · assign a lawyer', 'Since today'],
@@ -2713,7 +2768,7 @@ function readLocally(raw) {
   const start = firstMatch(body, [/((?:from|starting|start on|start from|begin(?:ning)? on)\s+(?:\d{1,2}\s+)?(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|June?|July?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)(?:\s+\d{1,2})?(?:,?\s+\d{4})?(?:,?\s+for\s+(?:\w+)\s+(?:years?|months?))?)/i, /(for\s+(?:one|two|three|\d+)\s+(?:years?|months?))/i]);
   const signer = firstMatch(body, [/([A-Z][a-z]+ [A-Z][a-z]+)(?:,\s*([^,.\n]{3,40}),)?\s+will sign/, /([A-Z][a-z]+ [A-Z][a-z]+), their ([^,.\n]{3,40}), will sign/, /signed by ([A-Z][a-z]+ [A-Z][a-z]+)/]);
   const budget = firstMatch(body, [/\b([A-Z]{2,5}-\d{3,5})\b/, /budget(?: code| line)? (?:is |of )?([A-Z][\w-]+)/]);
-  const agr = firstMatch(body, [/((?:their|our|IBM's|the supplier's|[A-Z]\w+'s) (?:own |standard |online )*(?:MSA|terms(?: of service)?|order form|SOW|NDA|contract|agreement)[^.,\n]{0,30})/i, /\b(MSA|SOW|NDA|order form|master services agreement)\b/i]);
+  const agr = firstMatch(body, [/((?:their|our|Kovalo's|the supplier's|[A-Z]\w+'s) (?:own |standard |online )*(?:MSA|terms(?: of service)?|order form|SOW|NDA|contract|agreement)[^.,\n]{0,30})/i, /\b(MSA|SOW|NDA|order form|master services agreement)\b/i]);
   const pd = firstMatch(body, [/([^.\n]*\b(?:customer|personal|employee|patient|candidate)s?\b[^.\n]*\b(?:data|emails?|names|comments|messages|details|records|list|addresses)\b[^.\n]*)/i, /([^.\n]*\bpersonal data\b[^.\n]*)/i]);
   const ac = firstMatch(body, [/([^.\n]*\b(?:access to|login|log in|admin rights|connect to|integrat\w+ with|badge access|VPN|single sign-on|SSO)\b[^.\n]*)/i]);
   const isReq = !!(supplier || val || /contract|agreement|sign|renew|order form|MSA|SOW|NDA|supplier|vendor|quote/i.test(body));
@@ -2738,7 +2793,7 @@ function answerLocally(q, raw) {
   const syn = {cost:['$', 'price', 'fee', 'year', 'month'], price:['$', 'cost', 'fee'], data:['customer', 'personal', 'comments', 'messages', 'email', 'list'], dpa:['customer', 'personal', 'data'], sign:['sign', 'signatory'], start:['start', 'from', 'january', 'december'], approve:['sign off', 'approve']};
   const terms = keys.concat(...keys.map(k => syn[k] || []));
   const scored = S.map(s => [terms.reduce((n, k) => n + (s.toLowerCase().includes(k) ? 1 : 0), 0), s]).filter(x => x[0] > 0).sort((a, b) => b[0] - a[0]).slice(0, 2).map(x => x[1]);
-  if (/approv|sign off|who needs/i.test(q)) { const f = readLocally(raw); if (f.fields) { const r = routeFor(f.fields); return `Under IBM's playbook: ${r.map(a => `${a[2]} (${a[3].replace(/<[^>]+>/g, '')})`).join('; ')}.${(f.fields.value_usd || 0) <= 100000 ? ' Finance isn\'t needed: under $100,000.' : ''}`; } }
+  if (/approv|sign off|who needs/i.test(q)) { const f = readLocally(raw); if (f.fields) { const r = routeFor(f.fields); return `Under Kovalo's playbook: ${r.map(a => `${a[2]} (${a[3].replace(/<[^>]+>/g, '')})`).join('; ')}.${(f.fields.value_usd || 0) <= 100000 ? ' Finance isn\'t needed: under $100,000.' : ''}`; } }
   if (!scored.length) return "The email doesn't say. Sirion AI can ask the requester when it opens the request.";
   return `From the email: ${scored.map(s => `"${s}"`).join(' ')}`;
 }
@@ -2764,7 +2819,7 @@ function paneHome(id) {
   const lk = mailLinked(id), t = lk && st.T[lk];
   const rel = t ? `<div class="srel">${av('S', true)}<div><b>This email is ${t.id}</b><div style="margin-top:4px">${pill(...t.status)}</div><button class="link sm" data-act="opensir" data-id="${t.id}">Open in Sirion</button></div></div>` : '';
   return `${rel}<button class="sask" data-act="pane" data-p="ask"><span>Ask Sirion AI about this email</span><span class="sinb"><span class="sarr">Ask</span></span></button>
-    <div class="sopts2"><button class="sopt2" data-act="pane" data-p="sum"><b>Summarize email</b><span>Summarize this email and its thread</span></button><button class="sopt2" data-act="pane" data-p="chk"><b>Analyze email attachments</b><span>Check the email and files against IBM's intake playbook</span></button></div>`;
+    <div class="sopts2"><button class="sopt2" data-act="pane" data-p="sum"><b>Summarize email</b><span>Summarize this email and its thread</span></button><button class="sopt2" data-act="pane" data-p="chk"><b>Analyze email attachments</b><span>Check the email and files against Kovalo's intake playbook</span></button></div>`;
 }
 function paneChk(id) {
   const m = MBOX[id], lk = mailLinked(id);
@@ -2784,7 +2839,7 @@ function paneAsk(id) {
   return `<h3>Ask Sirion AI</h3><div class="sm mute" style="margin-bottom:8px">About this email and its files</div>${P.map((q, k) => `<button class="sopt" data-act="askp" data-k="${k}">${q[0]}</button>`).join('')}
     ${ans}`;
 }
-const SAMPLE = "From: Omar Haddad <omar.haddad@ibm.com> (Warehouse operations)\nSubject: Forklift maintenance contract for the Pune warehouse\n\nHi Legal,\n\nWe want Swiftlift Services to maintain the 14 forklifts at the Pune warehouse from 1 January, for two years. Their quote is $118,000 a year and they've sent their own MSA.\n\nTheir technicians will need badge access to the site and a login to our Maximo maintenance system to log jobs. Ravi Menon, their operations director, will sign.\n\nCan you start whatever is needed?\n\nThanks,\nOmar";
+const SAMPLE = "From: Omar Haddad <omar.haddad@kovalo.com> (Warehouse operations)\nSubject: Forklift maintenance contract for the Pune warehouse\n\nHi Legal,\n\nWe want Swiftlift Services to maintain the 14 forklifts at the Pune warehouse from 1 January, for two years. Their quote is $118,000 a year and they've sent their own MSA.\n\nTheir technicians will need badge access to the site and a login to our Maximo maintenance system to log jobs. Ravi Menon, their operations director, will sign.\n\nCan you start whatever is needed?\n\nThanks,\nOmar";
 function paneNew() {
   const P = st.paste || {};
   let res = '';
@@ -2794,7 +2849,7 @@ function paneNew() {
   else if (P.state === 'done' && P.f) res = checkView(P.f, true, P.created ? `<div class="sdone">${P.created} created and added to the intake queue.</div><button class="link" data-act="opensir" data-id="${P.created}">Open ${P.created} in Sirion</button>` : `<div class="sfoot"><button class="pri" data-act="create" data-src="live">Create request in Sirion</button><button data-act="manual">Edit the fields first</button></div>`);
   else if (P.state === 'manual') res = manualForm();
   const err = P.inerr ? `<div class="aierr" role="alert">${P.inerr}</div>` : '';
-  return `<h3>Check a new email</h3><div class="sm mute" style="margin-bottom:8px">Paste a request email, including who it's from. Sirion AI checks it against IBM's playbook and suggests the approvers.</div>
+  return `<h3>Check a new email</h3><div class="sm mute" style="margin-bottom:8px">Paste a request email, including who it's from. Sirion AI checks it against Kovalo's playbook and suggests the approvers.</div>
     <textarea id="pastein" class="aiin" rows="7" maxlength="8000" placeholder="From: …\nSubject: …\n\nHi Legal, …">${esc2(P.text || '')}</textarea>${err}
     <div class="aibtns"><button class="pri" data-act="newgo"${P.state === 'loading' ? ' disabled' : ''}>Check against the playbook</button><button data-act="sample">Use a sample email</button></div>${res}`;
 }
@@ -2802,7 +2857,7 @@ function manualForm() {
   const f = (st.paste && st.paste.f) || {};
   const inp = (k, l, ph) => `<label class="mf"><span>${l}</span><input data-mf="${k}" value="${esc2(f[k] || '')}" placeholder="${ph}"></label>`;
   return `<div class="mform"><b>Request details</b><span class="sm faint">Fill in what you know. Requester, supplier and value are needed.</span>${inp('title', 'Request title', 'e.g. Forklift maintenance for Pune')}${inp('requester', 'Requester', 'Name')}${inp('team', 'Team', 'e.g. Warehouse operations')}${inp('supplier', 'Supplier', 'Company name')}${inp('value_text', 'Value', 'e.g. $118,000 a year')}${inp('start_term', 'Start, term', 'e.g. 1 Jan 2027, 2 years')}${inp('signatory', 'Signatory', 'Name and role')}
-    <label class="mf chk"><input type="checkbox" data-mf="personal"${f.personal ? ' checked' : ''}> Shares personal data</label><label class="mf chk"><input type="checkbox" data-mf="access"${f.access ? ' checked' : ''}> Needs access to IBM systems</label>
+    <label class="mf chk"><input type="checkbox" data-mf="personal"${f.personal ? ' checked' : ''}> Shares personal data</label><label class="mf chk"><input type="checkbox" data-mf="access"${f.access ? ' checked' : ''}> Needs access to Kovalo systems</label>
     <div id="mferr" class="aierr" role="alert" hidden></div><div class="aibtns"><button class="pri" data-act="mcreate">Create request in Sirion</button></div></div>`;
 }
 function spane29() {
@@ -2822,7 +2877,7 @@ function outlookApp() {
     <div class="omain"><div class="orail"><span class="on">${OL.mail}</span><span>${OL.cal}</span><span>${OL.people}</span><span>${OL.todo}</span><span>${OL.apps}</span></div>
     <div class="owork"><div class="orib"><div class="otabs"><span class="oib">${OL.menu}</span><span>File</span><span class="on">Home</span><span>View</span><span>Help</span></div>
       <div class="otools"><span class="onew">${OL.newm}<span>New email</span></span><span class="otb">${OL.del}<span>Delete</span></span><span class="otb">${OL.arch}<span>Archive</span></span><i class="sep"></i><span class="otb">${OL.reply}</span><span class="otb">${OL.replyall}</span><span class="otb">${OL.fwd}</span><i class="sep"></i><button class="otb sirrib on" data-act="pane" data-p="home"><img src="sirion-mark.png" alt=""><span>Sirion</span></button></div></div>
-    <div class="opanes wp"><div class="ofold"><div class="ofh">${OL.chev}arjun.mehta@ibm.com</div>${fo(OL.inbox, 'Inbox', unread, ' on')}${fo(OL.draft, 'Drafts')}${fo(OL.sent, 'Sent Items')}${fo(OL.trash, 'Deleted Items')}${fo(OL.arch, 'Archive')}${fo(OL.folder, 'Contract requests')}</div>
+    <div class="opanes wp"><div class="ofold"><div class="ofh">${OL.chev}arjun.mehta@kovalo.com</div>${fo(OL.inbox, 'Inbox', unread, ' on')}${fo(OL.draft, 'Drafts')}${fo(OL.sent, 'Sent Items')}${fo(OL.trash, 'Deleted Items')}${fo(OL.arch, 'Archive')}${fo(OL.folder, 'Contract requests')}</div>
     <div class="olist" aria-label="Inbox"><div class="olh"><span class="on">Focused</span><span>Other</span><span class="olhi">${OL.filter}${OL.sort}</span></div><div class="ogrp">${OL.chev}Today</div>${MORDER.filter(k => !MBOX[k].old).map(li).join('')}<div class="ogrp">${OL.chev}Earlier</div>${MORDER.filter(k => MBOX[k].old).map(li).join('')}</div>
     <div class="oread">${read}</div>${spane29()}</div></div></div>${st.toast ? `<div class="toast" role="status">${st.toast}</div>` : ''}</div>`;
 }
@@ -2878,6 +2933,68 @@ Object.assign(ACT, {
     st.paste = Object.assign({}, st.paste, {state:'done', f}); createFrom(f, true, 'live');
   },
   toview: el => { st.view = el.dataset.v; st.asg = null; render(); }
+});
+/* ---------- requester tracking page: read-only, opened from Sirion AI's confirmation email ---------- */
+const TIER = {
+  'REQ-1042':['high', "the agency's own contract, and customer data is shared"], 'REQ-1041':['low', "Kovalo's NDA template"],
+  'REQ-1040':['low', 'a new SOW under an existing contract'], 'REQ-1039':['low', 'a renewal on existing terms'],
+  'REQ-1038':['high', "the supplier's own terms, and visitor data is collected"], 'REQ-1037':['medium', 'spend over $100,000'],
+  'REQ-1036':['medium', 'a price change on an existing contract'], 'REQ-1035':['medium', 'spend over $100,000']
+};
+const TDAYS = {low:2, medium:5, high:10};
+const MON = {Jan:0, Feb:1, Mar:2, Apr:3, May:4, Jun:5, Jul:6, Aug:7, Sep:8, Oct:9, Nov:10, Dec:11};
+const pDate = s => { s = String(s || ''); let m = s.match(/(\d{1,2}) (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)/), d, mo; if (m) { d = +m[1]; mo = MON[m[2]]; } else { m = s.match(/(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (\d{1,2})/); if (!m) return null; d = +m[2]; mo = MON[m[1]]; } return new Date(mo < 6 ? 2027 : 2026, mo, d); };
+const fDate = d => d.toLocaleDateString('en-GB', {weekday:'short', day:'numeric', month:'short'}).replace(',', '');
+const addWork = (d, n) => { const x = new Date(d); if (isNaN(x)) return null; while (n > 0) { x.setDate(x.getDate() + 1); if (x.getDay() % 6) n--; } return x; };
+const RLAB = {'Request created':'Request received', 'Lawyer assigned':'Lawyer assigned', 'Draft updated':'Draft ready for you', 'Negotiation':'You negotiate with the supplier', 'Reviews':'Reviews', 'Terms agreed':'Terms agreed', 'Ready':'Ready to go'};
+const READY = /negotiation|counterparty|signature|signed/i;
+function trkStatus(t) {
+  const W = t.waiting, first = n => n.split(' ')[0];
+  if (!W) return `Done: ${t.done || t.status[1]}`;
+  if (W[0] === t.who) return `Waiting on you: ${W[3].charAt(0).toLowerCase() + W[3].slice(1)}`;
+  const ap = t.approvals.find(a => a[0] === W[0] && !a[5]);
+  if (ap) { const asked = [...t.emails].reverse().find(m => m.tag === 'out' && m.to.includes(ap[1])); const by = asked && (asked.subj.match(/by ([A-Z][a-z]{2} \d{1,2} [A-Z][a-z]{2})/) || [])[1];
+    return `Waiting on ${ap[2]}: ${first(ap[1])}${asked ? `, asked ${asked.tm.split(',')[0]}` : ''}${by ? `, due ${by}` : ''}`; }
+  if (!t.lawyer) return 'With Legal: a lawyer is being assigned';
+  return `With Legal: ${t.lawyer}, ${W[3].charAt(0).toLowerCase() + W[3].slice(1)}`;
+}
+function trkApSt(a) {
+  const s = a[4][1];
+  if (a[4][0] === 'green') return ['green', s];
+  if (/not sent/i.test(s)) return ['grey', 'Not asked yet'];
+  if (/sent/i.test(s)) return ['amber', 'Asked, waiting for a reply'];
+  return [a[4][0], s];
+}
+function trackPage() {
+  const t = T(st.trk) || T('REQ-1042'), R = PPL[t.who] || ['the requester', '', ''], first = R[0].split(' ')[0];
+  const tier = TIER[t.id] || ['medium', 'a standard supplier contract'], days = TDAYS[tier[0]];
+  const created = pDate(t.created), target = created ? addWork(created, days) : null, need = pDate(t.due);
+  const isReady = READY.test(t.status[1]);
+  const readyAt = isReady ? (t.hist.find(h => h[3] && READY.test(h[3])) || [])[2] : null;
+  const risk = !isReady && target && need && target > need;
+  const J = Object.assign({}, t, {journey:t.journey.map(j => [RLAB[j[0]] || j[0], j[1], j[2]])});
+  const W = t.waiting, mine = W && W[0] === t.who;
+  const law = t.lawyer ? [t.lawyer, (PPL[LAWYER_INI[t.lawyer]] || [])[2] || ''] : null;
+  const A = t.approvals.filter(a => !a[5]);
+  return `<div class="trk"><div class="trkbar"><span class="trkb">${av('S', true)}<b>Kovalo Legal</b><span>Request tracker</span></span><span class="trkv">Viewing as ${R[0]} (requester) · read-only · opened from the link in Sirion AI's email</span><button class="ghost sm2" data-act="trkback">Back to Legal's view</button></div>
+  <div class="trkin">
+    <div class="trkh"><div class="faint sm">${t.id}</div><h1>${t.t}</h1><div class="trks">${pill(...t.status)}<b>${trkStatus(t)}</b></div></div>
+    ${journey(J)}
+    <div class="trkg">
+      <section class="trkc trkneed${mine ? ' on' : ''}"><h3>What we need from you</h3>${mine ? `<p><b>${W[3]}</b></p><p class="sm mute">${W[4]}. Reply to the email from Sirion AI or from ${t.lawyer || 'Legal'}. No login needed.</p>` : `<p>Nothing right now, ${first}. We'll email you if we need anything.</p>`}</section>
+      <section class="trkc"><h3>Key dates</h3><div class="trkd"><span>You need it by</span><b>${need ? fDate(need) : '—'}</b></div>
+        <div class="trkd"><span>${isReady ? 'Ready to negotiate' : 'Expected ready by'}</span><b>${isReady ? (readyAt || 'Yes') : target ? fDate(target) : '—'}</b></div>
+        <p class="sm mute">Target: ${days} working days, because this is ${tier[1]} (${tier[0]} risk).</p>
+        ${risk ? `<div class="trkrisk">At risk: the expected date is after the date you need it. ${t.lawyer || 'Legal'} will tell you what can be done.</div>` : isReady ? '' : `<div class="trkok">On track</div>`}</section>
+      <section class="trkc"><h3>Approvals</h3>${A.length ? A.map(a => `<div class="trka">${avp(a[0], 'sm')}<div><b>${a[2]} team</b><span class="sm faint">${a[1]}</span></div>${pill(...trkApSt(a))}</div>`).join('') : `<p class="sm mute">${t.noappr || 'No approvals needed.'}</p>`}</section>
+      <section class="trkc"><h3>Contact</h3>${law ? `<div class="trka">${avp(LAWYER_INI[t.lawyer], 'sm')}<div><b>${law[0]}</b><span class="sm faint">Your lawyer · ${law[1]}</span></div></div>` : `<p class="sm">Arjun Mehta (Legal operations) is assigning a lawyer.</p>`}<p class="sm mute">Reply to any email about ${t.id} to message Legal. Your reply is added to the request.</p></section>
+    </div>
+    <p class="trkf sm faint">${first} sees status, dates, approvals and what's needed from them. Legal's notes, the contract review and other requests stay with Legal.</p>
+  </div></div>`;
+}
+Object.assign(ACT, {
+  track: el => { st.trkFrom = [st.scr, st.reqId, st.rtab]; st.trk = el.dataset.id || (st.scr === 'request' ? st.reqId : 'REQ-1042'); st.scr = 'track'; st.asg = null; render(); },
+  trkback: () => { const f = st.trkFrom || ['request', st.trk, 'details']; [st.scr, st.reqId, st.rtab] = f; if (st.scr === 'track') st.scr = 'intake'; render(); }
 });
 /* ---------------- other pages ---------------- */
 document.addEventListener('click', e => { const a = $('asm'); if (!a) return; if (e.target.closest('[data-asm]')) a.hidden = !a.hidden; else if (!e.target.closest('#asm')) a.hidden = true; });
@@ -2960,11 +3077,7 @@ function runBand() {
   band.classList.remove('in'); void band.offsetWidth;
   band.querySelectorAll('.sb').forEach((s, i) => {
     const to = +s.dataset.to, dec = +s.dataset.dec, v = s.querySelector('.sbv');
-    if (still) { v.textContent = to.toFixed(dec); return; }
-    v.textContent = (0).toFixed(dec);
-    const t0 = performance.now() + i * 90, D = 1600;
-    const step = now => { const p = Math.min(1, Math.max(0, (now - t0) / D)), e = 1 - Math.pow(1 - p, 4); v.textContent = (to * e).toFixed(dec); if (p < 1) requestAnimationFrame(step); };
-    requestAnimationFrame(step);
+    v.textContent = to.toFixed(dec);
   });
   requestAnimationFrame(() => band.classList.add('in'));
 }
