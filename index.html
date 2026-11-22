@@ -1591,6 +1591,13 @@ body:not(.appmode) #pctl{display:none!important}
 .fp-pr .fbig>div{padding:8px 0}
 .conn3{font-size:12.5px}.conn3>div{padding:7px 10px}.conn3 .link{font-size:12.5px;padding:0;color:#0e5e69;text-decoration:underline;background:none;border:0;cursor:pointer}
 .fp-pr.two{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr)!important}
+.ivw{border:1px solid #e4e4e7;border-radius:4px;background:#fff;padding:10px 12px;margin-bottom:10px}
+.ivh{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline}.ivh b{font-size:14.5px}.ivh span{font-size:12.5px;color:#52525b}
+.ivw blockquote{margin:6px 0;padding:0 0 0 10px;border-left:3px solid #0e5e69;font-size:13px;line-height:1.45;color:#27272a}
+.ivt{margin:4px 0 0;font-size:12.5px;color:#3f3f46}
+.fsub2{font-size:13.5px;font-weight:600;margin:12px 0 6px}
+.ivs{display:grid;border-top:1px solid #e4e4e7}.ivs>div{display:grid;grid-template-columns:150px minmax(0,1fr);gap:10px;padding:6px 0;border-bottom:1px solid #e4e4e7;font-size:12.5px;line-height:1.4}.ivs span{color:var(--t2)}
+.wtv video{max-width:min(100%,1040px)}
 </style>
 </head>
 <body>
@@ -1696,7 +1703,7 @@ body:not(.appmode) #pctl{display:none!important}
   </div>
 </div></section>
 
-<section data-view="problem" class="hidden"><div class="fp fp-pr two">
+<section data-view="problem" class="hidden"><div class="fp fp-pr">
   <div class="fcol">
     <h1>The problem</h1>
     <p class="flead">Intake runs on email, Teams and Slack. Requests arrive incomplete and scattered across inboxes. Legal spends its day chasing requesters for details and approvers for sign-off. Requesters can't see progress, so they chase Legal, or skip the process altogether.</p>
@@ -1719,7 +1726,26 @@ body:not(.appmode) #pctl{display:none!important}
   </div>
   <div class="fcol">
     <h2 class="fkr">How we know it's real</h2>
-    <h3 class="fsub">Secondary research</h3>
+    <h3 class="fsub">a) Primary research: interviews</h3>
+    <div class="ivw">
+      <div class="ivh"><b>Milind Agarwal</b><span>Lawyer &amp; Legal Manager, Xebia</span></div>
+      <blockquote>"Most requests come with incomplete information. We might receive an MSA or an SOW, but basic details like jurisdiction, scope, commercial terms or the purpose of the engagement may be missing. Legal then has to go back and forth with the requester before we can even begin the review."</blockquote>
+      <p class="ivt"><b>What this told us:</b> review can't start until someone collects the basics, and today that someone is Legal.</p>
+    </div>
+    <div class="ivw">
+      <div class="ivh"><b>Vanshita Agarwal</b><span>Lawyer, Delhi</span></div>
+      <blockquote>"Legal cannot validate everything independently. For example, Finance needs to validate the commercials and rate cards, while the business team needs to confirm the scope of work and deliverables. Coordinating with all these teams over separate emails makes the process quite cumbersome."</blockquote>
+      <p class="ivt"><b>What this told us:</b> the slow part is getting other teams to sign off, one email thread at a time.</p>
+    </div>
+    <h3 class="fsub2">Themes, and what we built for each</h3>
+    <div class="ivs">
+      <div><b>Details missing at the start</b><span>Sirion AI checks the email and files against the playbook and asks for what's missing in one email</span></div>
+      <div><b>Other teams must validate</b><span>Approval routing: one email per team with one clear ask, sent in parallel</span></div>
+      <div><b>Separate threads, no single record</b><span>Every reply is logged on the request; Legal follows up from Sirion, and the requester has a tracker</span></div>
+    </div>
+  </div>
+  <div class="fcol">
+    <h3 class="fsub">b) Secondary research</h3>
     <div class="fbig">
       <div><b>80%</b><span>of business professionals have zero or limited visibility into the status of a legal request.</span><a href="https://www.streamline.ai/2026-cost-of-legal-friction-benchmark-report" target="_blank" rel="noopener">Streamline, The True Cost of Legal Friction 2026 · 467 professionals</a></div>
       <div><b>41%</b><span>of in-house lawyers spend 3+ hours a day on back-and-forth with the business.</span><a href="https://legalleaders.lawvu.com/2024-in-house-legal-technology-report/" target="_blank" rel="noopener">LawVu and Perceptive, In-house Legal Technology Report 2024 · 300+ in-house legal</a></div>
@@ -1727,7 +1753,7 @@ body:not(.appmode) #pctl{display:none!important}
       <div><b>16%</b><span>of negotiated savings can be lost when people buy outside the process.</span><a href="https://get.coupa.com/rs/950-OLU-185/images/19-Maverick-Spend-Report.pdf" target="_blank" rel="noopener">The Hackett Group, Maverick spend study 2019</a></div>
       <div><b>30%</b><span>of confirmed data breaches involved a third party, double the year before. Supplier reviews at intake matter.</span><a href="https://www.verizon.com/about/news/2025-data-breach-investigations-report" target="_blank" rel="noopener">Verizon, Data Breach Investigations Report 2025 · 12,195 breaches</a></div>
     </div>
-    <p class="fvend">Streamline and LawVu sell legal intake software and ran or sponsored these surveys, so we treat their figures as directional.</p>
+    <p class="fvend">Streamline and LawVu sell legal intake software and ran or sponsored these surveys, which is why we also spoke to lawyers directly.</p>
   </div>
 </div></section>
 
