@@ -1539,6 +1539,14 @@ button:hover>.bl,.chip:hover>.bl,nav.menu a:hover>.bl,button:focus-visible>.bl{t
 @media (max-width:900px){.ivg{grid-template-columns:minmax(0,1fr)}}
 body:not(.appmode) #pctl{display:none!important}
 #win .oli.unread .r2 .sub{color:#0b5a9e}
+@media (min-width:1000px){.top .in{zoom:.8}}
+.fp-sh{grid-template-columns:minmax(0,.8fr) minmax(0,1.9fr)!important;row-gap:12px!important;column-gap:28px!important;padding-top:16px!important;padding-bottom:12px!important}
+.fp-sh .ftab>div>*{padding:6px 12px}.fp-sh .ftab.sht b small{margin-top:0}.fp-sh h2{margin-bottom:6px}
+.fp-sh .orb{height:296px;margin:-6px 0 22px}.fp-sh .shc{grid-column:1/-1}
+.fp-sh .shc .ftab>div{grid-template-columns:minmax(0,1fr) minmax(0,1.3fr) minmax(0,1.6fr)}
+.fp-sh .ftab.sht>div{grid-template-columns:minmax(170px,.8fr) minmax(0,1.25fr) minmax(0,1.25fr)}
+.fp-sh{grid-template-rows:max-content max-content!important;align-content:start!important}.fp-sh>.fcol{height:auto!important;max-height:none!important;overflow:visible!important;min-height:min-content!important}
+.fp-sh .orb .orbc{width:96px;height:96px}
 </style>
 </head>
 <body>
@@ -1616,6 +1624,7 @@ body:not(.appmode) #pctl{display:none!important}
     <h1>Stakeholders</h1>
     <p class="flead">Legal owns the intake queue, so Legal is the primary user. Everyone else sends requests to Legal or approves them, mostly over email.</p>
     <div class="orb" id="orb" role="img" aria-label="Stakeholder map: Legal at the centre, with the requester, business owner, Finance, Privacy, the supplier and Procurement around it"></div>
+
   </div>
   <div class="fcol">
     <h2>Who has a stake, and what they want</h2>
@@ -1629,6 +1638,8 @@ body:not(.appmode) #pctl{display:none!important}
       <div><b>Supplier<small>Sam, Pixel &amp; Pine</small></b><span>One set of questions, a fast signature and a purchase order</span><span>Asked for the same documents more than once</span></div>
       <div><b>Procurement<small>Outside this product</small></b><span>Know about new suppliers before anyone commits spend</span><span>Finds out after the business has agreed terms</span></div>
     </div>
+  </div>
+  <div class="fcol shc">
     <h2>Where priorities clash</h2>
     <div class="ftab">
       <div class="fh3"><span>Tension</span><span>Between</span><span>How Sirion handles it</span></div>
@@ -1685,7 +1696,7 @@ body:not(.appmode) #pctl{display:none!important}
     <h1>The solution: Sirion contract intake</h1>
     <p class="flead">Legal runs every supplier contract request from one queue, starting in the Outlook inbox where requests already arrive. Sirion AI reads the request, routes the approvals and keeps the record, so Legal stops chasing and the requester can see where things stand.</p>
     <div class="solflow"><span>Request email</span><i></i><span>Checked in Outlook</span><i></i><span>Intake queue</span><i></i><span>Approvals by email</span><i></i><span>Draft ready to negotiate</span></div>
-    <div class="sols"><div class="sol"><div class="sn">1</div><h2>Sirion add-in for Outlook</h2><p class="sl">Legal works from the inbox where requests already arrive.</p><ul><li>Summarize any email and its thread</li><li>Check the email and attachments against IBM's intake playbook (8 checks, each linked to its source)</li><li>Ask questions about the request, with sourced answers</li><li>Create the request in one click; the requester gets a request number by email</li></ul><button class="sgo" data-goto="outlook">Try it in Outlook</button></div><div class="sol"><div class="sn">2</div><h2>One intake queue</h2><p class="sl">Every request in one place, whichever channel it came from.</p><ul><li>Outlook, Teams, Slack, Jira and renewal dates in one Jira-style queue</li><li>Every status says who the request is waiting on</li><li>Assign a lawyer by their open work, deadlines and specialism</li></ul><button class="sgo" data-goto="intake">See the queue</button></div><div class="sol"><div class="sn">3</div><h2>Approval routing</h2><p class="sl">Sirion AI works out who must approve, and why.</p><ul><li>Rules from the playbook: budget owner, Finance above $100,000, Privacy when personal data is shared</li><li>One email per approver, drafted with a short brief and one clear ask</li><li>All approvals go out in parallel, not one after another</li></ul><button class="sgo" data-goto="REQ-1036:details">See the routing</button></div><div class="sol"><div class="sn">4</div><h2>Approvals by email</h2><p class="sl">Approvers reply from their own inbox. Nobody logs in to Sirion.</p><ul><li>Sirion AI reads each reply and logs it as an approval, a condition or a change</li><li>Legal replies and follows up from Sirion; every reply is on record</li><li>Agreed changes go into the draft, marked with who asked</li></ul><button class="sgo" data-goto="REQ-1042:emails">See the approvals</button></div><div class="sol"><div class="sn">5</div><h2>Tracking and reporting</h2><p class="sl">Everyone can see where a request stands, and Legal can see where intake slows down.</p><ul><li>A journey, a "Waiting on" block and a full history on every request</li><li>Every request ends in the contract repository with owner, value and renewal date</li><li>A reporting dashboard: volume, on-time rate and approval time by team</li></ul><button class="sgo" data-goto="REQ-1042:tracking">See tracking</button></div></div>
+    <div class="sols"><div class="sol"><div class="sn">1</div><h2>Sirion add-in for Outlook</h2><p class="sl">Legal works from the inbox where requests already arrive.</p><ul><li>Summarize any email and its thread</li><li>Check the email and attachments against IBM's intake playbook (8 checks, each linked to its source)</li><li>Ask questions about the request, with sourced answers</li><li>Create the request in one click; the requester gets a request number by email</li></ul><button class="sgo" data-goto="wt:8.4">Watch it in the walkthrough</button></div><div class="sol"><div class="sn">2</div><h2>One intake queue</h2><p class="sl">Every request in one place, whichever channel it came from.</p><ul><li>Outlook, Teams, Slack, Jira and renewal dates in one Jira-style queue</li><li>Every status says who the request is waiting on</li><li>Assign a lawyer by their open work, deadlines and specialism</li></ul><button class="sgo" data-goto="intake">See the queue</button></div><div class="sol"><div class="sn">3</div><h2>Approval routing</h2><p class="sl">Sirion AI works out who must approve, and why.</p><ul><li>Rules from the playbook: budget owner, Finance above $100,000, Privacy when personal data is shared</li><li>One email per approver, drafted with a short brief and one clear ask</li><li>All approvals go out in parallel, not one after another</li></ul><button class="sgo" data-goto="REQ-1036:details">See the routing</button></div><div class="sol"><div class="sn">4</div><h2>Approvals by email</h2><p class="sl">Approvers reply from their own inbox. Nobody logs in to Sirion.</p><ul><li>Sirion AI reads each reply and logs it as an approval, a condition or a change</li><li>Legal replies and follows up from Sirion; every reply is on record</li><li>Agreed changes go into the draft, marked with who asked</li></ul><button class="sgo" data-goto="REQ-1042:emails">See the approvals</button></div><div class="sol"><div class="sn">5</div><h2>Tracking and reporting</h2><p class="sl">Everyone can see where a request stands, and Legal can see where intake slows down.</p><ul><li>A journey, a "Waiting on" block and a full history on every request</li><li>Every request ends in the contract repository with owner, value and renewal date</li><li>A reporting dashboard: volume, on-time rate and approval time by team</li></ul><button class="sgo" data-goto="REQ-1042:tracking">See tracking</button></div></div>
     <div class="iva"><h2>How much Sirion AI does on its own</h2><p class="ivl">Sirion AI informs and prepares; people decide and send. Anything that commits IBM, or speaks for Legal, needs a person. A wrong extraction costs a minute to fix. A wrong commitment costs money.</p>
       <div class="ivg">
         <div><h3><span class="ivd a"></span>Does on its own</h3><ul><li>Reads every request email and its attachments</li><li>Checks them against the playbook and flags gaps and risks</li><li>Sends the requester their request number, and asks for what's missing</li><li>Logs each approver's reply as an approval, a condition or a change</li><li>Keeps the summary, status and history up to date</li></ul></div>
@@ -2180,9 +2191,9 @@ const LT = [
   {n:'Marcus Bell', r:'Counsel', open:3, due:0, types:['NDAs', 'Services']}
 ];
 const clone = o => JSON.parse(JSON.stringify(o));
-const ST0 = () => ({view:'outlook', mail:'loomly', pane0:'home', mf:{loomly:{read:0, req:null}}, order:ORDER29.slice(), notes:[], ppl:{}, src:{}, ask:null, paste:null, rmv:null, scr:'intake', sel:'REQ-1042', reqId:'REQ-1042', rtab:'details', T:clone(TK), q:'', fm:null, f:{status:'all', chan:'all', law:'all'}, pane:{}, ec:{}, efilt:'all', asg:null, toast:null, rmet:null, read:{}});
+const ST0 = () => ({view:'sirion', mail:'loomly', pane0:'home', mf:{loomly:{read:0, req:null}}, order:ORDER29.slice(), notes:[], ppl:{}, src:{}, ask:null, paste:null, rmv:null, scr:'intake', sel:'REQ-1042', reqId:'REQ-1042', rtab:'details', T:clone(TK), q:'', fm:null, f:{status:'all', chan:'all', law:'all'}, pane:{}, ec:{}, efilt:'all', asg:null, toast:null, rmet:null, read:{}});
 const st = ST0();
-const SAVEK = 'sirion-intake-v29c';
+const SAVEK = 'sirion-intake-v29d';
 try { const s = JSON.parse(localStorage.getItem(SAVEK) || 'null'); if (s && s.T) { Object.assign(st, s, {asg:null, fm:null, toast:null}); if (st.ask && st.ask.state === 'loading') st.ask = null; if (st.paste && st.paste.state === 'loading') st.paste.state = ''; Object.assign(PPL, st.ppl || {}); Object.assign(SRC, st.src || {}); } } catch (e) {}
 const saveDemo = () => { try { localStorage.setItem(SAVEK, JSON.stringify(st)); } catch (e) {} };
 const T = id => st.T[id];
@@ -2420,9 +2431,9 @@ function apop() {
 function placeApop() {
   const p = document.getElementById('apop'), a = st.asg && [...document.querySelectorAll(`#win [data-act=asgopen][data-id="${st.asg}"]`)].find(e => e.offsetParent);
   if (!p) return; if (!a) { p.style.left = '-9999px'; return; }
-  const r = a.getBoundingClientRect(), w = p.offsetWidth, h = p.offsetHeight;
-  p.style.left = Math.max(10, Math.min(r.right - w, innerWidth - w - 10)) + 'px';
-  p.style.top = (r.bottom + 6 + h > innerHeight - 8 ? Math.max(60, r.top - h - 6) : r.bottom + 6) + 'px';
+  const Z = parseFloat(getComputedStyle($('win')).zoom) || 1, r = a.getBoundingClientRect(), w = p.offsetWidth * Z, h = p.offsetHeight * Z;
+  p.style.left = Math.max(10, Math.min(r.right - w, innerWidth - w - 10)) / Z + 'px';
+  p.style.top = (r.bottom + 6 + h > innerHeight - 8 ? Math.max(60, r.top - h - 6) : r.bottom + 6) / Z + 'px';
 }
 function teamApp() {
   const s = st.scr;
@@ -2450,7 +2461,7 @@ function pushNav() {
   lastNav = k;
 }
 window.addEventListener('popstate', e => { if (e.state && e.state.p29 && e.state.p29.length === 4) { [st.view, st.scr, st.reqId, st.rtab] = e.state.p29; lastNav = JSON.stringify(e.state.p29); st.asg = null; st.fm = null; render(); } });
-function renderCtl() { const c = $('pctl'); if (c) c.innerHTML = `<span class="vsw" role="group" aria-label="Switch app"><button data-act="toview" data-v="outlook" aria-pressed="${st.view === 'outlook'}" class="${st.view === 'outlook' ? 'on' : ''}"><img src="logo-outlook.png" alt="">Legal's inbox</button><button data-act="toview" data-v="sirion" aria-pressed="${st.view === 'sirion'}" class="${st.view === 'sirion' ? 'on' : ''}"><img src="sirion-mark.png" alt="">Sirion</button></span><button class="tourbtn" data-act="reset" title="Put every request and email back to where it started">Reset demo</button>`; }
+function renderCtl() { const c = $('pctl'); if (c) c.innerHTML = `<button class="tourbtn" data-act="reset" title="Put every request back to where it started">Reset demo</button>`; }
 function stop() {}
 let pop = null;
 function closePop() { if (pop) { pop.remove(); pop = null; } }
@@ -2531,7 +2542,7 @@ const ACT = {
   na: el => { st.toast = `${el.dataset.what} isn't part of this prototype.`; render(); },
   clearf: () => { st.f = {status:'all', chan:'all', law:'all'}; st.q = ''; render(); },
   readall: () => { allNotes().forEach(n => st.read[n[4] + n[1]] = 1); render(); },
-  reset: () => { const v = st.view; Object.keys(st).forEach(k => delete st[k]); Object.assign(st, ST0(), {view:v, toast:'Demo reset. Every request and email is back where it started.'}); render(); }
+  reset: () => { Object.keys(st).forEach(k => delete st[k]); Object.assign(st, ST0(), {toast:'Demo reset. Every request and email is back where it started.'}); render(); }
 };
 document.addEventListener('click', e => {
   const t = e.target.closest('[data-act],[data-src],[data-tnav],[data-sel],[data-open],[data-rtab],[data-esel],[data-efilt],[data-fm],[data-fv],[data-note],[data-mail]');
@@ -2567,8 +2578,8 @@ window.addEventListener('resize', () => { closePop(); placeApop(); });
 window.addEventListener('hashchange', () => setTimeout(() => { if (currentView() === 'prototype') render(); }, 0));
 window.__go = g => {
   const [id, tab] = String(g).split(':');
-  if (id === 'outlook') { st.view = 'outlook'; st.mail = 'loomly'; st.pane0 = 'home'; return render(); }
   st.view = 'sirion';
+  if (id === 'outlook') { st.scr = 'intake'; return render(); }
   if (id === 'intake') { st.scr = 'intake'; return render(); }
   if (T(id)) return openReq(id, tab || 'details');
 };
@@ -2887,8 +2898,8 @@ const ON = [
   {id:2, ini:'VR', team:'Business owner', who:'Vikram, budget owner', ic:'brief', tag:'Works over email', dir:'both', flow:"Approves the spend against his budget by replying to Legal's email.", pain:'Approval requests reach him without context, so he either asks questions or sits on them.', stat:'91% say approval requests lack key information (Zone & Co)', rel:[1, 3]},
   {id:3, ini:'RV', team:'Finance', who:'Rahul', ic:'cash', tag:'Works over email', dir:'both', flow:'Confirms budget and payment terms when Legal asks.', pain:'Usually hears about a commitment at approval time or later, without seeing the terms.', stat:'Over half of finance teams see spend that late (Zone & Co)', rel:[2, 6]},
   {id:4, ini:'MI', team:'Privacy', who:'Meera', ic:'shield', tag:'Works over email', dir:'both', flow:'Reviews any supplier that will handle personal data, and can approve with conditions.', pain:'Often brought in late, or not at all.', stat:'Third parties are involved in 30% of breaches (Verizon DBIR 2025)', rel:[5]},
-  {id:5, ini:'SC', team:'Supplier', who:'Sam, Pixel & Pine', ic:'bldg', tag:'Via the requester', dir:'in', flow:'Deals with Priya, not Legal. His documents reach Legal through her.', pain:'Waits on approvals and gets asked for the same documents more than once.', stat:'15 to 28 days to onboard a supplier (HICX)', rel:[1]},
-  {id:6, ini:'PR', team:'Procurement', who:'Outside this product', ic:'rcpt', tag:'Kept in the loop', dir:'out', flow:'Sees new supplier requests at intake, before anyone commits spend.', pain:'Finds out about new suppliers after the business has already agreed terms.', stat:'Up to 16% of negotiated savings are lost to buying outside the process (Hackett)', rel:[3]}
+  {id:5, ini:'SC', team:'Supplier', who:'Pixel & Pine', ic:'bldg', tag:'Via the requester', dir:'in', flow:'Deals with Priya, not Legal. His documents reach Legal through her.', pain:'Waits on approvals and gets asked for the same documents more than once.', stat:'15 to 28 days to onboard a supplier (HICX)', rel:[1]},
+  {id:6, ini:'PR', team:'Procurement', who:'Out of scope', ic:'rcpt', tag:'Kept in the loop', dir:'out', flow:'Sees new supplier requests at intake, before anyone commits spend.', pain:'Finds out about new suppliers after the business has already agreed terms.', stat:'Up to 16% of negotiated savings are lost to buying outside the process (Hackett)', rel:[3]}
 ];
 const LEGAL = {rel:null, team:'Legal', who:'Arjun (legal ops) and Ana (commercial counsel)', tag:'Primary user', flow:'Owns the intake queue. Triages, assigns and takes every request through approvals.', pain:'Requests come in by email, chat and walk-ups, usually missing key details. Approvers have to be chased one by one.', stat:'49% of legal teams call scattered channels their biggest waste (IDC for LawVu)'};
 const el = $('orb');
@@ -2957,6 +2968,15 @@ function runBand() {
   });
   requestAnimationFrame(() => band.classList.add('in'));
 }
+/* the app renders at 80% on laptop screens, as it reads best at that density */
+const PZ = 0.8;
+function sizeProto() {
+  const w = document.getElementById('win'); if (!w) return;
+  if (innerWidth < 1000) { w.style.zoom = ''; w.style.width = ''; w.style.height = ''; w.style.flex = ''; return; }
+  const top = document.querySelector('.top').offsetHeight;
+  w.style.zoom = PZ; w.style.flex = 'none'; w.style.width = (document.documentElement.clientWidth / PZ) + 'px'; w.style.height = ((innerHeight - top) / PZ) + 'px';
+}
+addEventListener('resize', () => requestAnimationFrame(sizeProto));
 function fitPage() {
   const s = document.querySelector('section[data-view]:not(.hidden) .fp');
   if (!s) return;
@@ -2966,7 +2986,7 @@ function fitPage() {
   const W = document.documentElement.clientWidth, H = innerHeight - document.querySelector('.top').offsetHeight;
   const fits = z => { s.style.zoom = z; s.style.width = (W / z) + 'px'; s.style.height = (H / z) + 'px';
     return [...s.querySelectorAll('.fcol')].every(c => c.scrollHeight <= c.clientHeight + 1) && s.scrollHeight <= s.clientHeight + 1; };
-  let lo = 0.7, hi = 1.7;
+  let lo = 0.7, hi = 0.95;
   if (fits(hi)) return;
   for (let i = 0; i < 12; i++) { const m = (lo + hi) / 2; if (fits(m)) lo = m; else hi = m; }
   fits(lo * 0.97);
@@ -3000,7 +3020,7 @@ function route() {
   document.body.classList.toggle('appmode', v === 'prototype');
   if (v !== 'prototype') stop();
   const wv = document.getElementById('wtvid'); if (wv && v !== 'walkthrough') wv.pause();
-  closePop(); setTop(); window.scrollTo(0, 0); fitPage(); if (v === 'why') runBand();
+  closePop(); setTop(); window.scrollTo(0, 0); fitPage(); sizeProto(); if (v === 'why') runBand();
 }
 const topObs = new ResizeObserver(setTop); topObs.observe(document.querySelector('.top'));
 window.addEventListener('hashchange', route);
