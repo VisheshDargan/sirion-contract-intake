@@ -1,0 +1,4 @@
+{
+  "functions": { "api/sirion.js": { "maxDuration": 30 } },
+  "headers": [{ "source": "/(.*)\\.(png|jpg|mp4)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400" }] }]
+}
