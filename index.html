@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sirion Intake Prototype</title>
+<title>Sirion contract intake: prototype</title>
+<link rel="icon" href="sirion-mark.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
@@ -1537,6 +1538,7 @@ button:hover>.bl,.chip:hover>.bl,nav.menu a:hover>.bl,button:focus-visible>.bl{t
 .ivf{margin:12px 0 0;font-size:14px;color:#3f3f46}
 @media (max-width:900px){.ivg{grid-template-columns:minmax(0,1fr)}}
 body:not(.appmode) #pctl{display:none!important}
+#win .oli.unread .r2 .sub{color:#0b5a9e}
 </style>
 </head>
 <body>
@@ -1683,7 +1685,7 @@ body:not(.appmode) #pctl{display:none!important}
     <h1>The solution: Sirion contract intake</h1>
     <p class="flead">Legal runs every supplier contract request from one queue, starting in the Outlook inbox where requests already arrive. Sirion AI reads the request, routes the approvals and keeps the record, so Legal stops chasing and the requester can see where things stand.</p>
     <div class="solflow"><span>Request email</span><i></i><span>Checked in Outlook</span><i></i><span>Intake queue</span><i></i><span>Approvals by email</span><i></i><span>Draft ready to negotiate</span></div>
-    <div class="sols"><div class="sol"><div class="sn">1</div><h2>Sirion add-in for Outlook</h2><p class="sl">Legal works from the inbox where requests already arrive.</p><ul><li>Summarize any email and its thread</li><li>Check the email and attachments against IBM's intake playbook (8 checks, each linked to its source)</li><li>Ask questions about the request, with sourced answers</li><li>Create the request in one click; the requester gets a request number by email</li><li>Paste any new email and Sirion AI reads it live</li></ul><button class="sgo" data-goto="outlook">Try it in Outlook</button></div><div class="sol"><div class="sn">2</div><h2>One intake queue</h2><p class="sl">Every request in one place, whichever channel it came from.</p><ul><li>Outlook, Teams, Slack, Jira and renewal dates in one Jira-style queue</li><li>Every status says who the request is waiting on</li><li>Assign a lawyer by their open work, deadlines and specialism</li></ul><button class="sgo" data-goto="intake">See the queue</button></div><div class="sol"><div class="sn">3</div><h2>Approval routing</h2><p class="sl">Sirion AI works out who must approve, and why.</p><ul><li>Rules from the playbook: budget owner, Finance above $100,000, Privacy when personal data is shared</li><li>One email per approver, drafted with a short brief and one clear ask</li><li>All approvals go out in parallel, not one after another</li></ul><button class="sgo" data-goto="REQ-1036:details">See the routing</button></div><div class="sol"><div class="sn">4</div><h2>Approvals by email</h2><p class="sl">Approvers reply from their own inbox. Nobody logs in to Sirion.</p><ul><li>Sirion AI reads each reply and logs it as an approval, a condition or a change</li><li>Legal replies and follows up from Sirion; every reply is on record</li><li>Agreed changes go into the draft, marked with who asked</li></ul><button class="sgo" data-goto="REQ-1042:emails">See the approvals</button></div><div class="sol"><div class="sn">5</div><h2>Tracking and reporting</h2><p class="sl">Everyone can see where a request stands, and Legal can see where intake slows down.</p><ul><li>A journey, a "Waiting on" block and a full history on every request</li><li>Every request ends in the contract repository with owner, value and renewal date</li><li>A reporting dashboard: volume, on-time rate and approval time by team</li></ul><button class="sgo" data-goto="REQ-1042:tracking">See tracking</button></div></div>
+    <div class="sols"><div class="sol"><div class="sn">1</div><h2>Sirion add-in for Outlook</h2><p class="sl">Legal works from the inbox where requests already arrive.</p><ul><li>Summarize any email and its thread</li><li>Check the email and attachments against IBM's intake playbook (8 checks, each linked to its source)</li><li>Ask questions about the request, with sourced answers</li><li>Create the request in one click; the requester gets a request number by email</li></ul><button class="sgo" data-goto="outlook">Try it in Outlook</button></div><div class="sol"><div class="sn">2</div><h2>One intake queue</h2><p class="sl">Every request in one place, whichever channel it came from.</p><ul><li>Outlook, Teams, Slack, Jira and renewal dates in one Jira-style queue</li><li>Every status says who the request is waiting on</li><li>Assign a lawyer by their open work, deadlines and specialism</li></ul><button class="sgo" data-goto="intake">See the queue</button></div><div class="sol"><div class="sn">3</div><h2>Approval routing</h2><p class="sl">Sirion AI works out who must approve, and why.</p><ul><li>Rules from the playbook: budget owner, Finance above $100,000, Privacy when personal data is shared</li><li>One email per approver, drafted with a short brief and one clear ask</li><li>All approvals go out in parallel, not one after another</li></ul><button class="sgo" data-goto="REQ-1036:details">See the routing</button></div><div class="sol"><div class="sn">4</div><h2>Approvals by email</h2><p class="sl">Approvers reply from their own inbox. Nobody logs in to Sirion.</p><ul><li>Sirion AI reads each reply and logs it as an approval, a condition or a change</li><li>Legal replies and follows up from Sirion; every reply is on record</li><li>Agreed changes go into the draft, marked with who asked</li></ul><button class="sgo" data-goto="REQ-1042:emails">See the approvals</button></div><div class="sol"><div class="sn">5</div><h2>Tracking and reporting</h2><p class="sl">Everyone can see where a request stands, and Legal can see where intake slows down.</p><ul><li>A journey, a "Waiting on" block and a full history on every request</li><li>Every request ends in the contract repository with owner, value and renewal date</li><li>A reporting dashboard: volume, on-time rate and approval time by team</li></ul><button class="sgo" data-goto="REQ-1042:tracking">See tracking</button></div></div>
     <div class="iva"><h2>How much Sirion AI does on its own</h2><p class="ivl">Sirion AI informs and prepares; people decide and send. Anything that commits IBM, or speaks for Legal, needs a person. A wrong extraction costs a minute to fix. A wrong commitment costs money.</p>
       <div class="ivg">
         <div><h3><span class="ivd a"></span>Does on its own</h3><ul><li>Reads every request email and its attachments</li><li>Checks them against the playbook and flags gaps and risks</li><li>Sends the requester their request number, and asks for what's missing</li><li>Logs each approver's reply as an approval, a condition or a change</li><li>Keeps the summary, status and history up to date</li></ul></div>
@@ -2633,7 +2635,7 @@ const esc2 = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp
 function checkView(f, live, foot) {
   const found = PB.filter(([k]) => fval(f, k)).length;
   const rows = PB.map(([k, l]) => { const v = fval(f, k), q = f.quotes && f.quotes[k]; return `<div class="sfr"><span class="k"><span class="${v ? 'ok' : 'miss'}">${v ? '' : 'Missing'}</span> ${l}</span><div><div>${v ? (live ? esc2(v) : v) : '<span class="mtx">Not in the email</span>'}</div>${q ? `<div class="sq">"${live ? esc2(q) : q}"</div>` : ''}</div></div>`; }).join('');
-  return `<div class="scheck2"><div class="sch">Checked against IBM's intake playbook for new requests${live ? ' <span class="livetag">Live result from Sirion AI</span>' : ''}</div><div class="sok ${found < 8 ? 'part' : ''}">${found} of 8 items found</div><div class="sfields">${rows}</div>
+  return `<div class="scheck2"><div class="sch">Checked against IBM's intake playbook for new requests${live ? ' <span class="livetag">Read just now by Sirion AI</span>' : ''}</div><div class="sok ${found < 8 ? 'part' : ''}">${found} of 8 items found</div><div class="sfields">${rows}</div>
     ${(f.flags || []).length ? `<div class="snote"><b>Flags</b><ul>${f.flags.map(x => `<li>${live ? esc2(x) : x}</li>`).join('')}</ul></div>` : ''}
     ${(f.questions || []).length ? `<div class="snote q"><b>Sirion AI will ask ${f.requester ? esc2(f.requester.split(' ')[0]) : 'the requester'}</b><ul>${f.questions.map(x => `<li>${live ? esc2(x) : x}</li>`).join('')}</ul></div>` : ''}${foot}</div>`;
 }
@@ -2680,6 +2682,56 @@ function makeTicket(f, live) {
   st.T[id] = t; st.order.unshift(id); return t;
 }
 
+
+/* ---------- Sirion AI reader that runs in the browser (used when no AI service is connected) ---------- */
+const sentencesOf = t => t.replace(/\r/g, '').split(/\n{2,}|(?<=[.!?])\s+(?=[A-Z])/).map(s => s.replace(/\s+/g, ' ').trim()).filter(s => s.length > 3);
+const firstMatch = (t, res) => { for (const re of res) { const m = t.match(re); if (m) return m; } return null; };
+const quoteOf = (t, frag) => { if (!frag) return null; const s = sentencesOf(t).find(x => x.includes(frag)); return s ? (s.length > 120 ? s.slice(0, 117) + '…' : s) : null; };
+const clip = (s, n = 90) => s.length <= n ? s : s.slice(0, n).replace(/\s+\S*$/, '') + '…';
+function readLocally(raw) {
+  const t = raw.replace(/\r/g, ''), body = t.replace(/^(from|to|cc|subject|date|sent):.*$/gim, '').trim();
+  const from = firstMatch(t, [/^from:\s*([^<\n(]+?)\s*(?:<([^>\n]+)>)?\s*(?:\(([^)\n]+)\))?\s*$/im]);
+  const subj = firstMatch(t, [/^subject:\s*(.+)$/im]);
+  const sign = firstMatch(body, [/(?:thanks|regards|best|cheers)[,!]?\s*\n+\s*([A-Z][a-z]+(?: [A-Z][a-z]+)?)\s*$/im]);
+  const requester = from ? from[1].trim() : sign ? sign[1].trim() : null;
+  const team = from && from[3] ? from[3].trim() : (firstMatch(body, [/\b(?:the|our) ([A-Z][a-z]+(?: [a-z]+)?) team\b/]) || [])[1] || null;
+  const sup = firstMatch(body, [/\b([A-Z][\w&.'-]*(?: [A-Z][\w&.'-]*)* (?:Services|Solutions|Inc\.?|LLC|Ltd|Limited|Group|Logistics|Labs|Technologies|Studio|Agency|Partners|Consulting|Systems))\b/, /\b(?:use|hire|bring on|engage|sign with|onboard|renew|want) ([A-Z][\w&.'-]+(?: [A-Z][\w&.'-]+)?)\b/]);
+  const supplier = sup ? sup[1].replace(/^(?:The|Our)\s+/, '') : null;
+  const val = firstMatch(body, [/(\$\s?[\d,.]*\d(?:\s?(?:k|K|m|M|million)\b)?(?:\s(?:a|per)\s(?:year|month|annum))?)/, /(USD\s?[\d,.]+(?:\s(?:a|per)\s(?:year|month))?)/, /(₹\s?[\d,.]+\s?(?:lakh|crore)?)/]);
+  let value_usd = null; if (val) { const n = parseFloat(val[1].replace(/[^\d.]/g, '')); value_usd = /k\b/i.test(val[1]) ? n * 1000 : /m\b|million/i.test(val[1]) ? n * 1e6 : n; if (/month/i.test(val[1])) value_usd *= 12; }
+  const start = firstMatch(body, [/((?:from|starting|start on|start from|begin(?:ning)? on)\s+(?:\d{1,2}\s+)?(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|June?|July?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)(?:\s+\d{1,2})?(?:,?\s+\d{4})?(?:,?\s+for\s+(?:\w+)\s+(?:years?|months?))?)/i, /(for\s+(?:one|two|three|\d+)\s+(?:years?|months?))/i]);
+  const signer = firstMatch(body, [/([A-Z][a-z]+ [A-Z][a-z]+)(?:,\s*([^,.\n]{3,40}),)?\s+will sign/, /([A-Z][a-z]+ [A-Z][a-z]+), their ([^,.\n]{3,40}), will sign/, /signed by ([A-Z][a-z]+ [A-Z][a-z]+)/]);
+  const budget = firstMatch(body, [/\b([A-Z]{2,5}-\d{3,5})\b/, /budget(?: code| line)? (?:is |of )?([A-Z][\w-]+)/]);
+  const agr = firstMatch(body, [/((?:their|our|IBM's|the supplier's|[A-Z]\w+'s) (?:own |standard |online )*(?:MSA|terms(?: of service)?|order form|SOW|NDA|contract|agreement)[^.,\n]{0,30})/i, /\b(MSA|SOW|NDA|order form|master services agreement)\b/i]);
+  const pd = firstMatch(body, [/([^.\n]*\b(?:customer|personal|employee|patient|candidate)s?\b[^.\n]*\b(?:data|emails?|names|comments|messages|details|records|list|addresses)\b[^.\n]*)/i, /([^.\n]*\bpersonal data\b[^.\n]*)/i]);
+  const ac = firstMatch(body, [/([^.\n]*\b(?:access to|login|log in|admin rights|connect to|integrat\w+ with|badge access|VPN|single sign-on|SSO)\b[^.\n]*)/i]);
+  const isReq = !!(supplier || val || /contract|agreement|sign|renew|order form|MSA|SOW|NDA|supplier|vendor|quote/i.test(body));
+  if (!isReq) return {is_request:false, reason:"it doesn't mention a supplier, a price or a contract"};
+  const q = {}, F = {title:null, summary:null, requester, team, email:from && from[2] ? from[2].trim() : null, supplier, agreement:agr ? agr[1].trim() : null, value_text:val ? val[1].trim() : null, value_usd,
+    signatory:signer ? (signer[1] + (signer[2] ? ', ' + signer[2].trim() : '')) : null, start_term:start ? start[1].replace(/^(?:from|starting|start on|start from|beginning on|begin on)\s+/i, '').trim() : null, budget:budget ? budget[1] : null,
+    personal:!!pd, personal_text:pd ? clip(pd[1].trim().replace(/^(?:and|but|so)\s+/i, '')) : null, access:!!ac, access_text:ac ? clip(ac[1].trim().replace(/^(?:and|but|so)\s+/i, '')) : null};
+  [['supplier', supplier], ['agreement', F.agreement], ['value_text', F.value_text], ['signatory', signer && signer[0]], ['start_term', start && start[1]], ['budget', F.budget], ['personal_text', pd && pd[1]], ['access_text', ac && ac[1]]].forEach(([k, frag]) => { const s = quoteOf(body, frag && frag.trim()); if (s) q[k] = s; });
+  F.quotes = q;
+  F.title = (subj ? subj[1].replace(/^(re|fw|fwd):\s*/i, '') : `${supplier || 'New supplier'} for ${team || requester || 'the business'}`).slice(0, 60);
+  F.summary = `${requester || 'Someone'}${team ? ` (${team})` : ''} wants ${supplier || 'a new supplier'}${F.value_text ? ` for ${F.value_text}` : ''}${F.start_term ? `, ${F.start_term}` : ''}.`;
+  F.flags = []; if (/their own|their (?:standard |online )?(?:terms|MSA)|supplier's/i.test(body)) F.flags.push("On the supplier's own terms, so a lawyer must review them.");
+  if (/auto(?:matically)?[- ]renew/i.test(body)) F.flags.push('Renews automatically: check the notice period.');
+  F.questions = []; if (!F.budget) F.questions.push('Which budget will this come from?'); if (!F.signatory) F.questions.push(`Who will sign for ${supplier || 'the supplier'}?`); if (!F.value_text) F.questions.push('What will it cost each year?');
+  if (!requester && !supplier) return {error:true};
+  return {is_request:true, fields:F};
+}
+const STOP = new Set('what when where which while with this that from have will would could should does about there their they them into your yours than then also just only need needs does doesnt is are the and for who how why can any our its it'.split(' '));
+function answerLocally(q, raw) {
+  const words = q.toLowerCase().match(/[a-z]{3,}/g) || [], keys = words.filter(w => !STOP.has(w));
+  const S = sentencesOf(raw.replace(/^(from|to|subject|attachments):.*$/gim, ''));
+  const syn = {cost:['$', 'price', 'fee', 'year', 'month'], price:['$', 'cost', 'fee'], data:['customer', 'personal', 'comments', 'messages', 'email', 'list'], dpa:['customer', 'personal', 'data'], sign:['sign', 'signatory'], start:['start', 'from', 'january', 'december'], approve:['sign off', 'approve']};
+  const terms = keys.concat(...keys.map(k => syn[k] || []));
+  const scored = S.map(s => [terms.reduce((n, k) => n + (s.toLowerCase().includes(k) ? 1 : 0), 0), s]).filter(x => x[0] > 0).sort((a, b) => b[0] - a[0]).slice(0, 2).map(x => x[1]);
+  if (/approv|sign off|who needs/i.test(q)) { const f = readLocally(raw); if (f.fields) { const r = routeFor(f.fields); return `Under IBM's playbook: ${r.map(a => `${a[2]} (${a[3].replace(/<[^>]+>/g, '')})`).join('; ')}.${(f.fields.value_usd || 0) <= 100000 ? ' Finance isn\'t needed: under $100,000.' : ''}`; } }
+  if (!scored.length) return "The email doesn't say. Sirion AI can ask the requester when it opens the request.";
+  return `From the email: ${scored.map(s => `"${s}"`).join(' ')}`;
+}
+
 /* ---------- live Sirion AI ---------- */
 async function callAI(payload) {
   const ctl = new AbortController(), to = setTimeout(() => ctl.abort(), 35000);
@@ -2688,19 +2740,20 @@ async function callAI(payload) {
     let j = null; try { j = await r.json(); } catch (e) {}
     if (r.status === 404 || r.status === 405 || (!j && !r.ok)) throw {code:'offline'};
     if (!r.ok) throw {code:(j && j.error) || 'server', detail:j && j.detail};
+    if (j && j.fallback) throw {code:'no_key'};
     return j;
   } catch (e) { if (e && e.name === 'AbortError') throw {code:'timeout'}; if (e && e.code) throw e; throw {code:'offline'}; }
   finally { clearTimeout(to); }
 }
-const AIERR = {offline:"Sirion AI isn't connected on this copy of the prototype.", no_key:"Sirion AI isn't set up on this deployment yet (no API key).", rate:'Too many requests in a minute. Wait a moment, then retry.', timeout:'Sirion AI took too long to answer.', bad_json:"Sirion AI's answer couldn't be read.", too_long:'That email is too long. Paste up to 8,000 characters.', server:'Sirion AI hit an error.', upstream:'Sirion AI hit an error.'};
+const AIERR = {offline:"Sirion AI isn't connected on this copy of the prototype.", no_key:"Sirion AI isn't set up on this deployment yet (no API key).", rate:'Too many requests in a minute. Wait a moment, then retry.', timeout:'Sirion AI took too long to answer.', bad_json:"Sirion AI's answer couldn't be read.", too_long:'That email is too long. Paste up to 8,000 characters.', server:'Sirion AI hit an error.', upstream:'Sirion AI hit an error.', unreadable:"Sirion AI couldn't find who sent this or which supplier it's about."};
 
 /* ---------- Outlook rendering ---------- */
 const mailLinked = id => { const m = MBOX[id]; return m.linked || (st.mf[id] && st.mf[id].req); };
 function paneHome(id) {
   const lk = mailLinked(id), t = lk && st.T[lk];
   const rel = t ? `<div class="srel">${av('S', true)}<div><b>This email is ${t.id}</b><div style="margin-top:4px">${pill(...t.status)}</div><button class="link sm" data-act="opensir" data-id="${t.id}">Open in Sirion</button></div></div>` : '';
-  return `${rel}<button class="sask" data-act="pane" data-p="ask"><span>Ask Sirion AI about this email…</span><span class="sinb"><span class="sarr">Ask</span></span></button>
-    <div class="sopts2"><button class="sopt2" data-act="pane" data-p="sum"><b>Summarize email</b><span>Summarize this email and its thread</span></button><button class="sopt2" data-act="pane" data-p="chk"><b>Analyze email attachments</b><span>Check the email and files against IBM's intake playbook</span></button><button class="sopt2 new" data-act="pane" data-p="new"><b>Check a new email</b><span>Paste any request email. Sirion AI reads it live.</span></button></div>`;
+  return `${rel}<button class="sask" data-act="pane" data-p="ask"><span>Ask Sirion AI about this email</span><span class="sinb"><span class="sarr">Ask</span></span></button>
+    <div class="sopts2"><button class="sopt2" data-act="pane" data-p="sum"><b>Summarize email</b><span>Summarize this email and its thread</span></button><button class="sopt2" data-act="pane" data-p="chk"><b>Analyze email attachments</b><span>Check the email and files against IBM's intake playbook</span></button></div>`;
 }
 function paneChk(id) {
   const m = MBOX[id], lk = mailLinked(id);
@@ -2716,10 +2769,9 @@ function paneAsk(id) {
   const A = st.ask || {}, P = PRESETS[id] || [];
   const ans = A.mail === id && A.state ? (A.state === 'loading' ? `<div class="sans load" role="status">${av('S', true)}<span>Sirion AI is reading the email…</span></div>`
     : A.state === 'error' ? `<div class="aierr" role="alert"><b>${AIERR[A.code] || AIERR.server}</b> Your question is kept.${A.saved ? `<div class="saved"><span class="sm faint">Saved answer for this question</span><p>${A.saved}</p></div>` : ''}<div class="aibtns"><button data-act="askgo">Retry</button></div></div>`
-    : `<div class="sans">${av('S', true)}<div>${A.live ? '<span class="livetag">Live answer</span> ' : ''}${A.live ? esc2(A.a).replace(/\n/g, '<br>') : A.a}</div></div>`) : '';
+    : `<div class="sans">${av('S', true)}<div>${A.live ? '<span class="livetag">Answered just now</span> ' : ''}${A.live ? esc2(A.a).replace(/\n/g, '<br>') : A.a}</div></div>`) : '';
   return `<h3>Ask Sirion AI</h3><div class="sm mute" style="margin-bottom:8px">About this email and its files</div>${P.map((q, k) => `<button class="sopt" data-act="askp" data-k="${k}">${q[0]}</button>`).join('')}
-    <label class="sm faint" for="askq" style="display:block;margin:10px 0 4px">Or ask your own question</label><textarea id="askq" class="aiin" rows="3" maxlength="500" placeholder="e.g. Does this need a data processing agreement?">${esc2(A.mail === id ? A.q || '' : '')}</textarea>
-    ${A.mail === id && A.inerr ? `<div class="aierr" role="alert">${A.inerr}</div>` : ''}<div class="aibtns"><button class="pri" data-act="askgo"${A.state === 'loading' ? ' disabled' : ''}>Ask</button></div>${ans}`;
+    ${ans}`;
 }
 const SAMPLE = "From: Omar Haddad <omar.haddad@ibm.com> (Warehouse operations)\nSubject: Forklift maintenance contract for the Pune warehouse\n\nHi Legal,\n\nWe want Swiftlift Services to maintain the 14 forklifts at the Pune warehouse from 1 January, for two years. Their quote is $118,000 a year and they've sent their own MSA.\n\nTheir technicians will need badge access to the site and a login to our Maximo maintenance system to log jobs. Ravi Menon, their operations director, will sign.\n\nCan you start whatever is needed?\n\nThanks,\nOmar";
 function paneNew() {
@@ -2783,9 +2835,11 @@ Object.assign(ACT, {
     if (q.length < 3) { st.ask = {mail:st.mail, q, inerr:'Type a question first, or pick one above.'}; render(); const a = $('askq'); if (a) a.focus(); return; }
     const m = MBOX[st.mail], P = (PRESETS[st.mail] || []).find(x => x[0] === q);
     st.ask = {mail:st.mail, q, state:'loading'}; render();
-    try { const r = await callAI({task:'ask', question:q, email:`From: ${plain(m.who)}\nSubject: ${plain(m.subj)}\nAttachments: ${(m.att || []).map(a => a[0]).join(', ') || 'none'}\n\n${plain(mbody(m))}`});
+    const ctx = `From: ${plain(m.who)}\nSubject: ${plain(m.subj)}\nAttachments: ${(m.att || []).map(a => a[0]).join(', ') || 'none'}\n\n${mbody(m).replace(/<br\s*\/?>/g, '\n').replace(/<[^>]+>/g, '').replace(/&amp;/g, '&')}`;
+    try { const r = await callAI({task:'ask', question:q, email:ctx});
       st.ask = {mail:st.mail, q, state:'done', a:r.answer, live:true}; }
-    catch (e) { st.ask = {mail:st.mail, q, state:'error', code:e.code, saved:P ? P[1] : ''}; }
+    catch (e) { if (['offline', 'no_key'].includes(e.code)) { await new Promise(r => setTimeout(r, 500)); st.ask = {mail:st.mail, q, state:'done', a:answerLocally(q, ctx), live:true}; }
+      else st.ask = {mail:st.mail, q, state:'error', code:e.code, saved:P ? P[1] : ''}; }
     if (st.view === 'outlook' && st.pane0 === 'ask') render(); else saveDemo();
   },
   sample: () => { st.paste = {text:SAMPLE}; render(); },
@@ -2794,7 +2848,9 @@ Object.assign(ACT, {
     st.paste = {text};
     if (text.length < 80 || !/\s/.test(text)) { st.paste.inerr = 'Paste the whole email, including who it is from. That looks too short to be a request.'; render(); const p = $('pastein'); if (p) p.focus(); return; }
     st.paste.state = 'loading'; render();
-    try { const r = await callAI({task:'extract', email:text});
+    try { let r;
+      try { r = await callAI({task:'extract', email:text}); }
+      catch (e) { if (!['offline', 'no_key'].includes(e.code)) throw e; await new Promise(z => setTimeout(z, 700)); r = readLocally(text); if (r.error) throw {code:'unreadable'}; }
       if (r.is_request === false) st.paste = {text, state:'notreq', reason:r.reason};
       else { const f = r.fields || {}; f.raw = text; f.src = 'Outlook'; f.files = []; st.paste = {text, state:'done', f}; } }
     catch (e) { st.paste = {text, state:'error', code:e.code}; }
