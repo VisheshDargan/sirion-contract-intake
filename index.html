@@ -1625,7 +1625,7 @@ body:not(.appmode) #pctl{display:none!important}
 
 <section data-view="walkthrough" class="hidden"><div class="fp fp-wt">
   <div class="wtv"><video id="wtvid" src="walkthrough.mp4" poster="poster.jpg" controls playsinline preload="auto" aria-label="One-minute walkthrough with music: one contract request at Kovalo, from Priya's email to a draft ready to negotiate"></video></div>
-  <div class="wtb"><div><b>Priya's request, from start to finish</b><span>In this one-minute video, Priya sends her request by email. Arjun and Ana handle it in Sirion, and three teams approve it from their own Outlook. Please turn the sound on.</span></div><a class="wtgo" href="#prototype">Try the prototype yourself</a></div>
+  <div class="wtb"><div><b>Priya's request, from start to finish</b><span>In this one-minute video, Priya sends her request by email. Arjun and Ana handle it in Sirion, and three teams approve it from their own Outlook. Please turn the sound on.</span></div><a class="wtgo" href="#prototype" data-goto="intake">Try the prototype yourself</a></div>
 </div></section>
 
 <section data-view="why" class="hidden"><div class="fp fp-why">
@@ -2430,7 +2430,7 @@ function reqPage() {
   const tabs = [['details', 'Details'], ['emails', `Emails &amp; actions ${D ? '<span class="nbad">1</span>' : `<span class="faint">${t.emails.length}</span>`}`], ['review', 'Contract review'], ['tracking', 'Tracking']];
   const body = tab === 'details' ? `<div class="dwrap">${journey(t)}<div class="dsplit">${detailsCard(t)}<div class="dcol">${pendingBlock(t)}${nextSteps(t)}</div></div></div>` : tab === 'emails' ? emailsTab(t) : tab === 'review' ? reviewTab(t) : trackingTab(t);
   return `<div class="xreq"><div class="xrh"><div class="crumb"><button class="link" data-tnav="intake">Contract intake</button> / ${t.id}</div>
-    <div class="trow"><h1>${t.t}</h1>${pill(...t.status)}<span style="margin-left:auto;display:flex;gap:8px">${t.lawyer ? `<span class="pp sm">${avp(LAWYER_INI[t.lawyer], 'sm')}${t.lawyer}</span>` : `<button class="asg" data-act="asgopen" data-id="${t.id}">Assign a lawyer</button>`}<button class="ghost" data-act="track" data-id="${t.id}" title="What the requester sees">Requester view</button><button class="ghost" data-act="contact" data-id="${t.id}">${OI.mail} Message ${ownerName(t).split(' ')[0]}</button></span></div>
+    <div class="trow"><h1>${t.t}</h1>${pill(...t.status)}<span style="margin-left:auto;display:flex;gap:8px">${t.lawyer ? `<span class="pp sm">${avp(LAWYER_INI[t.lawyer], 'sm')}${t.lawyer}</span>` : `<button class="asg" data-act="asgopen" data-id="${t.id}">Assign a lawyer</button>`}<button class="ghost" data-act="track" data-id="${t.id}" title="What the requester sees">View as requester</button><button class="ghost" data-act="contact" data-id="${t.id}">${OI.mail} Message ${ownerName(t).split(' ')[0]}</button></span></div>
     <div class="xtabs">${tabs.map(x => `<button class="${tab === x[0] ? 'on' : ''}" data-rtab="${x[0]}">${x[1]}</button>`).join('')}</div></div>
     <div class="xmainc eamode">${body}</div></div>`;
 }
@@ -2541,7 +2541,7 @@ function pushNav() {
   lastNav = k;
 }
 window.addEventListener('popstate', e => { if (e.state && e.state.p29 && e.state.p29.length === 4) { [st.view, st.scr, st.reqId, st.rtab] = e.state.p29; lastNav = JSON.stringify(e.state.p29); st.asg = null; st.fm = null; render(); } });
-function renderCtl() { const c = $('pctl'); if (c) c.innerHTML = `${st.scr === 'track' ? '' : `<button class="tourbtn" data-act="track" title="See the request the way the requester sees it">${st.scr === 'request' ? 'Requester view' : 'View as Priya'}</button>`}<button class="tourbtn" data-act="reset" title="Put every request back to where it started">Reset demo</button>`; }
+function renderCtl() { const c = $('pctl'); if (c) c.innerHTML = `${st.scr === 'track' ? '' : `<button class="tourbtn" data-act="track" title="See the request the way the requester sees it">View as requester</button>`}<button class="tourbtn" data-act="reset" title="Put every request back to where it started">Reset demo</button>`; }
 function stop() {}
 let pop = null;
 function closePop() { if (pop) { pop.remove(); pop = null; } }
